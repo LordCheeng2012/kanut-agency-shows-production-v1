@@ -1,0 +1,44 @@
+.promotion-content-service{
+    padding: 3%;
+    height: 100%;
+    text-align: center;
+}
+.promotion-content-service h1{
+    height: 15%;
+    font-size: 15vh;
+    color: var(--primary-w);
+}
+.types-promotions-service-content{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 95%;
+}
+.content-type{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 2%;
+    text-align: justify;
+}
+.img-content-type{
+    margin-bottom: 10%;
+    height: 25%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.description-promotion{
+    height: 100%;
+    text-align: justify;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+.description-promotion button{
+    width: 50%;
+    margin-top: 10%;
+    height: 6%;
+    font-size: medium;
+}

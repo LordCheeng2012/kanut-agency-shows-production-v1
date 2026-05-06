@@ -1,0 +1,88 @@
+.about-content{
+    /* background-color: brown; */
+    height: 100%;
+    background-image: url('../../../assets/imgs/backgrounds/about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.a-c-item{
+    /* border: 1px solid darkcyan; */
+    /* background-color: aquamarine; */
+    /* align-items: center; */
+    height: 100%;
+}
+.ac-content-title{
+    height: 25%;
+}
+
+.ac-about-details{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 100%;
+    justify-content: center;
+}
+.ab-item-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 23%;
+    /* background-color: slateblue; */
+    /* border: 1px solid black; */
+    padding: 1%;
+}
+.details-text{
+    width: 40%;
+    p{
+    color: white !important; 
+    font-size: 2.5vh;
+    }
+}
+
+.img-card{
+    border: 2px solid var(--segondary-g-phamtom);
+    /* background-color: aliceblue; */
+    height: 80%;
+    width: 80%;
+    padding: 3%;
+    border-radius: 10px;
+    color: white;
+}
+.img-person{
+   height: 80%;
+   background-color: hotpink;
+   border-radius: 5px;
+}
+.img-daniela{
+    margin-top: 25%;
+}
+.details-person{
+   /* ingresar estilo de fuente comentario */
+   font-style: oblique;
+   margin-top: 5%;
+   font-size: small;
+}
+
+.ac-footer{
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-show-details{
+    height: 100%;
+    width: 40%;
+    /* background-color: darkgoldenrod; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+.ac-btn{
+    height: 30% !important; 
+    width: 30%;
+    font-size: large !important;
+    background-color: var(--segondary-pink);
+    color: white;
+}

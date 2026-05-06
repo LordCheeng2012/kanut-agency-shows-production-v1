@@ -1,0 +1,38 @@
+{
+    "services":{
+            "boda":{
+                "title":"Eventos - Bodas",
+                "description":"Detrás de cada boda hay sueños compartidos, promesas sinceras y emociones que no caben en palabras. Nos mueve la belleza de lo auténtico, la emoción de lo verdadero y la fuerza de un amor que decide celebrarse.",
+                "comments":"“Porque cuando dos personas se eligen, el mundo se detiene por un instante y ese instante merece ser inolvidable.”",
+                "otherDescription":null,
+                "imgService":"image_3.png",
+                "borderColor":"0.5rem solid var(--kanut-service-boda)",
+                "logoSrc":"/Kanut_Boda.png",
+                "colorClass":"btn-primary-sky",
+                "colorService":"boda"
+                             
+            },
+            "party":{
+                "title":"Eventos - party",
+                "description":"La juventud es color, movimiento y emoción sin filtros. Es celebrar la vida con intensidad, crear recuerdos que algún día arrancarán una sonrisa nostálgica y compartir momentos que fortalecen amistades para siempre.",
+                "comments":"“Cada celebración es una explosión de energía que conecta corazones y transforma una noche en una historia inolvidable.”",
+                "otherDescription":null,
+                "imgService":"image_2.png" ,
+                "borderColor":"0.5rem solid var(--kanut-service-party)",
+                "logoSrc":"/Kanut_Party.png" ,
+                "colorClass":"btn-gold",
+                "colorService":"party"              
+            },
+            "shows":{
+                "title":"Eventos - Shows",
+                "description":"Sabemos que detrás de cada celebración hay algo más profundo",
+                "comments":"“El deseo de regalarle a tu hijo un momento que nunca olvide. Un día lleno de emoción, juegos, sorpresas y sonrisas verdaderas.”",
+                "otherDescription":"Instantes donde el tiempo parece detenerse y solo importa la felicidad compartida.Porque cuando un niño es feliz, el corazón de los padres también lo es."  ,     
+                "imgService":"image_1.png" ,
+                "borderColor":"0.5rem solid var(--kanut-service-shows)",
+                "logoSrc":"/Kanut_Eventos_Shows.png",
+                "colorClass":"btn-primary",
+                "colorService":"party-color-altern"             
+            }
+        }
+}

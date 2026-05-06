@@ -1,0 +1,52 @@
+.section-controller{
+    height: 100%;
+    background-color: var(--primary-w);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+.item-service-option{
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0;
+    transition: border 0.1s ease;
+}
+.border-boda:hover{
+  border: 0.5rem solid var(--kanut-service-boda);
+   .i-s-o-option {
+    scale: 0.9;
+  }
+}
+.border-shows:hover{
+  border: 0.5rem solid var(--kanut-service-shows);
+   .i-s-o-option {
+     scale: 0.9;
+  }
+}
+.border-party:hover{
+  border:  0.5rem solid var(--kanut-service-party);
+  .i-s-o-option {
+    scale: 0.9;
+  }
+}
+.i-s-o-option{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-b-black);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    img{
+        height: 40%;
+    }
+}
+

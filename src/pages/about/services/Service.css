@@ -1,0 +1,38 @@
+.content-service{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content-image-service{
+    height: 20%;
+
+}
+.content-image{
+    /* border-bottom: 0.5rem solid var(--segondary-bwo-beich); */
+}
+.content-grid-galery-service{
+    height: 80%;
+}
+.title-service-content{
+   height: 20%;
+   border: 1px solid black;
+   padding: 5%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   h2{
+    font-size: 5rem !important;
+   }
+}
+.title-service{
+width: 20%;
+padding: 0.5%;
+}
+.galery-container{
+    border: 1px solid darkblue;
+    height: 80%;
+    padding: 0;
+    background-color: darkcyan;
+    position: relative;
+}

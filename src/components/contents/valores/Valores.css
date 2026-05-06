@@ -1,0 +1,24 @@
+.content-valores{
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    h1{
+       margin: 2%; 
+       color: white;
+    }
+}
+.list-valores{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    height: 100%;
+}
+.item-list-v{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+}

@@ -1,0 +1,26 @@
+.item-information-service{
+   flex: 1 1 50%;
+   /* border: 1px solid firebrick; */
+   padding: 3%;
+   img{
+    margin-bottom: 3%;
+   }
+   p{
+    text-align: justify;
+   }
+
+}
+.content-information{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+}
+
+.video-service{
+    height: 80%;
+    width: 100%;
+    background-color: black;
+    border-radius: 30px;
+}

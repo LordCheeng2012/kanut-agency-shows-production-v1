@@ -1,0 +1,101 @@
+.content-marcas{
+    height: 100%;
+    padding: 1%;
+}
+.empty-space{
+    height: 15%;
+}
+.types-services-marcas{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid darkgreen;
+    padding: 1%;
+    height: 15%;
+    gap: 2%;
+}
+.c-m-item-service{
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+    background-color: var(--background-gray--service);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 1%;
+}
+.cmi-service{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
+    width: 40%;
+    border: 1px solid black;
+}
+.description-service{
+    padding: 2%;
+    font-size: large !important;
+
+}
+.ds-details{
+ color: white !important;
+ font-size: larger;
+
+}
+
+.boda-s{background-image: url('../../../assets/imgs/services/Kanut_Boda.png');}
+.party-s{background-image: url('../../../assets/imgs/services/Kanut_Party.png');}
+.shows-s{background-image: url('../../../assets/imgs/services/Kanut_Eventos_Shows.png');}
+
+.gallery-images-grid{
+    height:60%;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(2rem,1fr));
+    grid-template-rows: repeat(2,minmax(2rem,1fr));
+    padding: 3%;
+    gap: 5px;
+}
+/* 
+.item-grid-galery{
+background-color: aquamarine;
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;
+
+} */
+
+.spreat-rows{
+ display: flex;
+ flex-direction: row;
+ gap: 5px;
+}
+.item-r{
+height: 100%;
+width: 50%;
+}
+.spreat-c{
+display: flex;
+flex-direction: column;
+gap: 5px;
+div{
+  background-color: var(--background-gray--service);
+  height: 100%;
+}
+}
+.spreat-columns{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.item-c{
+    height: 50%;
+}
+.spreat-r{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    div{
+    background-color: var(--background-gray--service);
+    width: 100%;
+    }
+}
+.only-back{
+    background-color: var(--background-gray--service);
+}

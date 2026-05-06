@@ -1,0 +1,221 @@
+/*
+Configuracion de fuentes principales Kanut
+----------------------------------------
+@Corparation KANUT--ENTERPRICE-2026 
+----------------------------------------
+codigo de colores de uso interno segun brand 
+
+*/
+
+/* ===== DECLARACION DE FONTS (@font-face) =====
+   Se registran todas las fuentes encontradas en la carpeta ./Fonts
+   y se exponen con nombres de familia limpios para usar en el proyecto.
+*/
+
+/* Agbalumo: usado para títulos principales */
+@font-face {
+  font-family: 'Agbalumo';
+  src: url('./Agbalumo-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Josefin Sans - variable weight: ideal para descripciones y body */
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('./JosefinSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Petra Sans - múltiples pesos */
+@font-face {
+  font-family: 'Petra Sans';
+  src: url('./PetraSans-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Petra Sans';
+  src: url('./PetraSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Petra Sans';
+  src: url('./PetraSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Petra Sans';
+  src: url('./PetraSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Petra Sans';
+  src: url('./PetraSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Petra Sans';
+  src: url('./PetraSans-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Petra Sans';
+  src: url('./PetraSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Rubik - sistema de pesos y variantes */
+@font-face {
+  font-family: 'Rubik';
+  src: url('./Rubik-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('./Rubik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('./Rubik-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('./Rubik-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('./Rubik-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fallbacks y alias: variables de familia para uso en componentes */
+:root {
+  /* familias */
+  --font-family-title: 'Agbalumo', 'Petra Sans', 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-subtitle: 'Petra Sans', 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-subtitle-altern: 'Agbalumo','Petra Sans', 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-body: 'Josefin Sans', 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-body-altern: 'Rubik','Petra Sans', 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  
+  /* tamaños por defecto (puedes sobreescribirlos) */
+  --fs-title: 48px;
+  --fs-subtitle: 20px;
+  --fs-subtitle-light:18px;
+  --fs--subtitle-h1:30px;
+  --fs-body: 15px;
+  --fs-small: 14px;
+}
+
+/* ===== CLASES TIPOGRAFICAS DE USO =====
+   - .kanut-title       -> títulos principales (h1/hero)
+   - .kanut-subtitle    -> subtítulos / secciones
+   - .kanut-description -> texto descriptivo / párrafos
+   - .kanut-muted       -> texto pequeño / menos prioridad
+*/
+
+.kanut-title {
+  font-family: var(--font-family-title);
+  /* font-weight: 700; usa Agbalumo o Petra Sans Bold si existe */
+  font-size: var(--fs-title);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+.kanut-title-altern{
+  font-family: var(--font-family-subtitle);
+  /* font-weight: 700; usa Agbalumo o Petra Sans Bold si existe */
+  font-size: var(--fs-title);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.kanut-subtitle {
+  font-family: var(--font-family-subtitle);
+  font-weight: 500; /* Medium por defecto */
+  font-size: var(--fs-subtitle);
+  line-height: 1.2;
+}
+.kanut-subtitle-light{
+  font-family: var(--font-family-subtitle);
+  font-weight: 400; /* Medium por defecto */
+  font-size: var(--fs-subtitle-light);
+  line-height: 1.1;
+}
+.kanut-subtitle-h1 {
+  font-family: var(--font-family-subtitle-altern);
+  font-weight: 100; /* Medium por defecto */
+  font-size: var(--fs--subtitle-h1);
+  line-height: 1.9;
+}
+
+.kanut-subtitle--strong {
+  font-family: var(--font-family-subtitle);
+  font-weight: 700;
+  font-size: calc(var(--fs-subtitle) + 2px);
+}
+
+.kanut-description {
+  font-family: var(--font-family-body);
+  font-weight: 300; /* ligero para descripciones */
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+.kanut-description-altern{
+  font-family: var(--font-family-body-altern);
+  font-weight: 400; /* ligero para descripciones */
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  color: var(--text-description);
+}
+
+.kanut-muted {
+  font-family: var(--font-family-body);
+  font-weight: 300;
+  font-size: var(--fs-small);
+  color: rgba(0,0,0,0.6);
+}
+
+/* Ejemplos de utilidad: clases responsivas pequeñas */
+@media (max-width: 768px) {
+  :root {
+    --fs-title: 34px;
+    --fs-subtitle: 18px;
+    --fs-body: 15px;
+    --fs--subtitle-h1:20px;
+  }
+}
+
+/* Fin de Fonts.css */
+
+
+

@@ -1,0 +1,53 @@
+.portfolio-content{
+    height: 100%;
+    width: 100%;
+
+}
+.p-c-item{
+    border: 1px solid blue;
+}
+
+.p-c-title-portfolio{
+text-align: center;
+height: 15%;
+h1{
+    font-size: 13vh;
+    font-weight: 400;
+    color: var(--primary-b-sky);
+}
+}
+.portfolio-list{
+height: 70%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 5%;
+justify-content: center;
+align-items: center;
+}
+.card-item{
+    border: 1px solid rgb(93, 93, 97);
+    height: 45%;
+    width: 25%;
+    
+}
+.c-i-img-item{
+background-color: darkslateblue;
+border-radius: 10px;
+height: 70%;
+}
+.c-i-f-portfolio{
+    padding: 2%;
+    height: 15%;
+}
+.f-portfolio{
+height: 15%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.f-p-btn{
+    background-color:var(--segondary-bwn-red);
+    width: 20%;
+    color: white;
+}

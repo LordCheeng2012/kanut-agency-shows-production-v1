@@ -1,0 +1,26 @@
+
+/* mision valores */
+.about-content-etic{
+height: 30%;    
+border: 1px solid blue;
+background-image: url('../../assets/imgs/backgrounds/Etica.png');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/*Preguntas frecuentes */
+.frequents-questions-content{
+height: 25%;
+border: 1px solid blue;
+}
+.content-about-marcas{
+height: 45%;
+border: 1px solid blue;
+background-image: url('../../assets/imgs/backgrounds/about_marcas.png');
+background-repeat: no-repeat;
+background-size:contain;
+background-color: var(--primary-b-black);
+}
+
+
+

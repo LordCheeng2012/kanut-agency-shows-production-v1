@@ -1,0 +1,23 @@
+.button{
+    padding: 1%;
+    height: 10vh;
+    font-size: x-large;
+    border-radius: 5px;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+.btn-primary{
+background-color: var(--segondary-pink);
+color: white;
+}
+.btn-primary-sky{
+background-color: var(--segondary-sky-b);
+color: white;
+}
+.btn-gold{
+background-color: var(--segondary-gold);
+color: white;
+}
+
+

@@ -1,0 +1,44 @@
+.questions-frequests-content{ 
+height: 100%;
+padding: 5%;
+/* background-color: brown; */
+}
+.title-q-f{
+    margin-bottom: 5%;
+    font-size: xx-large;
+    color: var(--primary-b-sky);
+}
+.content-questions-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-item{
+border: 1px solid gainsboro !important;
+border-radius: 10px !important;
+.accordion-button{
+font-size: 1.5rem !important;
+padding: 2% !important;
+color: var(--text-description);
+display: flex !important;
+align-items: center !important;
+gap: 1rem !important;
+}
+.question-circle{
+display: inline-block;
+min-width: 1rem;
+width: 1rem;
+height: 1rem;
+border-radius: 50%;
+background-color: var(--text-description);
+flex-shrink: 0;
+transition: transform 0.3s ease;
+}
+.accordion-button:not(.collapsed) .question-circle{
+transform: scale(1.1);
+}
+.accordion-body{
+ font-size: 1.2rem !important;  
+ background-color: var(--gray-white);
+}
+}
