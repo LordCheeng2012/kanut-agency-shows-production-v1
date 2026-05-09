@@ -21,5 +21,4 @@ export const  data = [
 
 export  const isServiceExist = (service="boda")=>{
 return services[service]? true : false;
-
 } 

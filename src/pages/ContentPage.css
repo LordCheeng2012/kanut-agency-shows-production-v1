@@ -5,9 +5,12 @@
 #first-content{
 height: 570vh;
 }
+#content-form{
+  height: auto;
+}
 main{
   display: flex;
-  height: 625vh;
+  /* height: 625vh; */
   flex-flow: column nowrap;
   background-color: white;
 }

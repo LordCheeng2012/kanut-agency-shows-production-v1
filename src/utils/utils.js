@@ -7,7 +7,7 @@ export const utils = () => {
         window.location.href=url;
     },
     setLocalContext: ({name=null,value=null})=>{
-        if(!name) return console.log(`no se puede setear a una variable nula`);
+        if(!name|| !value) return console.log(`no se puede setear a una variable nula`);
         window.localStorage.setItem(name,value);
     },
     getLocalContext:(name)=> window.localStorage.getItem(name),
@@ -21,7 +21,6 @@ export const utils = () => {
       const params = new URLSearchParams(querystring);
       return params.get(queryName);
     }
-    
-
+  
   }
 }

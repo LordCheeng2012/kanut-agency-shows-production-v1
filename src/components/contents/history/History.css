@@ -11,14 +11,14 @@
     align-items: center;
     justify-content: center;
     /* border: 1px solid darkblue; */
-    height: 20%;
+    height: 15%;
 }
 .item-content-video-player{
     /* border: 1px solid #000922; */
     display: flex;
     flex-direction: row;
     gap: 3%;
-    flex: 1 0 80%;
+    flex: 1 0 90%;
     padding: 1%;
 }
 .item-service-details{

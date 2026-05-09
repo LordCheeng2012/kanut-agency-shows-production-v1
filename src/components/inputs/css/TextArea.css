@@ -1,0 +1,14 @@
+.input-text-area{
+    padding: 3%;
+    font-size: large;
+    font-weight: 700;
+    background-color: var(--color-input);
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 0;
+    cursor:auto;
+}
+ :focus-visible{
+      border-radius: 0;
+      background-color: var(--segondary-or);
+}

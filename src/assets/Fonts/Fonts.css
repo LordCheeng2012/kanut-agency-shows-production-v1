@@ -189,12 +189,23 @@ codigo de colores de uso interno segun brand
   font-weight: 300; /* ligero para descripciones */
   font-size: var(--fs-body);
   line-height: 1.6;
+  text-align: justify;
 }
 .kanut-description-altern{
   font-family: var(--font-family-body-altern);
   font-weight: 400; /* ligero para descripciones */
   font-size: var(--fs-body);
   line-height: 1.5;
+  color: var(--text-description);
+  text-align: justify;
+}
+.kanut-description-altern-strong {
+  font-family: var(--font-family-body);
+  font-weight: 700; /* ligero para descripciones */
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  text-align: justify;
+  line-height: normal;
   color: var(--text-description);
 }
 
@@ -204,6 +215,7 @@ codigo de colores de uso interno segun brand
   font-size: var(--fs-small);
   color: rgba(0,0,0,0.6);
 }
+
 
 /* Ejemplos de utilidad: clases responsivas pequeñas */
 @media (max-width: 768px) {
