@@ -47,7 +47,7 @@ export const AboutMarcas = () => {
             </div>
         </div>
         <div className="item-grid-galery spreat-rows">
-              <div className="item-r only-back"></div>
+             <div className="item-r only-back"></div>
              <div className="item-r only-back"></div>
         </div>
         

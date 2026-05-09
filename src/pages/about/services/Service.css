@@ -1,21 +1,25 @@
 .content-service{
     height: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
 }
 .content-image-service{
-    height: 20%;
-
+height: 20%;
+.content-image-service img {
+    width: 100%;
 }
-.content-image{
-    /* border-bottom: 0.5rem solid var(--segondary-bwo-beich); */
 }
 .content-grid-galery-service{
     height: 80%;
 }
+.content-grid-galery-service p {
+    font-size: large;
+    text-align: justify;
+}
 .title-service-content{
    height: 20%;
-   border: 1px solid black;
+   /* border: 1px solid black; */
    padding: 5%;
    text-align: center;
    display: flex;

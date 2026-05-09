@@ -1,0 +1,41 @@
+.input-container-select {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.custom-select {
+  flex-grow: 1;
+  border: none;
+  padding: 10px 15px;
+  appearance: none; /* Oculta flecha default */
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.select-arrow-box {
+background-color: var(--blue);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow-down {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white;
+}

@@ -5,7 +5,98 @@ background: linear-gradient(90deg,rgba(236, 24, 100, 1) 0%, rgba(49, 175, 200, 1
 padding: 5%;
 }
 .content-form-main form{
-    background-color: var(--primary-w);
-    height: 100%;
+    background-color: white;
+    height: auto;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+.order-content{
+    height: 5%;
+    border: 1px solid black;
+    padding: 3%;
+}
+
+.form-title{
+    text-align: center;
+    height: auto;
+    border: 1px solid black;
+}
+.form-title h1{
+    font-size: 10vh;
+    margin: 1%;
+    color: var(--primary-b-sky);
+}
+.form-person-info{
+   height: 5%;
+}
+.form-date-info{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    height: 15%;
+}
+.form-date-info .input-container-select {
+  width: 25%;
+}
+.form-contact-info{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.form-contact-info .input-container-text {
+    width: 50%;
+}
+.form-location-info{
+    height: 10%;
+    .content-check-inputs{
+        border: 1px solid seagreen ;
+        flex-wrap: wrap;
+        
+    }
+     .content-check-inputs .input-label {
+        font-size:small;
+        margin: 0;
+    }
+
+     .content-check-inputs .input-container-text {
+        width: 15%;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: start;
+        align-items: center;
+        margin: 0;
+        padding: 5px;
+
+    }
+}
+.form-selected-service-info{
+    height: 15%;
+    padding: 5%;
+}
+.content-check-inputs{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 10px;
+}
+.form-about-event-details-info{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    h2{
+        margin: 1%;
+    }
+}
+
+.form-submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-submit button {
+    width: 50%;
 }

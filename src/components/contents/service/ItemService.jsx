@@ -11,7 +11,7 @@ export default function ItemService({keyService,addClass=null}) {
             <p className='kanut-description-altern s-description'>
               {description}
             </p>
-            <p className='s-d-comments'>{comments}</p>
+            <p className='kanut-description-altern-strong s-description s-d-comments'>{comments}</p>
 
             {/*---------------- OPCIONAL -------------- */}
             <p className='kanut-description-altern s-description' style={!otherDescription? {display:'none'} : {}}>

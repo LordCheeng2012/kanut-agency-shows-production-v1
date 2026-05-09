@@ -1,0 +1,33 @@
+.input-container-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+  width: 100%;
+  height: 100%;
+}
+
+.input-label {
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 10px;
+  color:var(--text-description);
+}
+
+.required-star {
+  color:var(--segondary-pink);
+  margin-left: 2px;
+}
+
+.custom-input-line {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0.8%;
+  outline: none;
+  font-size: medium;
+  background: transparent;
+  height: auto; 
+}
+
+.custom-input-line:focus {
+  border-bottom: 2px solid var(--primary-b-sky);
+}

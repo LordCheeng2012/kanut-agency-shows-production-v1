@@ -17,3 +17,14 @@ export const ContentPage = ({content}) => {
     
   )
 }
+export const ContentForm = ({content})=>{
+ return (
+ <main>
+        <Header></Header>
+        <section id='content-form'>
+              {content}
+        </section>
+        <Footer></Footer>
+  </main>
+  )
+}

@@ -19,5 +19,9 @@ color: white;
 background-color: var(--segondary-gold);
 color: white;
 }
+.btn-blue-primary{
+background-color: var(--blue);
+color: white;
+}
 
 
