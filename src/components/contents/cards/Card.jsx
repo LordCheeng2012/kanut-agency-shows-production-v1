@@ -5,7 +5,7 @@ function Card({data = {title:"dummy-title",img:null, descripcion:"",color:"red",
   const path =`${clients}/${data.img}`;
   return (
     <div className="card" >
-      <div className='content-card' style={{ backgroundColor: `var(${data.color})` }}>
+      <div className='content-card item-carousel' style={{ backgroundColor: `var(${data.color})` }}>
       <div className='card-title'>
        <div className='title-dialog'>
         <h3 style={{color:`var(${data.color})`}}>{data.title}</h3>

@@ -1,0 +1,146 @@
+.interface-options{
+    width: 100%;
+    background-color: rgba(93, 103, 194, 0.74);
+    position: relative;
+}
+.interface-options> section.io-options {
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.io-buttons{
+    background-color: rgba(90, 15, 160, 0.068);
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+
+.io-buttons button{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    line-height: 1;
+    background: transparent;
+    border: none;
+    background-color: aqua;
+}
+
+.io-buttons button h1{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+    display: block;
+}
+.status-items{
+    height: 5%;
+    background-color: cadetblue;
+}
+.carousel {
+    height: 100%;
+    /* background-color: black; */
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    overflow: auto;
+    /* padding: 5%; */
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+
+}
+
+.carousel-content {
+   /* background-color: rgb(0, 0, 0); */
+   display: flex;
+   flex-direction: row;
+   /* gap: 5px; */
+   height: 100%;
+   width: 400%;
+  
+   animation: slice-animation 10s alternate infinite ease-in-out;
+}
+.carousel-content li {
+    /* background-color: rgb(206, 203, 203); */
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+@keyframes slice-animation {
+    /*
+
+    Explicacion : margin-left|right -> 
+    cuando el div contentedor 
+    tiene un margin-left|right negativo , va acercandose a sus vecinos 
+    pero en este caso es unico ,asi que mientras menor sea su valor 
+    mas escondera asi mismo en su lado opuesto al padre.
+    
+    
+    - :::::::::: margin-left|right :::: [   width:100px   ]
+    - [:::: margin left|right < 0  , width: 100px- margin-left|right]
+
+    */
+
+    0%{
+     margin-left: 0%;
+     
+
+    }
+    20%{
+    margin-left: 0%;
+     
+    }
+
+    25%{
+    margin-left: -100%;
+    
+    }
+    45%{
+    margin-left: -100%;
+    
+    }
+
+    50%{
+     margin-left: -200%;
+    
+    }
+    70%{
+     margin-left: -200%;
+   
+    }
+
+    75%{
+     margin-left: -300%;
+     
+    }
+    100%{
+    margin-left: -300%;
+    
+    }
+   
+
+}

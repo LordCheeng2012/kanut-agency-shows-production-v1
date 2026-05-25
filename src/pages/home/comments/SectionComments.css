@@ -1,75 +1,31 @@
 
 .content-comments{
+
 height: 100%;
+width: auto;
 background-color: var(--primary-b-black);
-}
-.c-c-item{
-    /* border: 1px solid black; */
-}
-.c-c-title{
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.c-c-t-title{
-    background-image: url('../../../assets/imgs/fonts/font_2.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 80%;
-    height: 60%;
-}
-.c-c-list-content{
-height: 80%;
 display: flex;
 flex-direction: column;
-}
-.interface-comments{
-    height: 95%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.int-c-item{
-   width: 10%;
-   display: flex;
-   padding: 1%;
+flex: 0 1 100%;
+align-items: center;
 
 }
-.left-btn{
-   justify-content: end;  
+
+.content-comments > img.cc-item {
+width: 85%;
+padding: 3%;
 }
-.right-btn{
-    justify-content: start;  
+.content-comments > div.carousel-coments{
+background-color: rgb(4, 15, 24);
+height: 100%;
 }
-.int-c-item button{
-    font-size: large;
-    height: 6vh;
-    width: 6vh;
-    border-radius: 50%;
+li.cc-item {
+display: flex;
+flex-direction: row;
+gap: 15px;
 }
-.c-c-comments-list{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3%;
-    width: 100%;
-}
-.c-c-l-status-page{
-    height: 10%;
-    width: 100%;
-    /* background-color: rgb(119, 90, 90); */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* align-items: center; */
-    gap:10px;
-}
-.cclsp-item{
-    background-color: aliceblue;
-    border-radius: 50%;
-    height: 15%;
-    width: 10px;
+
+.content-comments >li.cc-item > div {
+
+background-color: black;
 }

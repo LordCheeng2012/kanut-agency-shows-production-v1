@@ -10,13 +10,15 @@ import { SectionComments } from './comments/SectionComments.jsx'
 export const Home = () => {
   return (
     <>  
+    
     <div className="c-d-s-item carousel-history">
-    <Carousel Class="c-h-item carousel"></Carousel>
+    <Carousel Class="c-h-item"></Carousel>
     <History Class="c-h-item history"></History>
     </div>
     <div className="c-d-s-item about-section"><SectionsAbout></SectionsAbout></div>
     <div className="c-d-s-item portfolio-section"><SectionsPortfolio></SectionsPortfolio></div>
     <div className="c-d-s-item comments-section"><SectionComments></SectionComments></div>   
+
     </>
 
   )
