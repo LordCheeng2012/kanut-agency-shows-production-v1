@@ -6,6 +6,7 @@ import { About } from './Pages/about/About.jsx'
 import { Services } from './Pages/services/Services.jsx';
 import {Service} from './pages/about/services/Service.jsx'
 import { Contact } from './pages/contact/Contact.jsx';
+import { BolsaTrabajo } from './pages/bolsa/bolsa.jsx';
 
 function Index() {
   return (
@@ -16,7 +17,7 @@ function Index() {
     <Route path='/Home' element = {<ContentPage content={<Home></Home>}></ContentPage>}></Route>
     <Route path='/Service' element = {<ContentPage content={<Services></Services>}></ContentPage>}></Route>
     <Route path='/Contact' element = {<ContentForm content={<Contact></Contact>}></ContentForm>}></Route>
-    <Route path='/PorDefinir' element = {<ContentPage content={<Service keyService={'party'}></Service>}></ContentPage>}></Route>
+    <Route path='/bolsa' element = {<ContentPage content={<BolsaTrabajo></BolsaTrabajo>}></ContentPage>}></Route>
     </Routes>
    </>
   )
