@@ -1,6 +1,6 @@
 .interface-options{
     width: 100%;
-    background-color: rgba(93, 103, 194, 0.74);
+    /* background-color: rgba(93, 103, 194, 0.74); */
     position: relative;
 }
 .interface-options> section.io-options {
@@ -8,14 +8,14 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 1;
+    /* ensure controls sit above potential overlays and receive pointer events */
+    z-index: 1000;
+    pointer-events: auto;
     display: flex;
     flex-direction: column;
-    
-    
 }
 .io-buttons{
-    background-color: rgba(90, 15, 160, 0.068);
+    /* background-color: rgba(90, 15, 160, 0.068); */
     height: 95%;
     display: flex;
     flex-direction: row;
@@ -24,10 +24,16 @@
     padding: 1%;
 }
 
+/* Ensure buttons accept pointer events and are above other content */
+.io-buttons{
+    z-index: 1001;
+    pointer-events: auto;
+}
+
 
 .io-buttons button{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -40,19 +46,35 @@
     line-height: 1;
     background: transparent;
     border: none;
-    background-color: aqua;
+    background-color: var(--segondary-or);
 }
 
 .io-buttons button h1{
     margin: 0;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     line-height: 1;
     display: block;
 }
 .status-items{
     height: 5%;
-    background-color: cadetblue;
+    /* background-color: rgb(18, 70, 72); */
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.status-items  div  {
+    background-color: var(--primary-griss);
+    border-radius: 30px;
+    height: 10px;
+    width: 10px;
+    transition: background-color 1s ease;
+}
+.next-item-transition{
+    background-color: aliceblue !important;
 }
 .carousel {
     height: 100%;
@@ -63,7 +85,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    overflow: auto;
+    overflow: hidden;
     /* padding: 5%; */
     width: 100%;
     position: absolute;
@@ -78,8 +100,8 @@
    /* gap: 5px; */
    height: 100%;
    width: 400%;
-  
-   animation: slice-animation 10s alternate infinite ease-in-out;
+   transition: margin-left 1s;
+   /* animation: slice-animation 10s alternate infinite ease-in-out; */
 }
 .carousel-content li {
     /* background-color: rgb(206, 203, 203); */
@@ -88,7 +110,6 @@
     width: 100%;
     
 }
-
 
 @keyframes slice-animation {
     /*
@@ -107,40 +128,31 @@
 
     0%{
      margin-left: 0%;
-     
-
+    
     }
     20%{
     margin-left: 0%;
-     
     }
 
     25%{
     margin-left: -100%;
-    
     }
     45%{
     margin-left: -100%;
-    
     }
 
     50%{
      margin-left: -200%;
-    
     }
     70%{
      margin-left: -200%;
-   
     }
 
     75%{
      margin-left: -300%;
-     
     }
     100%{
     margin-left: -300%;
-    
     }
    
-
 }

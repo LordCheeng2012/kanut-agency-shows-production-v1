@@ -14,21 +14,23 @@ export const SectionComments = () => {
       alt="Kanulovers" 
       className="cc-item"/>
 
-    <Carousel Class={'carousel-coments'}
+    <Carousel 
+      Class={'carousel-coments'}
       items =
       {
          prepareItems().result.map((items)=>{
            return(
             <>
-          <li className="cc-item">
-              {
-              items.map(i=><Card data={{...i}}></Card>)
-              }
-          </li>
+              <li className="cc-item">
+                  {
+                  items.map(i=><Card data={{...i}}></Card>)
+                  }
+              </li>
            </>
            )  
          })
-      }>
+      }
+      isAuto = {false}>
     </Carousel>
     </section>
   )

@@ -16,13 +16,14 @@ width: 85%;
 padding: 3%;
 }
 .content-comments > div.carousel-coments{
-background-color: rgb(4, 15, 24);
+/* background-color: rgb(4, 15, 24); */
 height: 100%;
 }
 li.cc-item {
 display: flex;
 flex-direction: row;
 gap: 15px;
+justify-content: center;
 }
 
 .content-comments >li.cc-item > div {

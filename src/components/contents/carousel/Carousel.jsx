@@ -1,33 +1,51 @@
+import { toogleItems, moveNext, movePrev } from './Carousel.js';
+import { useEffect } from 'react';
 import './Carousel.css';
-export const Carousel = ({Class=null, items =null}) => {
+export const Carousel = ({Class=null, items = null,isAuto = true}) => {
+
+  // No manual listeners or debug code here. Buttons use React onClick handlers below.
+
+    const agregateButtons = isAuto ? <></> : (
+    <>
+      <button type="button" className='button' data-action="prev" onClick={() => movePrev()}><h1>{`<`}</h1></button>
+      <button type="button" className='button' data-action="next" onClick={() => moveNext()}><h1>{`>`}</h1></button>
+    </>
+  );
+  const itemsCarousel = isAuto ? 
+  <>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  </>
+  : 
+  items.map(()=><div></div>)
+
   return (
     <div className={`${Class ? Class : ''} interface-options`}>
 
       <section className='io-options'>
         <section className='io-buttons'>
-        <button className='button' ><h1>{`>`}</h1></button>
-        <button className='button' ><h1>{`<`}</h1></button>
+        {agregateButtons}
         </section>
-        <section className='status-items'>
-
+        <section className='status-items' data-active={`${isAuto}`}>
+             {itemsCarousel}
         </section>
       </section>
 
       <div className={`carousel`}>
-        <CarouselList items={items}></CarouselList>
+        <CarouselList items={items} isAuto = {isAuto}></CarouselList>
       </div>
 
     </div>
   )
 }
 
-export const CarouselList = ({
-  items=null
-}) => {
-
+export const CarouselList = ({items=null,isAuto = true}) => {
+  useEffect(()=>toogleItems())
   if(!items){
     return (
-    <ul className='carousel-content' >
+    <ul className='carousel-content' data-active = {`${isAuto}`} >
       <li className='background-boda'></li>
       <li className='background-party'></li>
       <li className='background-shows'></li>
@@ -40,8 +58,7 @@ export const CarouselList = ({
     if(items.length <= 3 ) css_config.animation = 'none';
 
  return (
-
-   <ul className='carousel-content' style={css_config}>
+   <ul className='carousel-content' data-active = {`${isAuto}`} style={css_config}>
     {items.map(item =>item)}
    </ul>
    
