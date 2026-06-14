@@ -1,31 +1,19 @@
 
-.c-d-s-item{
+.c-d-s-item {
     height: auto;
     /* border: 1px solid darkblue; */
 }
-.carousel-history{
+.carousel-history {   
     display: flex;
     flex-direction: column;
-    height: 200vh;
+    height: 200vh; 
 }
 .c-h-item{
     /* border: 1px solid rgb(4, 4, 12); */
-    height: 50%;
+    height: 160%;
 }
 
-.carousel{
-    height: 160%;
-    background-color: black;
-    color: aliceblue;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../../assets/imgs/transitions/image_1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .history{
     height: 180%;
     background-color: rgb(164, 130, 130);
@@ -41,4 +29,5 @@ height: 120vh;
 }
 .comments-section{
 height: 120vh;
+display: flex;
 }

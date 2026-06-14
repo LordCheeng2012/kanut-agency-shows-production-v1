@@ -58,3 +58,18 @@ body{
   font-weight: 500;
   line-height: 1.3;
 }
+.background-boda{
+    background-image: url('../assets/imgs/transitions/image_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-party{
+    background-image: url('../assets/imgs/transitions/image_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-shows{
+    background-image: url('../assets/imgs/transitions/image_3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

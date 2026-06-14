@@ -1,31 +1,37 @@
 import Card from "@components/contents/cards/Card.jsx"
-import { ListComments } from "./SectionComments.js"
+import { prepareItems } from "./SectionComments.js"
+import { paths } from "../../../config/loadEnviroment.js"
 import './SectionComments.css'
+import { Carousel } from "../../../components/contents/carousel/Carousel.jsx"
+
 
 export const SectionComments = () => {
+  const {fonts} = paths(); 
   return (
     <section className="content-comments">
-      <div className="c-c-item c-c-title">
-        {/* <h1>Nuestros Kanulovers</h1> */}
-        <div className="c-c-t-title">
+     
+      <img src={`${fonts}/font_2.png`} 
+      alt="Kanulovers" 
+      className="cc-item"/>
 
-        </div>
-      </div>
-      <div className="c-c-item c-c-list-content">
-      <div className="interface-comments">
-          <div className="int-c-item left-btn"><button>{'<'}</button></div>
-          <div className="c-c-comments-list">
-         {ListComments().map(cv=><Card data={{...cv}} ></Card>)}     
-          </div>
-          <div className="int-c-item right-btn"><button>{'>'}</button></div>
-      </div>
-      <div className="c-c-l-status-page">
-       <div className="cclsp-item"></div>
-      <div className="cclsp-item"></div>
-      <div className="cclsp-item"></div>
-      <div className="cclsp-item"></div>
-      </div>
-      </div>
+    <Carousel 
+      Class={'carousel-coments'}
+      items =
+      {
+         prepareItems().result.map((items)=>{
+           return(
+            <>
+              <li className="cc-item">
+                  {
+                  items.map(i=><Card data={{...i}}></Card>)
+                  }
+              </li>
+           </>
+           )  
+         })
+      }
+      isAuto = {false}>
+    </Carousel>
     </section>
   )
 }
