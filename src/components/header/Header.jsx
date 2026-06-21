@@ -1,24 +1,60 @@
-import './Header.css'
+import './Header.css';
+
 export const Header = () => {
   return (
-   <header>
-    <div className='icon item-header'>
-    <div className = 'icon-img'>
-    </div>
-    </div>  
-     <nav className='navbar item-header'>
-     <li className='list-options kanut-subtitle-light'>
-     <a href="/Home" className="item-list">Inicio</a>
-     <a href="/about" className="item-list">Nosotros</a>
-     <a href="/Service" className="item-list">Servicios</a>
-     <a href="/Contact" className="item-list">Contactenos</a>
-     <a href="/bolsa" className="item-list">Bolsa de trabajo</a>
-     <a href="" className=' item-list btn-whatsap'> 
-        <i className = "fa fa-whatsapp"></i>
-        <p className='i-l-wsp kanut-subtitle'> whatsap</p>
+    <header className="header">
+
+      {/* Logo */}
+      <a href="/Home" className="icon item-header">
+        <div className="icon-img"></div>
       </a>
-     </li>
-    </nav>    
-   </header>
-  )
-}
+
+      {/* Navegación */}
+      <nav className="navbar item-header">
+        <ul className="list-options kanut-subtitle-light">
+
+          <li>
+            <a href="/Home" className="item-list">
+              INICIO
+            </a>
+          </li>
+
+          <li>
+            <a href="/about" className="item-list">
+              NOSOTROS
+            </a>
+          </li>
+
+          <li>
+            <a href="/Service" className="item-list">
+              SERVICIOS
+            </a>
+          </li>
+
+          <li>
+            <a href="/Contact" className="item-list">
+              CONTÁCTENOS
+            </a>
+          </li>
+
+          <li>
+            <a href="/bolsa" className="item-list">
+              BOLSA DE TRABAJO
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      {/* WhatsApp */}
+      <a
+        href="#"
+        className="btn-whatsap item-list"
+        aria-label="Contactar por WhatsApp"
+      >
+        <i className="fa fa-whatsapp"></i>
+      </a>
+
+    </header>
+  );
+};

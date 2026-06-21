@@ -52,7 +52,7 @@ export const SectionsAbout = () => {
         </div>
         <div className='a-c-item ac-footer'>
             <div className='btn-show-details'>
-                <Button title={"Saber mas"} addClass={"ac-btn"}></Button>
+                <Button title={"SABER MAS"} addClass={"ac-btn"}></Button>
             </div>
         </div>
             
