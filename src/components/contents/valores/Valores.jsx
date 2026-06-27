@@ -5,7 +5,7 @@ const {icons} = paths();
 export const Valores = () => {
   return (
      <section className='content-valores'>
-      <h1 className='kanut-title'>Valores</h1>
+      <h1 className='kanut-title-valores'>Valores</h1>
       <ul className='list-valores'>
         <li>
           <div className = 'item-list-v'><img src={`${icons}/kanut-especial.png`} alt="icono kanut especial" className="img-valor" /><h3>Creatividad</h3> </div>

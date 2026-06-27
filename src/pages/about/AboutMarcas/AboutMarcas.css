@@ -1,318 +1,289 @@
-.content-marcas{
-    height: 100%;
-    padding: 1%;
-    position: relative;
-}
+    .item-grid-galery{
+        height: 520px;
+    }
+    .content-marcas{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem;
+        gap: 2rem;
+        position: relative;
+    }
 
-.empty-space{
-    height: 15%;
-}
+    /* ========================= */
+    /* ESPACIO SUPERIOR */
+    /* ========================= */
 
-.types-services-marcas{
+    .empty-space{
+        height: 250px;
+    }
+/* ================================================*
+ =================================================0=/
+
+    /* ========================= */
+    /* SERVICIOS */
+    /* ========================= */
+
+    .types-services-marcas{
     display: flex;
-    flex-direction: row;
-    padding: 1%;
-    height: 15%;
-    gap: 2%;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
 }
-
 .c-m-item-service{
-    position: relative;
-    overflow: visible;
+    flex: 1;
+    min-height: 260px;
 
-    height: 100%;
-    width: 50%;
-
-    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background-color: #999090;
+    border-radius: 16px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 
-    padding: 1%;
+    transition: .3s ease;
+    cursor: pointer;
+}
 
-    transition: all 0.3s ease;
+.c-m-item-service::before{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    width: 50px;
+    height: 50px;
+    background: #000922; /* color del fondo */
+    border-radius: 50% 50% 10% 10% ;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.c-m-item-service::after{
+    content: '';
+
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+
+    transform: translateX(-50%) scale(0);
+
+    width: 28px;
+    height: 28px;
+
+    background: white;
+    border-radius: 50%;
+
+    opacity: 0;
+    transition: .3s ease;
 }
 
 .c-m-item-service:hover{
     background-color: white;
+    transform: translateY(-10px);
 }
 
-.c-m-item-service::before,
-.c-m-item-service::after{
-    content: '';
-    position: absolute;
-
-    opacity: 0;
-    transition: all 0.3s ease;
+.c-m-item-service:hover::after{
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
 }
-
-.c-m-item-service::before{
-    bottom: 0;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: 60px;
-    height: 30px;
-
-    background-color: #000c2e;
-
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-}
-
-.c-m-item-service::after{
-    bottom: -20px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: 30px;
-    height: 30px;
-
-    border-radius: 50%;
-
-    background-color: white;
-}
-
 .c-m-item-service:hover::before,
 .c-m-item-service:hover::after{
     opacity: 1;
+    transform: translateX(-50%) scale(1);
 }
 
 .cmi-service{
+    width: 180px;
+    height: 180px;
+
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
-
-    height: 70%;
-    width: 45%;
 }
 
-.description-service{
-    padding: 2%;
-    font-size: large !important;
-}
-
-.ds-details{
-    color: white !important;
-    font-size: larger;
-    padding: 2%;
-}
-
-.boda-s{
-    background-image: url('../../../assets/imgs/services/Kanut_Boda.png');
-}
-
-.party-s{
-    background-image: url('../../../assets/imgs/services/Kanut_Party.png');
-}
-
-.shows-s{
-    background-image: url('../../../assets/imgs/services/Kanut_Eventos_Shows.png');
-}
-
-/* ========================= */
-/* GRID GALLERY */
-/* ========================= */
-
-.gallery-images-grid{
-    height:60%;
-
-    display: grid;
-
-    grid-template-columns: repeat(2,minmax(2rem,1fr));
-    grid-template-rows: repeat(2,minmax(2rem,1fr));
-
-    padding: 3%;
-
-    gap: 5px;
-}
-
-.spreat-rows{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.item-r{
-    height: 100%;
-    width: 50%;
-}
-
-.spreat-c{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.spreat-c div{
-    background-color: var(--background-gray--service);
-    height: 100%;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-.spreat-columns{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.item-c{
-    height: 50%;
-}
-
-.spreat-r{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.spreat-r div{
-    background-color: var(--background-gray--service);
-    width: 100%;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-.only-back{
-    background-color: var(--background-gray--service);
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-/* Hover cuadros */
-
-.spreat-c div:hover,
-.spreat-r div:hover,
-.only-back:hover{
-    transform: scale(1.03);
-
-    background-color: #3a3a3a;
-}
-
-/* ========================= */
-/* GALLERY OVERLAY */
-/* ========================= */
-
-.gallery-overlay{
-    position: absolute;
-
-    top: 45.5%;
-    bottom: 45%;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: 90%;
-    height: 45%;
-
-    
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    z-index: 999;
-
-    border-radius: 10px;
-}
-
-
-/* ========================= */
-/* IMAGEN PRINCIPAL */
-/* ========================= */
-
-.main-gallery-image{
-    width: 32%;
-    height: 78%;
-
-    object-fit: cover;
-
-    border-radius: 12px;
-
-    box-shadow: 0px 15px 40px rgba(0,0,0,0.55);
-
-    animation: galleryShow 0.25s ease;
-}
-
-@keyframes galleryShow{
-    from{
-        opacity: 0;
-        transform: scale(0.9);
+    .boda-s{
+        background-image: url('../../../assets/imgs/services/Kanut_Boda.png');
     }
 
-    to{
-        opacity: 1;
-        transform: scale(1);
+    .party-s{
+        background-image: url('../../../assets/imgs/services/Kanut_Party.png');
     }
-}
 
-/* ========================= */
-/* FLECHAS */
-/* ========================= */
+    .shows-s{
+        background-image: url('../../../assets/imgs/services/Kanut_Eventos_Shows.png');
+    }
 
-.gallery-arrow{
-    position: absolute;
+    /* ========================= */
+    /* DESCRIPCIÓN */
+    /* ========================= */
 
-    background: transparent;
-    border: none;
+    .description-service{
+        display: flex;
+        justify-content: center;
+    }
 
+    .ds-details{
+    max-width: 650px;
     color: white;
-
-    font-size: 5rem;
-
-    cursor: pointer;
-
-    z-index: 1000;
-
-    transition: 0.3s ease;
+    text-align: center;
+    font-size: 1.15rem;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 
-.gallery-arrow:hover{
-    transform: scale(1.2);
-}
+    /* ========================= */
+    /* GALERÍA */
+    /* ========================= */
 
-.left{
-    left: 3%;
-}
+    .gallery-images-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 
-.right{
-    right: 3%;
-}
-/* ========================= */
-/* BOTON CERRAR */
-/* ========================= */
 
-.close-gallery{
-    position: absolute;
+    .spreat-rows{
+        display: flex;
+        gap: 10px;
+    }
 
-    top: 3%;
-    right: 3%;
+    .spreat-columns{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
-    background: transparent;
-    border: none;
+    .item-r{
+        width: 50%;
+    }
 
-    color: white;
+    .item-c{
+        height: 50%;
+    }
 
-    font-size: 2rem;
+    .spreat-c{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
-    cursor: pointer;
+    .spreat-r{
+        display: flex;
+        gap: 10px;
+    }
 
-    z-index: 1001;
+    /* cuadros de galería */
 
-    transition: 0.3s ease;
-}
+    .spreat-c div,
+    .spreat-r div,
+    .only-back{
+        flex: 1;
 
-.close-gallery:hover{
-    transform: rotate(90deg);
-}
+        background-color: #3f3f3f;
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        transition: .3s ease;
+    }
+
+    .spreat-c div:hover,
+    .spreat-r div:hover,
+    .only-back:hover{
+        transform: scale(1.03);
+        background-color: #5550e5;
+    }
+
+    /* ========================= */
+    /* OVERLAY */
+    /* ========================= */
+
+    .gallery-overlay{
+        position: fixed;
+        inset: 0;
+
+        background: rgba(0,0,0,.85);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 1000;
+    }
+
+    /* ========================= */
+    /* IMAGEN */
+    /* ========================= */
+
+    .main-gallery-image{
+        width: 70%;
+        max-width: 900px;
+        max-height: 80vh;
+
+        object-fit: cover;
+
+        border-radius: 16px;
+
+        box-shadow: 0 20px 50px rgba(0,0,0,.5);
+    }
+
+    /* ========================= */
+    /* FLECHAS */
+    /* ========================= */
+
+    .gallery-arrow{
+        position: absolute;
+
+        background: transparent;
+        border: none;
+
+        color: white;
+        font-size: 4rem;
+
+        cursor: pointer;
+
+        transition: .3s ease;
+    }
+
+    .gallery-arrow:hover{
+        transform: scale(1.2);
+    }
+
+    .left{
+        left: 4%;
+    }
+
+    .right{
+        right: 4%;
+    }
+
+    /* ========================= */
+    /* CERRAR */
+    /* ========================= */
+
+    .close-gallery{
+        position: absolute;
+
+        top: 2rem;
+        right: 2rem;
+
+        border: none;
+        background: transparent;
+
+        color: white;
+        font-size: 2rem;
+
+        cursor: pointer;
+
+        transition: .3s ease;
+    }
+
+    .close-gallery:hover{
+        transform: rotate(90deg);
+    }

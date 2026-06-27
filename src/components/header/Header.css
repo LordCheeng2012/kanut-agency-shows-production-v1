@@ -106,34 +106,39 @@ header{
 }
 
 /* ================= WHATSAPP ================= */
-
-.btn-whatsap{
-    flex: 0 0 50px;
-
-    width: 42px;
-    height: 42px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #25D366;
-    border-radius: 50%;
-
-    text-decoration: none;
-
-    transition: .3s ease;
+.btn-whatsap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #25d366;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-.btn-whatsap:hover{
-    transform: scale(1.1);
+/* Hover pro */
+.btn-whatsap:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: #1ebe5d;
+  box-shadow: 0 8px 18px rgba(37, 211, 102, 0.35);
 }
 
-.btn-whatsap i{
-    color: white;
-    font-size: 20px;
+/* Click */
+.btn-whatsap:active {
+  transform: scale(10);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-.item-list:not(.btn-whatsap):hover{
-    letter-spacing: 2px;
-    color: #f5f5f5;
+
+/* Icono centrado */
+.btn-whatsap i {
+   font-size: 30px; /* antes 20px */
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -49,7 +49,7 @@ export const Header = () => {
       {/* WhatsApp */}
       <a
         href="#"
-        className="btn-whatsap item-list"
+        className="btn-whatsap item-list-w"
         aria-label="Contactar por WhatsApp"
       >
         <i className="fa fa-whatsapp"></i>

@@ -151,6 +151,14 @@ codigo de colores de uso interno segun brand
   letter-spacing: -0.02em;
   font-weight: 400;
 }
+.kanut-title-valores {
+  font-family: var(--font-family-title);
+  /* font-weight: 700; usa Agbalumo o Petra Sans Bold si existe */
+  font-size: var(--fs-title);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
 .kanut-title-altern{
   font-family: var(--font-family-subtitle);
   /* font-weight: 700; usa Agbalumo o Petra Sans Bold si existe */

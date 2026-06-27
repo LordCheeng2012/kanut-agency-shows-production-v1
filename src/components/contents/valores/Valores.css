@@ -7,6 +7,7 @@
        margin: 2%; 
        color: white;
     }
+    overflow-x: hidden;
 }
 .list-valores{
     display: flex;
@@ -15,10 +16,18 @@
     justify-content: center;
     gap: 5%;
     height: 100%;
+    margin-top: 6%;
+    margin-bottom: 5%;  
 }
 .item-list-v{
     display: flex;
     flex-direction: column;
     color: white;
     gap: 10px;
+}
+.kanut-title-valores{
+    font-size: 4.5rem;
+    font-weight: 400;
+    width: 100%;
+    color: white;
 }
