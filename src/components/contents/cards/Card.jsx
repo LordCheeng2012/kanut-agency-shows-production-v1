@@ -1,7 +1,7 @@
 import './Card.css'
 import { paths } from '../../../config/loadEnviroment.js';
 const {clients} = paths();
-function Card({data = {title:"dummy-title",img:null, descripcion:"",color:"red",autor:"" }}) {
+export const Card =  ({data = {title:"dummy-title",img:null, descripcion:"",color:"red",autor:"" }})=> {
   const path =`${clients}/${data.img}`;
   return (
     <div className="card" >
@@ -30,4 +30,23 @@ function Card({data = {title:"dummy-title",img:null, descripcion:"",color:"red",
   );
 }
 
-export default Card;
+
+export const CardItem = ({title,subtitle})=> {
+  return(
+    <div className='card-item'>
+          <div className='c-i-img-item'>
+            <div className='flag-kanut'>
+              <p>K</p>
+              <div className='border-flag'>
+                  <div className='right-triangule' ></div>
+                 <div className='left-triangule' ></div>
+              </div>
+            </div>
+          </div>
+          <div className='c-i-f-portfolio'>
+            <p className='kanut-description-altern'><strong>Kanut</strong> {title} {subtitle}</p>
+          </div>
+        </div>
+  );
+  
+}

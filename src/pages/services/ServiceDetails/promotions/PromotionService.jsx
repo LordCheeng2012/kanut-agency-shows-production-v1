@@ -1,4 +1,4 @@
-import { BtnSkyPrimary, Button } from "../../../../components/buttons/Button";
+import { Button } from "../../../../components/buttons/Button";
 import './PromotionService.css'
 import { useContext } from 'react';
 import { serviceContext } from '../../../../context/Services/ServiceContext.jsx';
@@ -17,7 +17,7 @@ import { serviceContext } from '../../../../context/Services/ServiceContext.jsx'
             Recusandae nisi sit nihil exercitationem porro quasi vero nam enim quia autem perspiciatis deleniti itaque excepturi perferendis, deserunt ducimus mollitia commodi ullam eaque? Non perferendis architecto iste cum impedit voluptates.
             Harum dicta beatae suscipit tenetur aspernatur. Sunt dicta accusamus eveniet vero, saepe ipsam. Aliquam dicta repellendus iste assumenda quia accusantium numquam recusandae neque obcaecati laborum, necessitatibus dignissimos odio, itaque perferendis?
             Sequi, quisquam similique. Suscipit ipsam aspernatur, consequuntur ducimus alias atque expedita ab blanditiis facilis veniam vero praesentium dolorum autem necessitatibus aperiam mollitia neque iure illum laborum, voluptates fugiat sequi quia?
-            <Button addClass = {`${typeService.color_buttom}`}  title={"SABER MÁS"}></Button>
+            <Button addClass = {`${typeService.color_buttom}`}>SABER MÁS</Button>
 
         </div>
 

@@ -3,9 +3,9 @@
     width: 100%;
 
 }
-.p-c-item{
+/* .p-c-item{
     border: 1px solid blue;
-}
+} */
 
 .p-c-title-portfolio{
 text-align: center;
@@ -24,21 +24,6 @@ flex-wrap: wrap;
 gap: 5%;
 justify-content: center;
 align-items: center;
-}
-.card-item{
-    border: 1px solid rgb(93, 93, 97);
-    height: 45%;
-    width: 25%;
-    
-}
-.c-i-img-item{
-background-color: darkslateblue;
-border-radius: 10px;
-height: 70%;
-}
-.c-i-f-portfolio{
-    padding: 2%;
-    height: 15%;
 }
 .f-portfolio{
 height: 15%;

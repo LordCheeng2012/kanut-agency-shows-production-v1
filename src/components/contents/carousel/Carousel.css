@@ -10,7 +10,6 @@
     position: absolute;
     /* ensure controls sit above potential overlays and receive pointer events */
     z-index: 1000;
-    pointer-events: auto;
     display: flex;
     flex-direction: column;
 }
@@ -22,12 +21,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-}
-
-/* Ensure buttons accept pointer events and are above other content */
-.io-buttons{
     z-index: 1001;
-    pointer-events: auto;
+}
+.transparent{ 
+    pointer-events: none;
 }
 
 
@@ -108,7 +105,24 @@
     list-style: none;
     height: 100%;
     width: 100%;
-    
+    position: relative;
+  
+}
+.carousel-content li.background-boda button{
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    right: 45%;
+}
+.carousel-content li.background-party button{
+    position: absolute;
+    top: 65%;
+    right: 25%;
+}
+.carousel-content li.background-shows button{
+    position: absolute;
+    top: 60%;
+    right: 25%;
 }
 
 @keyframes slice-animation {

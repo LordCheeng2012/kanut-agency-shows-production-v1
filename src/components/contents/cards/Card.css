@@ -1,3 +1,7 @@
+:root{
+    --flag:2.5vh
+}
+
 .card {
 /* position: relative; */
   width: 20%;
@@ -78,4 +82,58 @@ border-bottom-right-radius: 15px;
   border-left: 5vh solid transparent;
   border-right: 5vh solid transparent;
   border-top: 5vh solid  red;     
+}
+
+.card-item{
+    /* border: 1px solid var(--primary-b-black); */
+    height: 45%;
+    width: 25%;
+    
+}
+.c-i-img-item{
+background-color:var(--primary-b-black);
+border-radius: 10px;
+height: 70%;
+position: relative;
+}
+.c-i-f-portfolio{
+    padding: 2%;
+    height: 15%;
+}
+.flag-kanut{
+    position:absolute;
+    height:10vh;
+    width: 5vh;
+    background-color: brown;
+    text-align: center;
+    font-weight: 300;
+    font-size: 5vh;
+    font-family: var(--font-family-body);
+    left: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.flag-kanut P {
+    margin: 0;
+}
+.flag-kanut >div.border-flag {
+    width: 5vh;
+    background-color:var(--primary-b-black);
+    display: flex;
+    flex-direction: row;
+}
+.border-flag>div {
+    width: 50%;
+}
+.border-flag > div.left-triangule{
+    /* background-color: aqua; */
+    border-left: var(--flag) solid rgba(178, 34, 34, 0);
+    border-top: var(--flag) solid brown;
+}
+.border-flag > div.right-triangule{
+    /* background-color: aqua; */
+    border-right: var(--flag) solid rgba(178, 34, 34, 0);
+    border-top:var(--flag) solid brown;
 }

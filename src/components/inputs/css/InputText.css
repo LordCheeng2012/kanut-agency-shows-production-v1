@@ -4,6 +4,7 @@
   margin-bottom: 1%;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 .input-label {
@@ -11,6 +12,7 @@
   font-size: large;
   margin-bottom: 10px;
   color:var(--text-description);
+  cursor: pointer;
 }
 
 .required-star {
@@ -26,6 +28,7 @@
   font-size: medium;
   background: transparent;
   height: auto; 
+  cursor: pointer;
 }
 
 .custom-input-line:focus {

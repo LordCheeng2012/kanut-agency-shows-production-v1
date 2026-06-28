@@ -1,4 +1,4 @@
-import { paths } from '../../../config/loadEnviroment.js'
+// import { paths } from '../../../config/loadEnviroment.js'
 import './SectionsAbout.css'
 import { Button } from '@components/buttons/Button.jsx' 
 export const SectionsAbout = () => {
@@ -52,7 +52,7 @@ export const SectionsAbout = () => {
         </div>
         <div className='a-c-item ac-footer'>
             <div className='btn-show-details'>
-                <Button title={"Saber mas"} addClass={"ac-btn"}></Button>
+                <Button addClass={"ac-btn"}>Saber mas</Button>
             </div>
         </div>
             
