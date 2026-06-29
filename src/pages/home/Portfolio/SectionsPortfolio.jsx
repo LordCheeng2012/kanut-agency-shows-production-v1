@@ -1,4 +1,5 @@
 
+import { CardItem } from '../../../components/contents/cards/Card.jsx'
 import './SectionPortfolio.css'
 import {ListPortfolioItems} from './SectionPortfolio.js'
 import { Button } from '@components/buttons/Button.jsx'
@@ -11,16 +12,12 @@ export const SectionsPortfolio = () => {
       <div className="p-c-item portfolio-list">
        {ListPortfolioItems().map(cv=>{
         return(
-        <div className='card-item'>
-          <div className='c-i-img-item'></div>
-          <div className='c-i-f-portfolio'>
-            <p className='kanut-description-altern'><strong>Kanut</strong> {cv.title} {cv.subtitle}</p>
-          </div>
-        </div>)
+          <CardItem title={cv.title} subtitle={cv.subtitle}></CardItem>
+       )
        })}
       </div>
       <div className="p-c-item f-portfolio">
-      <Button title={"Descubre mas"} addClass={"f-p-btn"}></Button>
+      <Button addClass={"f-p-btn"}>Descubre mas</Button>
       </div>
     </section>
   )

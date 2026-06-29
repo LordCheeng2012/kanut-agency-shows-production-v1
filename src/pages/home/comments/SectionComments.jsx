@@ -1,4 +1,4 @@
-import Card from "@components/contents/cards/Card.jsx"
+import {Card} from "@components/contents/cards/Card.jsx"
 import { prepareItems } from "./SectionComments.js"
 import { paths } from "../../../config/loadEnviroment.js"
 import './SectionComments.css'

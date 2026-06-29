@@ -1,6 +1,7 @@
 import { toogleItems, moveNext, movePrev } from './Carousel.js';
 import { useEffect } from 'react';
 import './Carousel.css';
+import { ButtonPrimary, Button, ButtonGold } from '../../buttons/Button.jsx';
 export const Carousel = ({Class=null, items = null,isAuto = true}) => {
 
   // No manual listeners or debug code here. Buttons use React onClick handlers below.
@@ -24,7 +25,7 @@ export const Carousel = ({Class=null, items = null,isAuto = true}) => {
   return (
     <div className={`${Class ? Class : ''} interface-options`}>
 
-      <section className='io-options'>
+      <section className={`io-options ${isAuto ? `transparent`:``}`}>
         <section className='io-buttons'>
         {agregateButtons}
         </section>
@@ -46,10 +47,18 @@ export const CarouselList = ({items=null,isAuto = true}) => {
   if(!items){
     return (
     <ul className='carousel-content' data-active = {`${isAuto}`} >
-      <li className='background-boda'></li>
-      <li className='background-party'></li>
-      <li className='background-shows'></li>
-      <li className='background-boda'></li>
+      <li className='background-boda'>
+       <ButtonPrimary type='medium'>Informes</ButtonPrimary>
+      </li>
+      <li className='background-party'>
+         <ButtonPrimary type='medium'>Informes</ButtonPrimary>
+      </li>
+      <li className='background-shows'>
+          <ButtonGold type='medium'>Informes</ButtonGold>
+      </li>
+      <li className='background-boda'>
+         <ButtonGold type='medium'>Informes</ButtonGold>
+      </li>
     </ul>
     );
   }

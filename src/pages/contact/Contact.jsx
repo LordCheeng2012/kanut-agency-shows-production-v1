@@ -66,7 +66,7 @@ export const Contact = () => {
               <InputFile></InputFile>
             </section>
           <section className='form-submit order-content'>
-            <Button addClass={'btn-blue-primary'} title={'Solicita tu Cotización'}></Button>
+            <Button addClass={'btn-blue-primary'}>Solicita tu Cotización</Button>
             
           </section>
         </form>

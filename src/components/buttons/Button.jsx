@@ -1,17 +1,23 @@
 import './Button.css'
-export const Button = ({title,addClass}) => {
+export const Button = ({children,addClass,type=null}) => {
   return (
-<button  className={`button ${addClass}`}>{title}</button>
+<button  className={`button ${addClass ?? ``} ${type ?? ``}`}>{children}</button>
   )
 }
-export const BtnPrimary = ({title})=>{
+export const ButtonPrimary = ({children,type=null})=>{
   return (
-    <button  className={`button btn-primary`}>{title}</button>
+    <button className={`button btn-primary ${type ?? ``}`}>{children}</button>
   )
 }
 
-export const BtnSkyPrimary = ({title})=>{
+export const ButtonSkyPrimary = ({children,type=null})=>{
   return (
-    <button type='submit' className={`button btn-primary-sky`}>{title}</button>
+    <button type='submit' className={`button btn-primary-sky ${type ?? ``}`}>{children}</button>
+  )
+}
+
+export const ButtonGold = ({children,type=null})=>{
+  return (
+    <button type='submit' className={`button btn-gold ${type ?? ``}`}>{children}</button>
   )
 }
