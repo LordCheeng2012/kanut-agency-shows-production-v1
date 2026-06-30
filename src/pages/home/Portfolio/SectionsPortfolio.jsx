@@ -17,7 +17,7 @@ export const SectionsPortfolio = () => {
        })}
       </div>
       <div className="p-c-item f-portfolio">
-      <Button addClass={"f-p-btn"}>Descubre mas</Button>
+      <Button size = "medium" type = "brown" classname="f-p-btn" >Descubre mas</Button>
       </div>
     </section>
   )

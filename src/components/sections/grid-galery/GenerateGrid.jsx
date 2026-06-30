@@ -1,4 +1,4 @@
-import { ButtonPrimary } from '../../buttons/Button'
+import { Button } from '../../buttons/Button'
 import './GenerateGrid.css'
 
 export const GenerateGrid = ({totalItems=25}) => {
@@ -13,7 +13,7 @@ export const GenerateGrid = ({totalItems=25}) => {
    </div>
    <div className='shadow-show'>
     <div className='question-toogle'>
-        <ButtonPrimary title={'Mostrar mas'}></ButtonPrimary>
+        <Button type = "primary">Mostrar Mas</Button>
     </div>
    </div>
    </>

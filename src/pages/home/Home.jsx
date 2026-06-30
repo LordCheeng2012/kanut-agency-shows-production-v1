@@ -1,24 +1,44 @@
 
 import './home.css'
-import { Carousel } from '@components/contents/carousel/Carousel.jsx'
 import { History } from '@components/contents/history/History.jsx'
 import { SectionsAbout } from './about/SectionsAbout.jsx'
-import { SectionsPortfolio } from './Portfolio/SectionsPortfolio.jsx'
+import { SectionsPortfolio } from './portfolio/SectionsPortfolio.jsx'
 import { SectionComments } from './comments/SectionComments.jsx'
-
+import { Carousel } from '../../components/contents/carousel/Carousel.jsx'
+import { Button} from '../../components/buttons/Button.jsx'
 
 export const Home = () => {
+  const items = [
+    <>
+     <li className='background-boda'>
+     <Button size='small' classname="free-content"  type='primary' >Informes</Button>
+     </li>
+    </>,
+    <>
+    <li className='background-party'>
+      <Button size='small' classname="free-content" type='primary'>Informes</Button>
+    </li>
+    </>,
+    <>
+     <li className='background-shows'>
+        <Button size='small' classname="free-content" type='gold'>Informes</Button>
+    </li>
+    </>,
+    <>
+    <li className='background-boda'>
+      <Button size='small' classname="free-content"  type='gold'>Informes</Button>
+    </li>
+    </>
+  ]
   return (
     <>  
-    
-    <div className="c-d-s-item carousel-history">
-    <Carousel Class="c-h-item"></Carousel>
-    <History Class="c-h-item history"></History>
-    </div>
-    <div className="c-d-s-item about-section"><SectionsAbout></SectionsAbout></div>
-    <div className="c-d-s-item portfolio-section"><SectionsPortfolio></SectionsPortfolio></div>
-    <div className="c-d-s-item comments-section"><SectionComments></SectionComments></div>   
-
+        <div className="carousel-history">
+        <Carousel items={items} />
+        <History/>
+        </div>
+        <div className="about-section"><SectionsAbout></SectionsAbout></div>
+        <div className="portfolio-section"><SectionsPortfolio></SectionsPortfolio></div>
+        <div className="comments-section"><SectionComments></SectionComments></div>   
     </>
 
   )

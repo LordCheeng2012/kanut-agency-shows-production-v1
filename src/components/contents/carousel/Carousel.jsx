@@ -1,75 +1,29 @@
-import { toogleItems, moveNext, movePrev } from './Carousel.js';
-import { useEffect } from 'react';
-import './Carousel.css';
-import { ButtonPrimary, Button, ButtonGold } from '../../buttons/Button.jsx';
-export const Carousel = ({Class=null, items = null,isAuto = true}) => {
 
-  // No manual listeners or debug code here. Buttons use React onClick handlers below.
+import { Interface } from './interface-button/interface-buttons.jsx';
+import { IndexItems } from './index-items/index-items.jsx';
+import s from "./carousel.module.css"
+import { defWidth } from './carousel.js';
+import {toogleItems} from "./carousel.js"
+import { useEffect, useRef } from 'react';
+export const Carousel = ({classname='',items}) => {
 
-    const agregateButtons = isAuto ? <></> : (
-    <>
-      <button type="button" className='button' data-action="prev" onClick={() => movePrev()}><h1>{`<`}</h1></button>
-      <button type="button" className='button' data-action="next" onClick={() => moveNext()}><h1>{`>`}</h1></button>
-    </>
-  );
-  const itemsCarousel = isAuto ? 
-  <>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  </>
-  : 
-  items.map(()=><div></div>)
-
+  if(!items || !(Array.isArray(items))) return console.log("error items not is array valid -> ",items);
+  const showButtons = items.length <= 3;
+  const buildclass = `${s['carousel']} ${classname}`;
+  const useCarousel = useRef(null); 
+  // useEffect(()=>{toogleItems(useCarousel);return ()=>undefined},[])
   return (
-    <div className={`${Class ? Class : ''} interface-options`}>
-
-      <section className={`io-options ${isAuto ? `transparent`:``}`}>
-        <section className='io-buttons'>
-        {agregateButtons}
-        </section>
-        <section className='status-items' data-active={`${isAuto}`}>
-             {itemsCarousel}
-        </section>
-      </section>
-
-      <div className={`carousel`}>
-        <CarouselList items={items} isAuto = {isAuto}></CarouselList>
-      </div>
-
+    <section ref={useCarousel} className= {`${s['carousel-content']}`}>
+      <div className= {buildclass}>
+        <Interface isghost = {showButtons}/>    
+        <ul style={{...defWidth(items.length)}}>
+            {
+                items.map(li => <>{li}</>)
+            }
+        </ul>
+        <IndexItems items={items.length}/>
     </div>
+    </section>
   )
-}
 
-export const CarouselList = ({items=null,isAuto = true}) => {
-  useEffect(()=>toogleItems())
-  if(!items){
-    return (
-    <ul className='carousel-content' data-active = {`${isAuto}`} >
-      <li className='background-boda'>
-       <ButtonPrimary type='medium'>Informes</ButtonPrimary>
-      </li>
-      <li className='background-party'>
-         <ButtonPrimary type='medium'>Informes</ButtonPrimary>
-      </li>
-      <li className='background-shows'>
-          <ButtonGold type='medium'>Informes</ButtonGold>
-      </li>
-      <li className='background-boda'>
-         <ButtonGold type='medium'>Informes</ButtonGold>
-      </li>
-    </ul>
-    );
-  }
-    if(!Array.isArray(items)) return ;
-    const css_config = {width:`${items.length}00%`}
-    if(items.length <= 3 ) css_config.animation = 'none';
-
- return (
-   <ul className='carousel-content' data-active = {`${isAuto}`} style={css_config}>
-    {items.map(item =>item)}
-   </ul>
-   
- );
 }

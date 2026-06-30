@@ -1,0 +1,21 @@
+.status-items{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+}
+.status-items  div  {
+    background-color: var(--primary-griss);
+    border-radius: 30px;
+    height: 10px;
+    width: 10px;
+    transition: background-color 1s ease;
+}
+.next-item-transition{
+    background-color: aliceblue !important;
+}

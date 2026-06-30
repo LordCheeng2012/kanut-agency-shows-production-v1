@@ -1,21 +1,10 @@
 
-.c-d-s-item {
-    height: auto;
-    /* border: 1px solid darkblue; */
-}
 .carousel-history {   
     display: flex;
     flex-direction: column;
     height: 200vh; 
 }
-.c-h-item{
-    /* border: 1px solid rgb(4, 4, 12); */
-    height: 160%;
-}
-
-
 .history{
-    height: 180%;
     background-color: rgb(164, 130, 130);
     color: aliceblue;
     text-align: center;
@@ -30,4 +19,11 @@ height: 120vh;
 .comments-section{
 height: 120vh;
 display: flex;
+}
+
+.free-content{
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    right: 40%;
 }

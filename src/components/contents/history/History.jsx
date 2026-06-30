@@ -2,9 +2,10 @@ import { paths } from '../../../config/loadEnviroment.js'
 import ItemService from '@components/contents/service/ItemService.jsx';
 const {fonts} = paths();
 import './History.css'
-export const History = ({Class}) => {
+export const History = ({classname = ''}) => {
+
   return (
-    <div className={Class + ' history-point'}>
+    <div className={`${classname} history history-point`}>
         <div className='item-title-history'>
         <img src={`${fonts}/font_1.png`} alt="" />
         </div>
