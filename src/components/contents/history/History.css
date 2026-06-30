@@ -1,3 +1,10 @@
+.history{
+    height: 100vh;
+    background-color: rgb(164, 130, 130);
+    color: aliceblue;
+    text-align: center;
+}
+
 .history-point{
     background-color: white;
     color: black;

@@ -1,7 +1,9 @@
-export const toogleItems = ()=>{
-    const carousel = document.querySelector(`.carousel-content`);
-    if(!carousel) return;
-    const carouselItems = Array.from(document.querySelectorAll(`.carousel-content  li`));
+export const toogleItems = (carouselRef)=>{
+    if(!carouselRef) return;
+    console.log(carouselRef.current)
+    const carousel = carouselRef.current;
+    // alert('runnn');
+    const carouselItems = Array.from(carousel.querySelectorAll(`.carousel-content  li`));
     const  onlyDefault = carouselItems.filter((i)=> i.className.includes("background"));
     let waitForStart = 3000;
     const totalItems = onlyDefault.length;
@@ -90,3 +92,9 @@ export const movePrev = ()=>{
     carousel.style.marginLeft = `-${newIndex}00%`;
     _updateStatusByIndex(newIndex);
 }
+export const defWidth = (length)=> {
+    if(!length || length >=10) return {width:'auto'}
+    return {
+        width : `${length}00%`
+    } 
+} 

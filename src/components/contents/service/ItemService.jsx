@@ -3,7 +3,6 @@ import './ItemService.css'
 import { services } from '../../../data/services.json'
 import { TitleService } from './TitleService';
 export default function ItemService({keyService,addClass=null}) {
-  console.log(`service key `,keyService);
   const {title,description,comments,otherDescription} = services[keyService] || services.boda;
   return (
     <div className={`component-service ${addClass? addClass: ''}`}>

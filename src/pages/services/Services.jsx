@@ -1,13 +1,11 @@
 
-import { useContext } from 'react';
 import { Valores } from '../../components/contents/valores/Valores.jsx';
 import { ServiceProvider } from '../../context/providers/ServiceProvider.jsx'
-import { serviceContext } from '../../context/Services/ServiceContext.jsx';
-import { InterfaceService } from './interfaceService/InterfaceService.jsx'
+import { InterfaceService } from './interface-service/InterfaceService.jsx'
 import { ServiceHooks } from './js/ServiceHooks.js';
-import { GaleryDetails } from './ServiceDetails/GaleryDetails.jsx';
-import { InformationService } from './ServiceDetails/Information/InformationService.jsx';
-import { PromotionService } from './ServiceDetails/promotions/PromotionService.jsx';
+import { GaleryDetails } from './service-details/GaleryDetails.jsx';
+import { InformationService } from './service-details/information/InformationService.jsx';
+import { PromotionService } from './service-details/promotions/PromotionService.jsx';
 import './Services.css';
 
 
