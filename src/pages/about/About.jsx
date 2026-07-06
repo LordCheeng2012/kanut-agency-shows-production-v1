@@ -1,8 +1,8 @@
 
 import './About.css'
-import { AboutMarcas } from './AboutMarcas/AboutMarcas.jsx'
-import { Ethics } from './Etica/Ethics.jsx'
-import { Questions } from './Questions/Questions.jsx'
+import { AboutMarcas } from './marcas/AboutMarcas.jsx'
+import { Ethics } from './etica/Ethics.jsx'
+import { Questions } from './questions/Questions.jsx'
 
 export const About = () => {
   return (

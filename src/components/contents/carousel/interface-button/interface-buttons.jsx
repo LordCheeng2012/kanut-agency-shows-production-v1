@@ -1,7 +1,9 @@
 import { ButtonCircle } from '../../../buttons/Button.jsx';
-import { moveNext, movePrev } from '../carousel.js';
+import { movePrev,moveNext } from './interface-buttons.js';
+
 import s from "./interface-buttons.module.css"
-export const Interface = ({classname = '' , isghost = false}) => {
+export const Interface = ({classname = '' , isghost = false,refItemsCarousel = null}) => {
+
   const show = !isghost ? s['cursor--off'] : '';
   const buildclass = `${s['interface-content']} ${show}`;
 
@@ -10,12 +12,12 @@ export const Interface = ({classname = '' , isghost = false}) => {
       <section className ={`${s['io-options']}`}>
         <section className ={`${classname} ${s['io-buttons']}`}>
             <ButtonCircle type="white"
-            data-action="prev" onClick={() => movePrev()}>
+            data-action="prev" onClick={() => movePrev(refItemsCarousel)}>
                 <h1>{`<`}</h1>
             </ButtonCircle>
             <ButtonCircle type="white" 
             data-action="next" 
-            onClick={() => moveNext()}>
+            onClick={() => moveNext(refItemsCarousel)}>
                 <h1>{`>`}</h1>
             </ButtonCircle>
         </section>

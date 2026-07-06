@@ -10,18 +10,24 @@ export const Carousel = ({classname='',items}) => {
   if(!items || !(Array.isArray(items))) return console.log("error items not is array valid -> ",items);
   const showButtons = items.length <= 3;
   const buildclass = `${s['carousel']} ${classname}`;
-  const useCarousel = useRef(null); 
-  // useEffect(()=>{toogleItems(useCarousel);return ()=>undefined},[])
+  const refCarousel = useRef(null); 
+  const refIndexItems = useRef(null);
+  const itemsCarousel = {carousel:refCarousel,indexs:refIndexItems};
+  useEffect(()=>{
+    !showButtons && toogleItems(refCarousel,refIndexItems);
+    return ()=>undefined},
+    []);
+
   return (
-    <section ref={useCarousel} className= {`${s['carousel-content']}`}>
-      <div className= {buildclass}>
-        <Interface isghost = {showButtons}/>    
-        <ul style={{...defWidth(items.length)}}>
+    <section className= {`${s['carousel-content']}`}>
+      <div ref={refCarousel} className= {buildclass}>
+        <Interface isghost = {showButtons} refItemsCarousel={itemsCarousel} />    
+        <ul data-carousel-active = {showButtons ? "false":"true"} style={{...defWidth(items.length)}}>
             {
                 items.map(li => <>{li}</>)
             }
         </ul>
-        <IndexItems items={items.length}/>
+        <IndexItems ref={refIndexItems} items={items.length} />
     </div>
     </section>
   )

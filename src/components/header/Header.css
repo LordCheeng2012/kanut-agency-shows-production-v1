@@ -26,10 +26,9 @@ color: blanchedalmond;
 .icon-img{
     margin: 0;
     background-image: url('../../assets/imgs/Kanut-logo.png');
-    height: 60%;
-    /* border-radius: 50%; */
-    width: 65%;
     background-repeat: no-repeat;
+    height: 60%;
+    width: 15vh;
 }
 .navbar{
     width: 90%;

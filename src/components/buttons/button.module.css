@@ -1,24 +1,26 @@
 :root{
-    --size-sm:8vh;
-    --size-md:10vh;
-    --size-big:20vh;
-    --size-extra-big:30vh;
-    --pd-sm:30px;
+    --size-circle: 15px;
+    --size-sm:5vh;
+    --size-md:7vh;
+    --size-big:15vh;
+    --size-extra-big:20vh;
+    --pd-sm:10px;
     --pd-md:15px;
     --pd-big:20px;
     --pd-ext-bg:30px;
-    --font-size-sm : 3.5vh; 
+    --font-size-sm : 3vh; 
+    --font-size-md:3.5vh;
+    --font-size-big:5vh;
+    --font-size-extra-big:8vh;
 
 
 }
 
 button{
-    padding: 1%;
-    font-size: x-large;
     border-radius: 5px;
     border: none;
-    font-weight: 800;
     cursor: pointer;
+    text-align: center;
 }
 
 
@@ -26,14 +28,14 @@ button{
 .small{
     font-size: var(--font-size-sm);
     height: var(--size-sm);
-    width: var(--size-sm) *2;
+    width: var(--size-sm)*2;
     padding-left: var(--pd-sm);
     padding-right: var(--pd-sm);
     font-weight: 100;
 
 }
 .medium{
-    font-size: 4vh;
+    font-size: var(--font-size-md);
     height: var(--size-md);
     width:var(--size-md) *2;
     padding-left: var(--pd-md);
@@ -41,7 +43,7 @@ button{
     font-weight: 500;
 }
 .big{
-    font-size: x-large;
+    font-size: var(--font-size-big);
     height: var(--size-big);
     width: var(--size-big)*2;
     padding-left: var(--pd-big);
@@ -50,7 +52,7 @@ button{
 }
 
 .extra-big{
-    font-size: x-large;
+    font-size: var(--font-size-extra-big);
     height: var(--size-big);
     width: var(--size-big)*2;
     padding-left: var(--pd-ext-bg);
@@ -87,10 +89,16 @@ color:var(--primary-w);
 
 .circle{
     border-radius: 35px;
-    height: var(--size-sm);
-    width: var(--size-sm);
-    padding: 0%;
+    height:var(--size-md);
+    width: var(--size-md);
     text-align: center;
-    font-size: medium;
-
+    padding: 0;
+    font-size: var(--size-circle);
+}
+.circle * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }

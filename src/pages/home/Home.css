@@ -23,7 +23,7 @@ display: flex;
 
 .free-content{
     position: absolute;
-    bottom: 40%;
-    left: 40%;
-    right: 40%;
+    bottom: 35%;
+    /* left: 40%;
+    right: 40%; */
 }

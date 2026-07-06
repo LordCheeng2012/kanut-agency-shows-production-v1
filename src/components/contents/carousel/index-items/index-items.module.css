@@ -17,5 +17,5 @@
     transition: background-color 1s ease;
 }
 .next-item-transition{
-    background-color: aliceblue !important;
+    background-color: var(--segondary-pink) !important;
 }
