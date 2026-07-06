@@ -1,8 +1,8 @@
 import './AboutMarcas.css'
 import { useState } from 'react'
-//import img1 from '../../../assets/imgs/marcas/img1.jpg'
-//import img2 from '../../../assets/imgs/marcas/img2.jpg'
-// import img3 from '../../../assets/imgs/marcas/img2.jpg'
+import img1 from '../../../assets/imgs/marcas/img1.png'
+import img2 from '../../../assets/imgs/marcas/img2.png'
+import img3 from '../../../assets/imgs/marcas/img3.jpg'
 // import img4 from '../../../assets/imgs/marcas/img2.jpg'
 // import img5 from '../../../assets/imgs/marcas/img2.jpg'
 // import img6 from '../../../assets/imgs/marcas/img2.jpg'
@@ -13,9 +13,9 @@ import { useState } from 'react'
 export const AboutMarcas = () => {
 
     const images = [
-        //img1,
-        //img2,
-        // img3,
+        img1,
+        img2,
+        img3,
         // img4,
         // img5,
         // img6,
@@ -80,124 +80,109 @@ export const AboutMarcas = () => {
 
         </section>
 
-        <section className='gallery-images-grid'>
+ <section className='gallery-images-grid'>
 
-            <div className="item-grid-galery spreat-rows">
+    <div className="item-grid-galery spreat-rows">
 
-                <div className="spreat-c item-r">
+        <div className="spreat-c item-r">
 
-                    <div
-                        onClick={() => openGallery(0)}
-                    ></div>
+            <div onClick={() => openGallery(0)}></div>
 
-                    <div
-                        onClick={() => openGallery(1)}
-                    ></div>
+            <div onClick={() => openGallery(1)}></div>
 
-                </div>
+        </div>
 
-                <div
-                    className="item-r only-back"
-                    onClick={() => openGallery(2)}
-                ></div>
+        <div
+            className="item-r only-back"
+            onClick={() => openGallery(2)}
+        ></div>
 
+    </div>
+
+    <div className="item-grid-galery spreat-columns">
+
+        <div
+            className="item-c only-back"
+            onClick={() => openGallery(3)}
+        ></div>
+
+        <div className="item-c spreat-r">
+
+            <div onClick={() => openGallery(4)}></div>
+
+            <div onClick={() => openGallery(5)}></div>
+
+        </div>
+
+    </div>
+
+    <div className="item-grid-galery spreat-rows">
+
+        <div
+            className="item-r only-back"
+            onClick={() => openGallery(6)}
+        ></div>
+
+        <div className="item-r spreat-c">
+
+            <div onClick={() => openGallery(7)}></div>
+
+            <div onClick={() => openGallery(8)}></div>
+
+        </div>
+
+    </div>
+
+    <div className="item-grid-galery spreat-rows">
+
+        <div
+            className="item-r only-back"
+            onClick={() => openGallery(9)}
+        ></div>
+
+        <div
+            className="item-r only-back"
+            onClick={() => openGallery(10)}
+        ></div>
+
+    </div>
+
+    {galleryOpen && (
+
+        <div className="gallery-overlay">
+
+            <div className="gallery-popup">
+
+                <button
+                    className="close-gallery"
+                    onClick={closeGallery}
+                >
+                    ✕
+                </button>
+
+                <button
+                    className="gallery-arrow left"
+                    onClick={prevImage}
+                >
+                    ‹
+                </button>
+
+                <img
+                    src={images[current]}
+                    alt=""
+                    className="main-gallery-image"
+                />
+
+                <button
+                    className="gallery-arrow right"
+                    onClick={nextImage}
+                >
+                    ›
+                </button>
             </div>
-
-            <div className="item-grid-galery spreat-columns">
-
-                <div
-                    className="item-c only-back"
-                    onClick={() => openGallery(3)}
-                ></div>
-
-                <div className="item-c spreat-r">
-
-                    <div
-                        onClick={() => openGallery(4)}
-                    ></div>
-
-                    <div
-                        onClick={() => openGallery(5)}
-                    ></div>
-
-                </div>
-
-            </div>
-
-            <div className="item-grid-galery spreat-rows">
-
-                <div
-                    className="item-r only-back"
-                    onClick={() => openGallery(6)}
-                ></div>
-
-                <div className="item-r spreat-c">
-
-                    <div
-                        onClick={() => openGallery(7)}
-                    ></div>
-
-                    <div
-                        onClick={() => openGallery(8)}
-                    ></div>
-
-                </div>
-
-            </div>
-
-            <div className="item-grid-galery spreat-rows">
-
-                <div
-                    className="item-r only-back"
-                    onClick={() => openGallery(9)}
-                ></div>
-
-                <div
-                    className="item-r only-back"
-                    onClick={() => openGallery(10)}
-                ></div>
-
-            </div>
-
-        </section>
-
-        {
-            galleryOpen && (
-
-                <div className="gallery-overlay">
-
-                    <button
-                        className="close-gallery"
-                        onClick={closeGallery}
-                    >
-                        ✕
-                    </button>
-
-                    <button
-                        className="gallery-arrow left"
-                        onClick={prevImage}
-                    >
-                        ‹
-                    </button>
-
-                    <img
-                        src={images[current]}
-                        alt=""
-                        className="main-gallery-image"
-                    />
-
-                    <button
-                        className="gallery-arrow right"
-                        onClick={nextImage}
-                    >
-                        ›
-                    </button>
-
-                </div>
-
-            )
-        }
-
+        </div>
+    )}
+</section>
     </div>
   )
 }

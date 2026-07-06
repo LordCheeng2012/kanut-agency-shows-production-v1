@@ -83,57 +83,74 @@ border-bottom-right-radius: 15px;
   border-right: 5vh solid transparent;
   border-top: 5vh solid  red;     
 }
-
 .card-item{
-    /* border: 1px solid var(--primary-b-black); */
-    height: 45%;
-    width: 25%;
-    
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    cursor: pointer;
 }
 .c-i-img-item{
-background-color:var(--primary-b-black);
-border-radius: 10px;
-height: 70%;
-position: relative;
+    position: relative; 
+    
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--primary-b-black);
+}
+.c-i-img-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 .c-i-f-portfolio{
-    padding: 2%;
-    height: 15%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
 }
+
+
+
 .flag-kanut{
-    position:absolute;
-    height:10vh;
-    width: 5vh;
-    background-color: brown;
-    text-align: center;
-    font-weight: 300;
-    font-size: 5vh;
-    font-family: var(--font-family-body);
-    left: 3vh;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 40px;
+    height: 80px;
+    background: rgb(6, 138, 168);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    color: white;
+    font-size: 28px;
+    font-family: var(--font-family-body);
+
+    z-index: 100;
 }
 .flag-kanut P {
-    margin: 0;
+    margin-top: 20px;
 }
-.flag-kanut >div.border-flag {
-    width: 5vh;
-    background-color:var(--primary-b-black);
+.flag-kanut > .border-flag{
+    width: 40px;
     display: flex;
     flex-direction: row;
+    background: transparent;
+    height: 0;
 }
-.border-flag>div {
-    width: 50%;
+.border-flag > div{
+    width: 47%;
+    height: 0;
 }
 .border-flag > div.left-triangule{
     /* background-color: aqua; */
-    border-left: var(--flag) solid rgba(178, 34, 34, 0);
-    border-top: var(--flag) solid brown;
+   border-left: var(--flag) solid transparent;
+    border-top: var(--flag) solid rgb(6, 138, 168);
 }
 .border-flag > div.right-triangule{
     /* background-color: aqua; */
     border-right: var(--flag) solid rgba(178, 34, 34, 0);
-    border-top:var(--flag) solid brown;
+    border-top:var(--flag) solid rgb(6, 138, 168);
 }

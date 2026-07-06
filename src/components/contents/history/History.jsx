@@ -2,7 +2,9 @@ import { paths } from '../../../config/loadEnviroment.js'
 import ItemService from '@components/contents/service/ItemService.jsx';
 const {fonts} = paths();
 import './History.css'
+import {useNavigate} from 'react-router-dom';
 export const History = ({classname = ''}) => {
+  const navigate = useNavigate();
 
   return (
     <div className={`${classname} history history-point`}>
@@ -10,7 +12,7 @@ export const History = ({classname = ''}) => {
         <img src={`${fonts}/font_1.png`} alt="" />
         </div>
         <div className='item-content-video-player'>
-         <div className="item-service-details">
+         <div className="item-service-details" onclick={() => navigate('/services/boda')}>
           <section className='item-video'></section>
           <section className='service-details'>
             <ItemService  keyService={'boda'}></ItemService>

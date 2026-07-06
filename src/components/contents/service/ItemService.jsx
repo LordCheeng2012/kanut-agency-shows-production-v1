@@ -7,13 +7,13 @@ export default function ItemService({keyService,addClass=null}) {
   return (
     <div className={`component-service ${addClass? addClass: ''}`}>
             <TitleService serviceTitle={title} classService={keyService}></TitleService>
-            <p className='kanut-description-altern s-description'>
+            <p className='kanut-description-altern-vid s-description'>
               {description}
             </p>
-            <p className='kanut-description-altern-strong s-description s-d-comments'>{comments}</p>
+            <p className='kanut-description-altern-strong-vid s-description s-d-comments' >{comments}</p>
 
             {/*---------------- OPCIONAL -------------- */}
-            <p className='kanut-description-altern s-description' style={!otherDescription? {display:'none'} : {}}>
+            <p className='kanut-description-altern-vid s-description' style={!otherDescription? {display:'none'} : {}}>
             {otherDescription}
           </p>
     </div>

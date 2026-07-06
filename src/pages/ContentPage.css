@@ -72,7 +72,7 @@ body{
 .background-shows{
     background-image: url('../assets/imgs/transitions/image_3.png');
     background-repeat: no-repeat;
-<<<<<<< HEAD
+
     background-size: cover;
 }
 @keyframes pageLoad{
@@ -85,7 +85,4 @@ body{
         opacity: 1;
         transform: translateY(0);
     }
-=======
-    background-size: contain;
->>>>>>> f89a6c33d01ee682a8ea4e02872333593589b587
-}
+  }
