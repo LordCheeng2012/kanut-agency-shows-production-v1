@@ -2,13 +2,9 @@
 .carousel-history {   
     display: flex;
     flex-direction: column;
-    height: 200vh; 
+    height: 210vh; 
 }
-.history{
-    background-color: rgb(164, 130, 130);
-    color: aliceblue;
-    text-align: center;
-}
+
 .about-section{
 height: 130vh;
 }

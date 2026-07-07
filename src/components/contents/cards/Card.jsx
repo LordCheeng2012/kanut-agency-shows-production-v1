@@ -1,4 +1,5 @@
 import './Card.css'
+
 import { paths } from '../../../config/loadEnviroment.js';
 const {clients} = paths();
 export const Card =  ({data = {title:"dummy-title",img:null, descripcion:"",color:"red",autor:"" }})=> {
@@ -31,22 +32,36 @@ export const Card =  ({data = {title:"dummy-title",img:null, descripcion:"",colo
 }
 
 
-export const CardItem = ({title,subtitle})=> {
+export const CardItem = ({title,subtitle,image,onClick})=> {
   return(
-    <div className='card-item'>
-          <div className='c-i-img-item'>
-            <div className='flag-kanut'>
-              <p>K</p>
-              <div className='border-flag'>
-                  <div className='right-triangule' ></div>
-                 <div className='left-triangule' ></div>
-              </div>
-            </div>
-          </div>
-          <div className='c-i-f-portfolio'>
-            <p className='kanut-description-altern'><strong>Kanut</strong> {title} {subtitle}</p>
+    <div
+      className="card-item"
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          onClick?.();
+        }
+      }}
+    >
+      <div className="c-i-img-item">
+        <img src={image} alt={title} />
+
+        <div className="flag-kanut">
+          <p>K</p>
+          <div className="border-flag">
+            <div className="right-triangule"></div>
+            <div className="left-triangule"></div>
           </div>
         </div>
+      </div>
+
+      <div className="c-i-f-portfolio">
+        <p className="kanut-description-altern-card">
+          <strong>Kanut</strong> {title} {subtitle}
+        </p>
+      </div>
+    </div>
   );
-  
-}
+};

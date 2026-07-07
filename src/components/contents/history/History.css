@@ -1,5 +1,5 @@
 .history{
-    height: 110vh;
+    height: 120vh;
     background-color: rgb(164, 130, 130);
     color: aliceblue;
     text-align: center;
@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: row;
     gap: 3%;
-    flex: 1 0 90%;
+    flex: 1 0 auto;
     padding: 1%;
 }
 .item-service-details{
@@ -56,4 +56,7 @@
     /* justify-content: center; */
     gap:2%;
     text-align: center;
+}
+.item-service-details{
+    cursor: pointer;
 }

@@ -28,21 +28,26 @@
     padding: 1%;
 }
 .details-text{
-    width: 40%;
-    p{
-    color: white !important; 
-    font-size: 2.5vh;
-    }
+    width: 50%;
+    margin-right: -6%;
+    margin-left: -6%;
+    margin-top: 1%;
+     p{
+    color: white !important;
+    font-size: 1rem;
+    line-height: 1.7;
+}
 }
 
 .img-card{
     border: 2px solid var(--segondary-g-phamtom);
     /* background-color: aliceblue; */
-    height: 80%;
-    width: 80%;
-    padding: 3%;
+    height: 70%;
+    width: 70%;
+    padding: 2%;
     border-radius: 10px;
     color: white;
+    margin-top: 5%;
 }
 .img-person{
    height: 80%;
@@ -50,12 +55,12 @@
    border-radius: 5px;
 }
 .img-daniela{
-    margin-top: 25%;
+    margin-top: 40%;
 }
 .details-person{
    /* ingresar estilo de fuente comentario */
    font-style: oblique;
-   margin-top: 5%;
+   margin-top: 15px;
    font-size: small;
 }
 

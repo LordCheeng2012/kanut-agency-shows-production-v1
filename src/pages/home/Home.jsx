@@ -44,13 +44,13 @@ export const Home = () => {
         <History />
       </div>
       <div className="about-section">
-        <SectionsAbout></SectionsAbout>
+        <SectionsAbout/>
       </div>
       <div className="portfolio-section">
-        <SectionsPortfolio></SectionsPortfolio>
+        <SectionsPortfolio/>
       </div>
       <div className="comments-section">
-        <SectionComments></SectionComments>
+        <SectionComments/>
       </div>
     </>
   );

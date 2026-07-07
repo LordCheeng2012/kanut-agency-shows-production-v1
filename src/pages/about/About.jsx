@@ -10,7 +10,7 @@ export const About = () => {
     <div className='about-content-etic'>
       <Ethics></Ethics>
     </div>
-    <div className='frequents-questions-content '>
+    <div className='frequents-questions-content'>
     <Questions></Questions>
     </div>
     <section className='content-about-marcas'>

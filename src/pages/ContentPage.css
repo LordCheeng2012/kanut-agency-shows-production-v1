@@ -2,8 +2,8 @@
 @import url("../assets/colors/segondary.css");
 @import url("../assets/Fonts/Fonts.css");
 
-#first-content {
-  height: 570vh;
+#first-content{
+height: auto;
 }
 #content-form {
   height: auto;
@@ -13,6 +13,7 @@ main {
   /* height: 625vh; */
   flex-flow: column nowrap;
   background-color: white;
+  animation: pageLoad .8s ease;
 }
 #root {
   font-family:
@@ -85,3 +86,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+.background-shows{
+    background-image: url('../assets/imgs/transitions/image_3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes pageLoad{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }

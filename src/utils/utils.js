@@ -20,7 +20,8 @@ export const utils = () => {
       // usando el querystring, creamos un objeto del tipo URLSearchParams
       const params = new URLSearchParams(querystring);
       return params.get(queryName);
-    }
+    },
+    isnull_undf:(value)=>{return value == undefined || !value || value == null}
   
   }
 }
