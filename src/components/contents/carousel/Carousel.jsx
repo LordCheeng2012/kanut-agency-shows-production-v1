@@ -8,7 +8,7 @@ import { useEffect, useRef } from 'react';
 export const Carousel = ({classname='',items}) => {
 
   if(!items || !(Array.isArray(items))) return console.log("error items not is array valid -> ",items);
-  const showButtons = items.length <= 3;
+  const showButtons = items.length <= 2;
   const buildclass = `${s['carousel']} ${classname}`;
   const refCarousel = useRef(null); 
   const refIndexItems = useRef(null);

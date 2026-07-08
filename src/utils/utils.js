@@ -1,4 +1,5 @@
 
+
 export const utils = () => {
   return {
     redirect: (url=null)=>{
@@ -21,7 +22,15 @@ export const utils = () => {
       const params = new URLSearchParams(querystring);
       return params.get(queryName);
     },
-    isnull_undf:(value)=>{return value == undefined || !value || value == null}
-  
+    isnull_undf:(value)=>{return value == undefined || !value || value == null},
+    isvalid_element_type :(element,type = HTMLElement)=>{
+      return element instanceof type ;
+    },
+    isvalid_ref_element : (refElement)=>{
+     const {isnull_undf,isvalid_element_type} = utils();
+     const validELement = !isnull_undf(refElement) &&
+     !isnull_undf(refElement.current) && isvalid_element_type(refElement.current);
+     return validELement;
+    }
   }
 }

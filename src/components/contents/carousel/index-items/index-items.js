@@ -38,7 +38,7 @@ export const moveTransition = ({ i = 1, ref = null }) => {
 //obtener el indice actual
 export const _getCurrentIndex = (refIndexs) => {
   if (!refIndexs || !(refIndexs.current instanceof HTMLElement))
-    return console.log("Error elemento no es valid");
+    return console.log("Error elemento no es valido");
   const contentIndexs = refIndexs.current;
   const items = Array.from(
     contentIndexs.querySelectorAll("section[data-js-status-content] > div"),

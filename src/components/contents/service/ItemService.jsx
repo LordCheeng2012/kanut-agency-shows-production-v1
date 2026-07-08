@@ -1,6 +1,6 @@
 
 import './ItemService.css'
-import { services } from '../../../data/services.json'
+import { services } from '../../../data/services/services.json'
 import { TitleService } from './TitleService';
 export default function ItemService({keyService,addClass=null}) {
   const {title,description,comments,otherDescription} = services[keyService] || services.boda;

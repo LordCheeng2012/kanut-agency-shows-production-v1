@@ -1,8 +1,5 @@
-import './Ethics.css'
-import { paths } from '../../../config/loadEnviroment.js'
+import './ethics.css'
 import { Valores } from '../../../components/contents/valores/Valores.jsx';
-
-const { icons } = paths();
 
 export const Ethics = () => {
   return (

@@ -1,0 +1,20 @@
+.nav-content{
+    position: absolute;
+    background-color:var(--segondary-blue-marine-ghost);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    z-index: 1;
+    width: 30vh;
+}
+.nav-content li {
+    border-bottom: 2px solid white;
+    margin: 3%;
+    font-weight: 100;
+    height: 5vh;
+    text-align: center;
+}
+.nav-content li:nth-child(5){
+border-bottom: 0cm;
+}

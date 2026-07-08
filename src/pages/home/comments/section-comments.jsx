@@ -1,8 +1,8 @@
 import {Card} from "@components/contents/cards/Card.jsx"
-import { prepareItems } from "./SectionComments.js"
+import { prepareItems } from "./section-comments.js"
 import { paths } from "../../../config/loadEnviroment.js"
-import './SectionComments.css'
-import { Carousel } from "../../../components/contents/carousel/Carousel.jsx"
+import './section-comments.css'
+import { Carousel } from "../../../components/contents/carousel/carousel.jsx"
 
 export const SectionComments = () => {
   const {fonts} = paths(); 

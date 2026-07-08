@@ -1,12 +1,12 @@
 
 import { Valores } from '../../components/contents/valores/Valores.jsx';
 import { ServiceProvider } from '../../context/providers/ServiceProvider.jsx'
-import { InterfaceService } from './interface-service/InterfaceService.jsx'
-import { ServiceHooks } from './js/ServiceHooks.js';
+import { InterfaceService } from './interface-service/interface-service.jsx'
+import { ServiceHooks } from './services.js';
 import { GaleryDetails } from './service-details/GaleryDetails.jsx';
 import { InformationService } from './service-details/information/InformationService.jsx';
 import { PromotionService } from './service-details/promotions/PromotionService.jsx';
-import './Services.css';
+import './services.css';
 
 
 export const Services = () => {

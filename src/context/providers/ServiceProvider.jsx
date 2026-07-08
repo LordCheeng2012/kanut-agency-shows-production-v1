@@ -1,5 +1,5 @@
 import { serviceContext } from "../Services/ServiceContext"
-import { services } from "../../data/services.json";
+import { services } from "../../data/services/services.json";
 
 
 export const ServiceProvider = ({children,keyService='boda'}) => {

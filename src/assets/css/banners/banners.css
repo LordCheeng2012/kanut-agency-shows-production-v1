@@ -1,0 +1,53 @@
+.boda {
+  background-color: var(--kanut-service-boda);
+  color: var(--text-boda);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.shows {
+  background-color: var(--kanut-service-shows);
+  color: var(--text-shows);
+  font-weight: 500;
+  line-height: 1.3;
+}
+.party {
+  background-color: var(--kanut-service-party);
+  color: var(--text-party);
+  font-weight: 500;
+  line-height: 1.3;
+}
+.party-color-altern {
+  background-color: var(--segondary-blue-marine);
+  color: var(--text-party);
+  font-weight: 500;
+  line-height: 1.3;
+}
+.background-boda {
+  background-image: url("../../imgs/transitions/image_1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.background-party {
+  background-image: url("../../imgs/transitions/image_2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.background-shows {
+  background-image: url("../../imgs/transitions/image_3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.background-shows{
+    background-image: url('../../imgs/transitions/image_3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

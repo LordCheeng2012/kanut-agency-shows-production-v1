@@ -5,9 +5,9 @@
 .card {
   /* position: relative; */
   width: 20%;
-  padding: 10px;
+  padding: 0;
   height: 100%;
-  color: white;
+  color: black;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -20,6 +20,7 @@
   flex-direction: column;
   border-radius: 20px;
   width: 100%;
+  background-color: var(--primary-w);
 }
 .card-title {
   height: 13%;
@@ -30,8 +31,8 @@
 }
 .title-dialog {
   padding: 1%;
-  background-color: aliceblue;
-  color: black;
+  background-color: var(--primary-w);
+  color:var(--primary-w);
   width: 70%;
   font-size: medium;
   border-top-right-radius: 15px;
@@ -52,7 +53,7 @@
   display: flex;
   justify-content: center;
   img {
-    border: 5px solid white;
+    border: 5px solid var(--primary-w);
     border-radius: 50%;
     margin: 1%;
   }
@@ -62,7 +63,7 @@
   padding: 5%;
   height: 70%;
   font-size: 0.8rem;
-  text-align: justify;
+  text-align: start;
 }
 .c-c-d-autor-client {
   height: 15%;
@@ -80,7 +81,7 @@
   width: 10%;
   border-left: 5vh solid transparent;
   border-right: 5vh solid transparent;
-  border-top: 5vh solid red;
+  border-top: 5vh solid var(--primary-w);
 }
 .card-item {
   width: 100%;
@@ -113,7 +114,7 @@
 
 .flag-kanut{
     position:absolute;
-    z-index: 1;
+    /* z-index: 1; */
     height:10vh;
     width: 5vh;
     background-color: brown;

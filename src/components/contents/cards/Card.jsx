@@ -6,14 +6,14 @@ export const Card =  ({data = {title:"dummy-title",img:null, descripcion:"",colo
   const path =`${clients}/${data.img}`;
   return (
     <div className="card" >
-      <div className='content-card item-carousel' style={{ backgroundColor: `var(${data.color})` }}>
+      <div className='content-card item-carousel' >
       <div className='card-title'>
-       <div className='title-dialog'>
-        <h3 style={{color:`var(${data.color})`}}>{data.title}</h3>
+       <div className='title-dialog' style={{ backgroundColor: `var(${data.color})` }}>
+        <h3>{data.title}</h3>
        </div>
         </div>
-      <div className='card-content-details'>
-        <section className='c-c-d-img-item'>
+      <div className='card-content-details' >
+        <section className='c-c-d-img-item' >
           <img src={path} alt="" />
           </section> 
           <section className='c-c-d-description-service'>
@@ -24,7 +24,7 @@ export const Card =  ({data = {title:"dummy-title",img:null, descripcion:"",colo
           </section>
       </div>
       </div>
-      <div className='card-footer' style={{borderTop: `5vh solid  var(${data.color})`}} >
+      <div className='card-footer' >
       </div>
     </div>
       

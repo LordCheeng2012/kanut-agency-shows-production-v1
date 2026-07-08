@@ -1,5 +1,6 @@
-import { isServiceExist } from "../../../data/Questions.js";
-import { utils } from "../../../utils/utils.js"
+
+import { isServiceExist } from "../../data/services/service.js";
+import { utils } from "../../utils/utils.js"
 export const ServiceHooks = () => {
     const {redirect,getParamsByUrl} = utils();
     return {
