@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 23%;
+    width:25%;
     /* background-color: slateblue; */
     /* border: 1px solid black; */
     padding: 1%;
@@ -40,22 +40,35 @@
 }
 
 .img-card{
-    border: 2px solid var(--segondary-g-phamtom);
+    /* border: 2px solid var(--segondary-g-phamtom); */
     /* background-color: aliceblue; */
     height: 70%;
-    width: 70%;
-    padding: 2%;
+    width: 60%;
+    /* padding: 2%; */
     border-radius: 10px;
     color: white;
     margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.img-person{
-   height: 80%;
-   background-color: hotpink;
+
+.img-person {
+   height: 100%;
+   width: 100%;
    border-radius: 5px;
+   background-size: contain;
+   background-repeat: no-repeat;
 }
-.img-daniela{
+
+.img-bootom{
     margin-top: 40%;
+}
+.daniela{
+ background-image: url("../../../assets/imgs/teams/daniel.webp");
+}
+.elian{
+ background-image: url("../../../assets/imgs/teams/elian.webp");
 }
 .details-person{
    /* ingresar estilo de fuente comentario */

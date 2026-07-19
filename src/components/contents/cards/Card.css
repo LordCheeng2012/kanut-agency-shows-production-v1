@@ -1,5 +1,7 @@
 :root {
   --flag: 2.5vh;
+  --padding-comments : 10%;
+  --size-text : 0.8rem;
 }
 
 .card {
@@ -20,20 +22,23 @@
   flex-direction: column;
   border-radius: 20px;
   width: 100%;
-  background-color: var(--primary-w);
+  background-color: var(--gray-white);
 }
 .card-title {
-  height: 13%;
+  height: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  margin-top: 8%;
+
+
 }
 .title-dialog {
   padding: 1%;
   background-color: var(--primary-w);
   color:var(--primary-w);
-  width: 70%;
+  width: 80%;
   font-size: medium;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -60,28 +65,34 @@
 }
 
 .c-c-d-description-service {
-  padding: 5%;
+  min-height: 10%;
   height: 70%;
-  font-size: 0.8rem;
-  text-align: start;
+  font-size: var(--size-text);
+  text-align: justify;
+  padding-left: var(--padding-comments);
+  padding-right: var(--padding-comments);
+  p{
+    margin-bottom: 10px;
+  }
 }
+
 .c-c-d-autor-client {
-  height: 15%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+  height: 5%;
+  width: 90%;
+  display: inline-flex;
   align-items: start;
-  padding-left: 8%;
   font-style: oblique;
-  font-weight: 650;
-  font-size: small;
+  font-size: var(--size-text);;
+  font-weight: 800;
+  justify-content: start;
+
 }
 .card-footer {
   height: 10%;
   width: 10%;
   border-left: 5vh solid transparent;
   border-right: 5vh solid transparent;
-  border-top: 5vh solid var(--primary-w);
+  border-top: 5vh solid var(--gray-white);
 }
 .card-item {
   width: 100%;
@@ -133,7 +144,7 @@
 }
 .flag-kanut >div.border-flag {
     width: 5vh;
-    background-color:var(--primary-b-black);
+    background-color:var(--gray-white);
     display: flex;
     flex-direction: row;
 }

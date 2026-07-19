@@ -7,6 +7,7 @@ import { Carousel } from "../../../components/contents/carousel/carousel.jsx"
 export const SectionComments = () => {
   const {fonts} = paths(); 
   const items = prepareItems().result.map((items, index) => {
+    console.log(items);
   return (
     <li className="cc-item" key={index}>
       {items.map((i, subIndex) => (
@@ -18,7 +19,7 @@ export const SectionComments = () => {
   return (
     <section className="content-comments">
       <img src={`${fonts}/font_2.png`} alt="Kanulovers"  className="cc-item"/>
-      <Carousel items={items} />
+      <Carousel items={items} automatic = {false} />
     </section>
   )
 }

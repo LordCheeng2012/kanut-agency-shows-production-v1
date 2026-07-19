@@ -1,5 +1,5 @@
 import './Questions.css'
-import data from  '../../../data/questions/questions.json'
+import data from  '../../../data/questions.json'
 export const Questions = ({ questions = data }) => {
   return (
     <div className='questions-frequests-content'>

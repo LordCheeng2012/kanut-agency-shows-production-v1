@@ -1,4 +1,4 @@
-import comments from "../../../data/comments/comments.json";
+import comments from "../../../data/comments.json";
 export const prepareItems = ()=>{
   const items = [];
 

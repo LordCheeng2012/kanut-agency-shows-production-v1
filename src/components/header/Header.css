@@ -76,12 +76,13 @@ header {
   }
 }
 
-.list-options > .item-list:hover {
+.list-options > .item-list:not(.btn-whatsap):hover {
   color: var(--segondary-sky-b);
   font-weight: 500;
   /* text-decoration-line: underline; */
   margin-left: 10px;
   margin-right: 10px;
+  height: 100%;
   p {
     margin-bottom: 5px;
   }

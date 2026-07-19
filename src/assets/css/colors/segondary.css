@@ -8,22 +8,28 @@ codigo de colores de uso interno segun brand
 */
 :root{
 --segondary-gold : #FF940A;
+--segondary-orange-light:#F75B00;
 --segondary-g-phamtom:#1948bc;
 --segondary-bwn-red:#A44819;
 --segondary-bwo-beich:#CE8A39;
 --segondary-orange:#C77408;
---segondary-pink:#EC1864;
+--segondary-pink:#EA1B88;
+--segondary-light-green:#01CE1B;
 --segondary-sky-b:#31AFC8;
 --segondary-or:#fffbe7;
 --text-description:#686464;
 --segondary-green-gray:#7E8952;
 --segondary-blue-marine:#002264;
---segondary-blue-marine-ghost:#00216481;
+--segondary-blue-marine-ghost:#000a2387;
 --gray-white:#F1F4F8;
 --background-gray--service:#595E6A;
 --background-gray-galery:#808080;
 --black-text: rgb(55 43 43 / 75%);
 --segondary-brown:#A34718;
+--segondary-blue-green:#0A4F54;
+--segondary-purple:#8B0142;
+--segondary-red:#D11515;
+--segondary-violet-purple:#7102C2;
 
 
 /* codigos de servicios --- */

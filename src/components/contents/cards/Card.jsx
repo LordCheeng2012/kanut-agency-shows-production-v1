@@ -2,14 +2,14 @@ import './Card.css'
 
 import { paths } from '../../../config/loadEnviroment.js';
 const {clients} = paths();
-export const Card =  ({data = {title:"dummy-title",img:null, descripcion:"",color:"red",autor:"" }})=> {
+export const Card =  ({data = {title:"dummy-title",img:null, descriptions:[],color:"red",autor:"" }})=> {
   const path =`${clients}/${data.img}`;
   return (
     <div className="card" >
-      <div className='content-card item-carousel' >
+      <div className='content-card' >
       <div className='card-title'>
        <div className='title-dialog' style={{ backgroundColor: `var(${data.color})` }}>
-        <h3>{data.title}</h3>
+        <h3>{data.type}</h3>
        </div>
         </div>
       <div className='card-content-details' >
@@ -17,7 +17,7 @@ export const Card =  ({data = {title:"dummy-title",img:null, descripcion:"",colo
           <img src={path} alt="" />
           </section> 
           <section className='c-c-d-description-service'>
-            <p>{data.descripcion}</p>
+           {data.descriptions.map(comments => <p>{comments}</p>)}
           </section>
           <section className='c-c-d-autor-client'>
             <p>{data.autor}</p>

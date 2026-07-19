@@ -1,0 +1,150 @@
+[
+  {
+    "id": 1,
+    "type": "Shows Infantiles",
+    "img": "client16.webp",
+    "descriptions": [
+      "¡Increíble energía! Contratamos a Kanut para el cumple de mi hijo y lograron que todos los niños se diviertan de principio a fin.",
+      "Se nota la pasión y el cariño que le ponen a cada dinámica; convirtieron la fiesta en un momento lleno de alegría y color."
+    ],
+    "autor": "Andrea C., San Borja.",
+    "color": "--segondary-pink"
+  },
+  {
+    "id": 2,
+    "type": "Eventos Party",
+    "img": "client15.webp",
+    "descriptions": [
+      "Los nueve años de mi pequeño fueron espectaculares",
+      "Aunque contraté a Kanut eventos-shows un día antes,  cumplieron con todo lo prometido",
+      "Nos hicieron reír, bailar y disfrutar de principio a fin",
+      "Incluso con mis amigas volvimos a sentirnos como niñas al romper la piñata",
+      "¡Fue una experiencia inolvidable!"
+    ],
+    "autor": "Ruby Maria P, - Casa Club El Bosque",
+    "color": "--segondary-sky-b"
+  },
+  {
+    "id": 3,
+    "type": "Evento Infantil",
+    "img": "client14.webp",
+    "descriptions": [
+      "Al principio tenía dudas porque en experiencias anteriores había contratado shows donde los payasos hacían bromas incómodas a los invitados",
+      "Con Kanut eventos-shows fue totalmente diferente",
+      "Desde el primer contacto recibí una atención muy profesional y siempre estuvieron pendientes de lo que esperaba para el evento",
+      "El show fue divertido, respetuoso y superó mis expectativas. Sin duda, los volvería a contratar"
+    ],
+    "autor": "Eliana A, -SJL .Urb las flores",
+    "color": "--segondary-light-green"
+  },
+  {
+    "id": 4,
+    "type": "Evento Infantil",
+    "img": "client13.webp",
+    "descriptions": [
+      "Lo que más me gustó de Kanut eventos-shows fue la seguridad y profesionalismo que transmiten",
+      "Como mamá, me dieron la tranquilidad de que cada detalle estaba cubierto con excelencia y compromiso",
+      "Los animadores tienen un talento increíble para conectar con los niños, se nota que son profesionales apasionados",
+      "¡Fue la mejor decisión para el cumple de mi hija!"
+    ],
+    "autor": "Carla M. - Santiago de Surco",
+    "color": "--segondary-orange-light"
+  },
+  {
+    "id": 5,
+    "type": "Evento Ceremoniales",
+    "img": "client12.webp",
+    "descriptions": [
+      "Los Contraté por primera vez en 2021 para celebrar mis 50 años. Buscaba un DJ que respetara mis gustos musicales y lograron hacerme bailar toda la noche.",
+      "La experiencia fue tan buena que en 2024 los volví a contratar para el cumpleaños de mi esposa y, ese mismo año, para mi boda.",
+      "Pensé que solo ofrecían servicio de DJ, pero superaron todas mis expectativas e hicieron de nuestra boda una experiencia inolvidable.",
+      "¡Los recomiendo totalmente!"
+    ],
+    "autor": "Wilfredo Chiroque - Jesús María",
+    "color": "--segondary-blue-green"
+  },
+  {
+    "id": 6,
+    "type": "Evento Ceremoniales",
+    "img": "client11.webp",
+    "descriptions": [
+      "Celebramos nuestra boda en 2023 con una ceremonia íntima y contratamos una hora loca con temática de los años 80.",
+      "El servicio superó nuestras expectativas: fue divertido, muy bien organizado y nuestros invitados lo disfrutaron al máximo.",
+      "los recomendamos y volveremos a contratarlos."
+    ],
+    "autor": "Abel C. y Susan Y. - SJL",
+    "color": "--segondary-purple"
+  },
+  {
+    "id": 7,
+    "type": "Evento Ceremoniales",
+    "img": "client7.webp",
+    "descriptions": [
+      "¡Totalmente recomendados! Organizaron nuestra boda y nos acompañaron durante todo el proceso de planificación.",
+      "Tuvimos varias reuniones para cuidar cada detalle y siempre estuvieron atentos a nuestras necesidades.",
+      "Gracias a ese trabajo, nuestro matrimonio fue un éxito y los resultados se reflejan en las fotografías que hoy forman parte de su página web."
+    ],
+    "autor": "Valeria  M. e Irving P.  – Surco",
+    "color": "--segondary-bwo-beich"
+  },
+  {
+    "id": 8,
+    "type": "Evento Ceremoniales",
+    "img": "client10.webp",
+    "descriptions": [
+      "Llegué a Kanut en el año 2023 por recomendación de mi familia, quienes ya habían trabajado con ellos, y fue una excelente decisión. ",
+      "Celebré mis 50 años en Chorrillos y el equipo transformó mi azotea en un elegante ambiente tipo restobar.",
+      "La decoración fue hermosa y el DJ respetó cada una de mis solicitudes musicales, haciendo que toda mi familia disfrutara y bailara con los mejores éxitos de antaño."
+    ],
+    "autor": "Yesenia G.  S. – Chorrillos",
+    "color": "--segondary-bwn-red"
+  },
+  {
+    "id": 9,
+    "type": "Evento Juvenil",
+    "img": "client9.webp",
+    "descriptions": [
+      "Conozco a Kanut desde sus inicios y puedo dar fe de que es una empresa seria y confiable. He trabajado con ellos alquilando equipos de sonido y brindando servicios de DJ.",
+      "Siempre han cumplido con los acuerdos y demostrado un gran profesionalismo, permitiéndome responder con confianza ante mis propios clientes y proveedores.",
+      "Los recomiendo por su responsabilidad y compromiso."
+    ],
+    "autor": "Jean R. R. - Surco",
+    "color": "--segondary-gold"
+  },
+  {
+    "id": 10,
+    "type": "Evento Juvenil",
+    "img": "client8.webp",
+    "descriptions": [
+      "Contraté a Kanut para la decoración del cumpleaños de mi pequeña con temática de Guerreras K-Pop. Quedé encantado con el resultado y con el profesionalismo de todo el equipo.",
+      "La decoración quedó hermosa y las fotos junto a nuestros invitados salieron increíbles.",
+      "¡Los recomiendo totalmente!"
+    ],
+    "autor": "Jorge L. M. - S. J de Lurigancho",
+    "color": "--segondary-red"
+  },
+  {
+    "id": 11,
+    "type": "Evento Juvenil",
+    "img": "client6.webp",
+    "descriptions": [
+      "Celebré mis 21 años en un pequeño local y, sinceramente, no esperaba que todo saliera tan perfecto.",
+      "Contraté el servicio de DJ y todo fue muy profesional,  el DJ llegó con su propia cabina que hasta prendía luces y un excelente equipo. La música estuvo increíble y mantuvo a todos bailando toda la noche.",
+      "¡Quedé encantada!"
+    ],
+    "autor": "Katy Ruiz - Jesús María",
+    "color": "--segondary-g-phamtom"
+  },
+  {
+    "id": 12,
+    "type": "Evento Juvenil",
+    "img": "client5.webp",
+    "descriptions": [
+      "Mi esposo celebró su cumpleaños, como es un gran hincha de Alianza Lima, quería sorprenderlo con una celebración especial.",
+      "No tenía una idea clara de cómo organizar todo y buscaba algo bonito, sin necesidad de hacer una gran inversión.",
+      "Me recomendaron Kanut Eventos y, aunque reservé un día antes, organizaron una increíble sorpresa con una hermosa decoración de Alianza Lima, una batucada del equipo y dos osos caracterizados."
+    ],
+    "autor": "Shirle S. C. - SJL",
+    "color": "--segondary-violet-purple"
+  }
+]

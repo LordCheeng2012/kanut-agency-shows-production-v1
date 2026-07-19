@@ -1,7 +1,8 @@
-// import { paths } from '../../../config/loadEnviroment.js'
+import { paths } from '../../../config/loadEnviroment.js'
 import './SectionsAbout.css'
 import { Button } from '@components/buttons/Button.jsx' 
 export const SectionsAbout = () => {
+ const {teams} = paths();
   return (
     <section className='about-content'>
         <div className='a-c-item ac-content-title'>
@@ -9,9 +10,9 @@ export const SectionsAbout = () => {
         </div>
         <div className='a-c-item ac-about-details'>
             <section className='ab-item-detail'>
-                <div className='img-card img-eliam'>
-                {/* <img src="img-person" alt="" /> */}
-                <div className='img-person'></div>
+                <div className='img-card'>
+                <img className="img-person" src={`${teams}/elian.webp`} alt="" />
+                {/* <div className='img-person elian'></div> */}
                 <div className='details-person'>
                     <h3>Elian Santa Cruz Solis</h3>
                     <p>(Gerente General)</p>
@@ -40,14 +41,14 @@ export const SectionsAbout = () => {
                 
             </section>
             <section className='ab-item-detail '>
-                <div className='img-card img-daniela'>
-                <div className='img-person'></div>
-                {/* <img src="img-person" alt="" /> */}
+             <div className='img-card img-bootom'>
+                {/* <div className='img-person daniela'></div> */}
+                <img className="img-person" src={`${teams}/daniela.webp`} alt="" />
                 <div className='details-person'>
-                    <h3>Daniela Coronel Cahuaza</h3>
-                    <p>(Gerente Administrativa)</p>
-                </div>
-                </div>
+                  <h3>Daniela Coronel Cahuaza</h3>
+                  <p>(Gerente Administrativa)</p>
+            </div>
+                 </div>
             </section>
         </div>
         <div className='a-c-item ac-footer'>
