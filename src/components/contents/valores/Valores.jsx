@@ -1,5 +1,5 @@
 import './Valores.css'
-import { paths } from '../../../config/loadEnviroment.js'
+import { paths } from '../../../config/config.js'
 const {icons} = paths();
 
 export const Valores = () => {

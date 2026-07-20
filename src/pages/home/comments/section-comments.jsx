@@ -1,6 +1,6 @@
 import {Card} from "@components/contents/cards/Card.jsx"
 import { prepareItems } from "./section-comments.js"
-import { paths } from "../../../config/loadEnviroment.js"
+import { paths } from "../../../config/config.js"
 import './section-comments.css'
 import { Carousel } from "../../../components/contents/carousel/carousel.jsx"
 

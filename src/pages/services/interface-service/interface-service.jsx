@@ -1,5 +1,5 @@
 import './interface-service.css'
-import { paths } from '../../../config/loadEnviroment.js'
+import { paths } from '../../../config/config.js'
 import { ServiceHooks } from '../services.js';
 
 export const InterfaceService = () => {

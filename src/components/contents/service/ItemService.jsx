@@ -2,11 +2,11 @@
 import './ItemService.css'
 import { services } from '../../../data/services/services.json'
 import { TitleService } from './TitleService';
-export default function ItemService({keyService,addClass=null}) {
-  const {title,description,comments,otherDescription} = services[keyService] || services.boda;
+export default function ItemService({keyService}) {
+  const {title,colorTitle,description,comments,otherDescription} = services[keyService] || services.boda;
   return (
-    <div className={`component-service ${addClass? addClass: ''}`}>
-            <TitleService serviceTitle={title} classService={keyService}></TitleService>
+    <div className={`component-service`}>
+            <TitleService serviceTitle={title} classService={keyService} colorTitle={colorTitle}></TitleService>
             <p className='kanut-description-altern-vid s-description'>
               {description}
             </p>

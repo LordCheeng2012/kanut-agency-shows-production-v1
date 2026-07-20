@@ -1,4 +1,4 @@
-import { paths } from "../../../config/loadEnviroment.js";
+import { paths } from "../../../config/config.js";
 import ItemService from "@components/contents/service/ItemService.jsx";
 const { fonts } = paths();
 import "./History.css";

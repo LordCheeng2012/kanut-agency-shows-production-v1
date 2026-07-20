@@ -6,7 +6,8 @@ return {
     clients:`${import.meta.env.VITE_ASSETS}/imgs/clients`,
     fonts:`${import.meta.env.VITE_ASSETS}/imgs/fonts`,
     services:`${import.meta.env.VITE_ASSETS}/imgs/services`,
-    teams:`${import.meta.env.VITE_ASSETS}/imgs/teams`
+    teams:`${import.meta.env.VITE_ASSETS}/imgs/teams`,
+    banners:`${import.meta.env.VITE_ASSETS}/imgs/banner`
 }
 
 }

@@ -1,7 +1,10 @@
 .portfolio-content{
     height: 100%;
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
 }
 /* .p-c-item{
     border: 1px solid blue;
@@ -9,26 +12,22 @@
 
 .p-c-title-portfolio{
 text-align: center;
-height: 15%;
+height: auto;
+margin: 5%;
 h1{
-    font-size: 13vh;
+    font-size: 15vh;
     font-weight: 400;
     color: var(--primary-b-sky);
 }
 }
 .portfolio-list{
-    width: 100%;
+    width: 90%;
     height: 70%;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
-    gap: 30px;
-
+    /* grid-template-rows: repeat(auto, 1fr); */
     justify-items: center;
     align-items: center;
-
     padding: 0 80px;
     box-sizing: border-box;
 }

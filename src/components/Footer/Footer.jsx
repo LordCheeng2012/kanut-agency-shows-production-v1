@@ -1,5 +1,5 @@
 import React from 'react'
-import { paths } from '../../config/loadEnviroment.js'
+import { paths } from '../../config/config.js'
 const {icons} = paths();
 import './Footer.css'
 export const Footer = () => {

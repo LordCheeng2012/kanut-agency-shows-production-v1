@@ -1,4 +1,4 @@
-import { paths } from '../../../config/loadEnviroment.js'
+import { paths } from '../../../config/config.js'
 import './SectionsAbout.css'
 import { Button } from '@components/buttons/Button.jsx' 
 export const SectionsAbout = () => {

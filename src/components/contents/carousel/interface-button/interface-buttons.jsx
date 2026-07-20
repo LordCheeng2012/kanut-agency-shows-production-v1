@@ -11,11 +11,11 @@ export const Interface = ({classname = '' , isghost = false,refItemsCarousel = n
     <div className = {buildclass}>
       <section className ={`${s['io-options']}`}>
         <section className ={`${classname} ${s['io-buttons']}`}>
-            <ButtonCircle type="white"
+            <ButtonCircle type="ghost"
             data-action="prev" onClick={() => movePrev(refItemsCarousel)}>
                 <h1>{`<`}</h1>
             </ButtonCircle>
-            <ButtonCircle type="white" 
+            <ButtonCircle type="ghost" 
             data-action="next" 
             onClick={() => moveNext(refItemsCarousel)}>
                 <h1>{`>`}</h1>

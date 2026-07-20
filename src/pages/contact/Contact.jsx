@@ -8,7 +8,7 @@ import
   InputFile
 } 
   from '../../components/inputs/Inputs.jsx';
-import { paths } from '../../config/loadEnviroment.js';
+import { paths } from '../../config/config.js';
 import { Button } from '../../components/buttons/Button.jsx';
 const {services} = paths();
 export const Contact = () => {

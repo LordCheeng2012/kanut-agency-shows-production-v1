@@ -1,0 +1,35 @@
+[
+  {
+    "id":1,
+    "title": "La Boda que Nos Regaló un Latido Más",
+    "service": "Kanut - eventos de bodas.",
+    "color":"--segondary-red",
+    "page":"historia1",
+    "image":"banner_1.webp"
+  },
+  {
+    "id":2,
+    "title": "Adios a la dulce niña.",
+    "service": "Kanut - eventos de party.",
+    "page":"historia2",
+    "color":"--primary-b-sky",
+    "image":"banner_2.webp"
+  },
+  { 
+    "id":3,
+    "title": "Show Infantil en la Piscina.",
+    "service": "Kanut - eventos de shows.",
+    "page":"historia3",
+    "color":"--segondary-pink",
+    "image":"banner_3.webp"
+  },
+  {
+    "id":4,
+    "title": "Cuando la alegría encontró su mejor escenario.",
+    "service": "Kanut - eventos de shows.",
+    "page":"historia4",
+    "color":"--segondary-pink",
+    "image":null
+  }
+  
+]

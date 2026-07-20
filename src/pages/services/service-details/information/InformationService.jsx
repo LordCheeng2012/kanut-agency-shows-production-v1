@@ -1,7 +1,7 @@
 import './InformationService.css'
 import { useContext } from 'react';
 import { serviceContext } from '../../../../context/Services/ServiceContext.jsx';
-import { paths } from '../../../../config/loadEnviroment.js';
+import { paths } from '../../../../config/config.js';
 export const InformationService = () => {
 const {services} = paths();    
 const {serviceDetails} = useContext(serviceContext);

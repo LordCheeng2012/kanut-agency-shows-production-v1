@@ -10,7 +10,8 @@ height: 130vh;
 }
 
 .portfolio-section{
-height: 120vh;
+height: 150vh;
+max-height: 170vh;
 }
 .comments-section{
 height: 125vh;

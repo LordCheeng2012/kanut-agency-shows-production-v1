@@ -1,6 +1,6 @@
 import { TitleService } from '@components/contents/service/TitleService.jsx';
 import { services } from '../../../data/services/services.json'
-import { paths } from '../../../config/loadEnviroment.js'
+import { paths } from '../../../config/config.js'
 import { GenerateGrid } from '@components/sections/grid-galery/GenerateGrid.jsx';
 import './Service.css'
 const {transitions} = paths();

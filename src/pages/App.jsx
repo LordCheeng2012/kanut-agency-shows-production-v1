@@ -18,7 +18,7 @@ import { History2 } from "./Portfolio-events/Historia2.jsx";
 export const App = () => {
   return (
     <main>
-      <Header></Header>
+      <Header/>
       <section id="content-page">
        <Routes>
         <Route path='/' element = {<Home/>}/>
@@ -34,7 +34,7 @@ export const App = () => {
         <Route path='/Historia4' element={<History4 />}/>
         </Routes>
       </section>
-      <Footer></Footer>
+      <Footer/>
     </main>
   );
 };

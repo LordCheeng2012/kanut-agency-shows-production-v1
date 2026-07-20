@@ -1,18 +1,12 @@
 import { CardItem } from '../../../components/contents/cards/Card.jsx';
 import './SectionPortfolio.css';
-import data from "./portofolio-items.json"
-import bannerBoda1 from '../../../assets/imgs/banner/bannerBoda1.png';
-import bannerQuince from '../../../assets/imgs/banner/bannerQuince.png';
+import data from "../../../data/portafolio.json"
 import { utils } from '../../../utils/utils.js';
+import { paths } from '../../../config/config.js';
 
 export const SectionsPortfolio = () => {
-
+  const {banners} = paths();
   const {redirect} = utils();
-  const images = [
-    bannerBoda1,
-    bannerQuince,
-  ];
-
   return (
     <section className="portfolio-content">
       <div className="p-c-item p-c-title-portfolio">
@@ -21,13 +15,13 @@ export const SectionsPortfolio = () => {
 
       <div className="p-c-item portfolio-list">
         {data
-          .slice(0, 4)
-          .map((cv, index) => (
+        .map((cv, index) => (
             <CardItem
               key={index}
-              image={images[index % images.length]}
+              image={`${banners}/${cv.image}`}
               title={cv.title}
-              subtitle={cv.subtitle}
+              service={cv.service}
+              color={cv.color}
               onClick={() =>redirect(`/${cv.page}`)}
             />
           ))}

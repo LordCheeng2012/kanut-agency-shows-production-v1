@@ -14,11 +14,11 @@ export const close = ({ e, seteableState }) => {
 export const DrowItem = ()=>{
     return(
     <nav className={styles["nav-content"]}>
-        <li>Bodas</li>
-        <li>Party</li>
-        <li>Shows</li>
+        <li>Eventos Infantiles</li>
+        <li>Eventos Juveniles</li>
+        <li>Eventos Ceremoniales</li>
         <li>Catering</li>
-        <li>Regalos Corporativos</li>
+        <li>Catering y Decoración</li>
    </nav>
     );
 }

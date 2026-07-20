@@ -81,6 +81,10 @@ color:var(--primary-w);
     background-color:var(--primary-w);
     color: var(--primary-b-black);
 }
+.ghost{
+    background-color:var(--gray-white-ghost);
+    color: var(--primary-b-black);
+}
 .brown{
     background-color: var(--segondary-brown);
     color:var(--primary-w);

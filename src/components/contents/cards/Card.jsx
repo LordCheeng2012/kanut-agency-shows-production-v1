@@ -1,6 +1,6 @@
 import './Card.css'
 
-import { paths } from '../../../config/loadEnviroment.js';
+import { paths } from '../../../config/config.js';
 const {clients} = paths();
 export const Card =  ({data = {title:"dummy-title",img:null, descriptions:[],color:"red",autor:"" }})=> {
   const path =`${clients}/${data.img}`;
@@ -32,7 +32,7 @@ export const Card =  ({data = {title:"dummy-title",img:null, descriptions:[],col
 }
 
 
-export const CardItem = ({title,subtitle,image,onClick})=> {
+export const CardItem = ({title,service,image,color="--segondary-pink",onClick})=> {
   return(
     <div
       className="card-item"
@@ -48,18 +48,21 @@ export const CardItem = ({title,subtitle,image,onClick})=> {
       <div className="c-i-img-item">
         <img src={image} alt={title} />
 
-        <div className="flag-kanut">
+        {/* <div className="flag-kanut">
           <p>K</p>
           <div className="border-flag">
             <div className="right-triangule"></div>
             <div className="left-triangule"></div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="c-i-f-portfolio">
-        <p className="kanut-description-altern-card">
-          <strong>Kanut</strong> {title} {subtitle}
+        <p className="c-i-f-title">
+         {title} 
+        </p>
+        <p className='c-i-f-service-type' style={{color:`var(${color})`}}>
+          {service}
         </p>
       </div>
     </div>
