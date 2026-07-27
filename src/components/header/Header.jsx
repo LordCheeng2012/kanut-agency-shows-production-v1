@@ -43,9 +43,9 @@ export const Header = () => {
             <p>Bolsa de trabajo</p>
             <div className="line-link" />
           </a>
-          <a href="" className="item-list btn-whatsap">
+          <a href="https://walink.co/x856dy" className="item-list btn-whatsap">
             <i className="fa fa-whatsapp"></i>
-            <p className="i-l-wsp kanut-subtitle"> whatsap</p>
+            <p className="i-l-wsp kanut-subtitle"> WhatsApp</p>
           </a>
         </li>
       </nav>

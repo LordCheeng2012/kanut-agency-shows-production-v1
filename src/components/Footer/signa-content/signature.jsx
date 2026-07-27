@@ -1,11 +1,16 @@
 import styles from "./signature.module.css"
+import legalPdf from "@assets/legal/legal.pdf"
 function Signature() {
     return (
     <section className={styles["signature-content"]}>
         <div className={styles["info-legal"]}>
-            <a href="./joder tio ">Términos y Condiciones</a>
-            <a href="">Politica de privacidad</a>
-            <a href="">Politica de Satisfacción Garantizada</a>
+            <a href={legalPdf} download={legalPdf} >
+                Términos y Condiciones
+            </a>
+            <a href={legalPdf} download={legalPdf} >
+                Politica de privacidad
+                </a>
+            <a href={legalPdf} download={legalPdf}>Politica de Satisfacción Garantizada</a>
         </div>
         <div className={styles["signature"]}>
             <p>© 2025 KANUT ESPECTACULOS. Todos los derechos reservados</p>

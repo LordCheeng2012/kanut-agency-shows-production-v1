@@ -10,7 +10,7 @@ function MeetSection({className=""}) {
     <div className={`${className} ${styles["meet-section"]}`}>
         <h1 className="title-section">AGENDA TU REUNIÓN</h1>
         <section className={`${styles["section-reserved"]} `}>
-            <a href="">
+            <a href="https://walink.co/x856dy">
                 <img src={meet} alt="reserva referencia" />
             </a>
         </section>
