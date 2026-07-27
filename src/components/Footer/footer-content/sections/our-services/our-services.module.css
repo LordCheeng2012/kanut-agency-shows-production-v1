@@ -1,0 +1,21 @@
+.our-services-section{
+    width: auto;
+    section{
+        margin: 1rem;
+        margin-block: 2rem;
+    }
+}
+.our-services-section > section> a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    color: var(--gray-white);
+}
+
+.service-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

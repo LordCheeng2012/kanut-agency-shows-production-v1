@@ -1,0 +1,14 @@
+
+.footer-content{
+    display: inline-flex;
+    padding: 1rem;
+    height: 80vh;
+}
+.footer-content-item{
+    display: inline-block;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+

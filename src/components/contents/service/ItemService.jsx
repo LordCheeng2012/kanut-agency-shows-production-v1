@@ -3,7 +3,7 @@ import './ItemService.css'
 import { services } from '../../../data/services/services.json'
 import { TitleService } from './TitleService';
 export default function ItemService({keyService}) {
-  const {title,colorTitle,description,comments,otherDescription} = services[keyService] || services.boda;
+  const {title,colorTitle,description,comments,otherDescription} = services["primary-services"][keyService] || services["primary-services"].boda;
   return (
     <div className={`component-service`}>
             <TitleService serviceTitle={title} classService={keyService} colorTitle={colorTitle}></TitleService>

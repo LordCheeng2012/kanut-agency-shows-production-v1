@@ -1,12 +1,15 @@
 import { useState } from "react";
 import "./Header.css";
 import { deploy, close } from "./drop-down-item/drop-down-item.jsx";
+import kanut from "@imgs/kanut.png"
 export const Header = () => {
   const [desplegableItem, setDesplegableItem] = useState(null);
   return (
     <header>
       <div className="icon item-header">
-        <div className="icon-img"></div>
+       <a href="./">
+        <img src= {kanut}alt="kanut logo principal" />
+       </a>
       </div>
       <nav className="navbar item-header">
         <li className="list-options kanut-subtitle-light">

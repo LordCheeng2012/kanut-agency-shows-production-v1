@@ -1,0 +1,38 @@
+:root{
+    --padding-content:1.5rem 2rem;
+}
+.signature-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+}
+.info-legal{
+    display: flex;
+    color: var(--gray-white);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: var(--padding-content);
+    width: 100%;
+    flex-wrap: wrap;
+    a{
+        width: 20%;
+    }
+}
+
+.signature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.25rem;
+    padding: var(--padding-content);
+    font-weight: 600;
+    font-size: small;
+    margin-block: 2rem;
+}

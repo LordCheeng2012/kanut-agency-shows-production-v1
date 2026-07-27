@@ -224,6 +224,13 @@ codigo de colores de uso interno segun brand
   color: rgba(0,0,0,0.6);
 }
 
+.title-section{
+    margin: 5%;
+    text-align: center;
+    font-size: large;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
 
 /* Ejemplos de utilidad: clases responsivas pequeñas */
 @media (max-width: 768px) {
