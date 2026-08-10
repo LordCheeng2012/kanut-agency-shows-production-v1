@@ -1,20 +1,20 @@
 
-import './About.css'
-import { AboutMarcas } from './marcas/AboutMarcas.jsx'
-import { Ethics } from './etica/Ethics.jsx'
+import styles from "./about.module.css"
+import IdentityEnterprice from "./identity-enterprice"
+import OurBrands from './our-brands'
 import { Questions } from './questions/Questions.jsx'
 
 export const About = () => {
   return (
    <>
-    <div className='about-content-etic'>
-      <Ethics></Ethics>
+    <div className={styles['about-content-etic']}>
+      <IdentityEnterprice/>
     </div>
-    <div className='frequents-questions-content'>
-    <Questions></Questions>
+    <div className={styles['frequents-questions-content']}>
+    <Questions/>
     </div>
-    <section className='content-about-marcas'>
-      <AboutMarcas></AboutMarcas>
+    <section className={styles['content-about-marcas']}>
+     <OurBrands/>
     </section>
    </>
   )

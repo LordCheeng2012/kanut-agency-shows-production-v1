@@ -1,0 +1,23 @@
+:root{
+    --space-content:1.5rem;
+    --time:0.8s;
+    --border:15px;
+}
+.animate-card{
+    width: 60vh;
+    min-height: 30vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: center;
+    /* background-color: rgb(23, 58, 58); */
+    border-radius: var(--border);
+    transition:
+     background-color var(--time) ease,
+     margin var(--time) ease,
+     height var(--time) ease;
+}
+.animate-card:hover{
+    margin-bottom: 10px;
+    bottom: 5px;
+}

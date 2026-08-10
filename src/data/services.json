@@ -1,0 +1,289 @@
+[
+  {
+    "name": "kanut-boda",
+    "summary": "Eventos - Bodas",
+    "styles": {
+      "color": "--kanut-service-boda",
+      "image": "image_3.png",
+      "border-color": "0.5rem solid var(--primary-b-black)",
+      "logo-src": "/kanut-boda.png",
+      "button-class": "btn-primary-sky",
+      "class-name": "boda"
+    },
+    "details": {
+      "summary": "Detrás de cada boda hay sueños compartidos, promesas sinceras y emociones que no caben en palabras. Nos mueve la belleza de lo auténtico, la emoción de lo verdadero y la fuerza de un amor que decide celebrarse.",
+      "descriptions": [
+        "Creamos experiencias auténticas que reflejan elegancia,romanticismo y celebración,",
+        "cuidando cada detalle e iluminación para transformar momentos especiales en recuerdos inolvidables."
+      ]
+    },
+    "comments": [
+      "“Porque cuando dos personas se eligen, el mundo se detiene por un instante y ese instante merece ser inolvidable.”"
+    ]
+  },
+  {
+    "name": "kanut-party",
+    "summary": "Eventos - party",
+    "styles": {
+      "color": "--kanut-service-party",
+      "image": "image_2.png",
+      "border-color": "0.5rem solid var(--kanut-service-party)",
+      "logo-src": "/kanut-party.png",
+      "button-class": "btn-gold",
+      "class-name": "party"
+    },
+    "details": {
+      "summary": "La juventud es color, movimiento y emoción sin filtros. Es celebrar la vida con intensidad, crear recuerdos que algún día arrancarán una sonrisa nostálgica y compartir momentos que fortalecen amistades para siempre.",
+      "descriptions": [
+        "Fusionamos la elegancia con la energía de celebraciones vibrantes para crear experiencias únicas.",
+        "Cuidamos cada detalle e iluminación para transformar tus momentos especiales en recuerdos inolvidables"
+      ]
+    },
+    "comments": [
+      "“Cada celebración es una explosión de energía que conecta corazones y transforma una noche en una historia inolvidable.”"
+    ]
+  },
+  {
+    "name": "kanut-shows",
+    "summary": "Eventos - Shows",
+    "styles": {
+      "color": "--kanut-service-shows",
+      "image": "image_1.png",
+      "border-color": "0.5rem solid var(--kanut-service-shows)",
+      "logo-src": "kanut-shows.png",
+      "button-class": "btn-primary",
+      "class-name": "party-color-altern"
+    },
+    "details": {
+      "summary": "Hay instantes donde el tiempo parece detenerse y solo importa la felicidad compartida, porque cuando un niño es feliz, el corazón de los padres también lo es. Sabemos que detrás de cada celebración hay algo mucho más profundo.",
+      "descriptions": [
+        "Llenamos tus días de diversión y alegría con juegos, espectáculos y actividades junto a la piscina.",
+        "Creamos momentos inolvidables y risas para toda la familia en cada evento."
+      ]
+    },
+    "comments": [
+      "“El deseo de regalarle a tu hijo un momento que nunca olvide. Un día lleno de emoción, juegos, sorpresas y sonrisas verdaderas.”"
+    ]
+  },
+  {
+    "name": "show-infantiles",
+    "summary": "Show Infantiles",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "show-infantiles"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "decoraciones-tematicas",
+    "summary": "Decoraciones Tematicas",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "decoraciones-tematicas"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "bodas",
+    "summary": "Bodas",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "bodas"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "eventos-corporativos",
+    "summary": "Eventos corporativos",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "eventos-corporativos"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "eventos-quinceaneros",
+    "summary": "Eventos Quinceañeros",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "eventos-quinceaneros"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "hora-loca",
+    "summary": "Hora Loca",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "hora-loca"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "luces-psicodelicas",
+    "summary": "Luces Psicodélicas",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "luces-psicodelicas"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "equipo-de-sonido",
+    "summary": "Equipo de sonido",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "equipo-de-sonido"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "fotografia",
+    "summary": "Fotografía",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "fotografia"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "catering",
+    "summary": "Catering",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "catering"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "filmacion-eventos",
+    "summary": "Filmación Eventos",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "filmacion-eventos"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "regalos-corporativos",
+    "summary": "Regalos Corporativos",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "regalos-corporativos"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  },
+  {
+    "name": "activaciones-publicitarias",
+    "summary": "Activaciones Publicitarias",
+    "styles": {
+      "color": "--primary-b-black",
+      "image": "",
+      "border-color": "",
+      "logo-src": "",
+      "button-class": "btn-default",
+      "class-name": "activaciones-publicitarias"
+    },
+    "details": {
+      "summary": "Descripción por definir.",
+      "descriptions": []
+    },
+    "comments": []
+  }
+]

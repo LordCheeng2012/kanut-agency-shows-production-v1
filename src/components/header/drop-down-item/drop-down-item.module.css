@@ -8,7 +8,7 @@
     z-index: 1;
     width: 30vh;
 }
-.nav-content li {
+.nav-content a {
     border-bottom: 2px solid var(--gray-white);
     margin: 3%;
     font-weight: 100;
@@ -22,11 +22,11 @@
     align-items: center;
     justify-content: center;
 }
-.nav-content li:hover {
+.nav-content a:hover {
     color: var(--segondary-blue-marine-ghost);
     background-color:var(--gray-white) ;
     margin:0;
 }
-.nav-content li:nth-child(5){
+.nav-content a:nth-child(5){
 border-bottom: 0cm;
 }

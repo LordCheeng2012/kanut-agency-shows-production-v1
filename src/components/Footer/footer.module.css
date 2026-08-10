@@ -26,3 +26,12 @@
      border: 1px solid white;
 }
 
+@media (max-width: 200vh) {
+  .footer {
+   height:auto;
+   max-height:fit-content;
+  }
+ 
+}
+
+

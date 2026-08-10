@@ -28,7 +28,7 @@ export const Home = () => {
           Informes
         </Button>
       </li>
-    </>
+    </>,
   ];
   return (
     <>
@@ -37,13 +37,13 @@ export const Home = () => {
         <History />
       </div>
       <div className="about-section">
-        <SectionsAbout/>
+        <SectionsAbout />
       </div>
       <div className="portfolio-section">
-        <SectionsPortfolio/>
+        <SectionsPortfolio />
       </div>
       <div className="comments-section">
-        <SectionComments/>
+        <SectionComments />
       </div>
     </>
   );

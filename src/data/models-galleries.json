@@ -1,0 +1,32 @@
+{
+  "kanut-boda": {
+    "total-items": 11,
+    "model": [
+      {
+        "model-name": "slice",
+        "items": [],
+        "min-items": 3
+      },
+      {
+        "model-name": "template",
+        "items": [],
+        "min-items":4,
+        "sub-items":{
+          "items":[1,2],
+          "position": 1
+        }
+      },
+      {
+        "model-name": "slice-m",
+        "items": [],
+        "min-items": 2
+      },
+      {
+        "model-name": "template-row",
+        "items": [],
+        "min-items": 2
+      }
+    ]
+  }
+  
+}

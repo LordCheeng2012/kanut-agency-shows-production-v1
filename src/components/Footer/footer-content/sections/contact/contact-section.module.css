@@ -49,3 +49,31 @@
   height: 50%;
   width: 50%;
 }
+
+@media (max-width: 200vh) {
+  .info-contact{
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+  }
+  .item-info{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  .item-info img{
+    width: 40px;
+  }
+  .item-info a{
+    width: auto;
+  }
+  .complaints-section{
+    padding: 0.75rem;
+  }
+  .claim-big{
+    width: 100%;
+    max-width: 100%;
+  }
+}

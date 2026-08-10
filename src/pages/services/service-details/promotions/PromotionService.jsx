@@ -1,10 +1,12 @@
-import { Button } from "../../../../components/buttons/Button";
-import './PromotionService.css'
+import { Button } from "@components/buttons/Button"
 import { useContext } from 'react';
-import { serviceContext } from '../../../../context/Services/ServiceContext.jsx';
+import {ServiceContext} from "@absolute/context/services";
+import './PromotionService.css'
+
  const TypeService = ({service={
     color_buttom:"btn-primary-sky"
  }}) => {
+
   return (
     <div className="content-type">
         <div className="img-content-type">
@@ -25,18 +27,18 @@ import { serviceContext } from '../../../../context/Services/ServiceContext.jsx'
   )
 }
 
-
 export const PromotionService = () => {
-const {serviceDetails} = useContext(serviceContext);
-const colorButton = serviceDetails.colorClass  ;
-console.log("contexto de servicio cargado : ",serviceDetails.colorClass);
+const {service} = useContext(ServiceContext);
+const colorButton = service["styles"]["button-class"];
+console.log("contexto de servicio cargado : ",colorButton);
+
   return (
     <div className="promotion-content-service">
         <h1 className="kanut-title">Promociones</h1>
         <section className="types-promotions-service-content">
-        <TypeService  service={{color_buttom:colorButton}}></TypeService>
-        <TypeService  service={{color_buttom:colorButton}}></TypeService>
-        <TypeService  service={{color_buttom:colorButton}}></TypeService>
+        <TypeService  service={{color_buttom:colorButton}}/>
+        <TypeService  service={{color_buttom:colorButton}}/>
+        <TypeService  service={{color_buttom:colorButton}}/>
         </section>
     </div>
   )

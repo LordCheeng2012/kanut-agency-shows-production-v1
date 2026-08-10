@@ -5,7 +5,7 @@ import { Header } from "@components/header/header.jsx";
 import { Footer } from "@components/footer/footer.jsx";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./home/Home.jsx";
-import { About } from "./about/About.jsx";
+import { About } from "./about/about.jsx";
 import { Services } from "./services/Services.jsx";
 import { Contact } from "./contact/Contact.jsx";
 import { BolsaTrabajo } from "./bolsa/bolsa.jsx";
@@ -14,7 +14,6 @@ import { History1 } from "./Portfolio-events/Historia1.jsx";
 import { History3 } from "./Portfolio-events/Historia3.jsx";
 import { History4 } from "./Portfolio-events/Historia4.jsx";
 import { History2 } from "./Portfolio-events/Historia2.jsx";
-
 
 export const App = () => {
   return (

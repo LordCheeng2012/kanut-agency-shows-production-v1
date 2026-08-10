@@ -4,7 +4,7 @@ import wsp from "@imgs/icons/wsp.png";
 import email from "@imgs/icons/email.png";
 import claim from "@imgs/icons/claim.png";
 function ContactSection({ className = "" }) {
-  console.log(styles);
+
   return (
     <div className={`${className} ${styles["contact-section"]}`}>
       <h1 className="title-section">CONTACTANOS</h1>

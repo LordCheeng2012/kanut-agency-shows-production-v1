@@ -1,33 +1,52 @@
-import { TitleService } from '@components/contents/service/TitleService.jsx';
-import { services } from '../../../data/services/services.json'
-import { paths } from '../../../config/config.js'
-import { GenerateGrid } from '@components/sections/grid-galery/GenerateGrid.jsx';
-import './Service.css'
-const {transitions} = paths();
-export const Service = ({keyService = 'boda'}) => {
-  console.log(`contexto de service key como :`,keyService);
-  const {title,description,imgService,borderColor} = services[keyService] || services.boda;
+import { TitleService } from "@components/contents/service/TitleService.jsx";
+import { GenerateGrid } from "@components/sections/grid-galery/GenerateGrid.jsx";
+import { paths } from "../../../config/config.js";
+import { useContext } from "react";
+import { ServiceContext } from "@absolute/context/services"; 
+import "./Service.css";
+export const Service = () => {
+  const { transitions } = paths();
+
+  const {service} = useContext(ServiceContext);  
+  const { name, styles } = service;
+
   return (
-    <section className='content-service'>
-      <div className='content-image-service'>
-        <img style={{borderBottom:`${borderColor}`}} src={`${transitions}/${imgService}`} alt="imagen del servicio" />
+    <section className="content-service">
+      <div className="content-image-service">
+        <img
+          style={{ borderBottom: `${styles["border-color"]}` }}
+          src={`${transitions}/${styles["logo-src"]}`}
+          alt="imagen del servicio"
+        />
       </div>
-      <div className='content-grid-galery-service'>
-        <section className='title-service-content'>
-        <TitleService serviceTitle={title} classService ={keyService} addClass= 'title-service'></TitleService>
-        <p className='kanut-description-altern'>
-        {/*description*/}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel delectus voluptate placeat, blanditiis dignissimos, harum, repellendus non tempora odio facere impedit corporis cumque. Consequuntur assumenda accusamus eos ipsa et!
-        Eligendi saepe quam iure sed similique, cum voluptatum voluptas, hic aliquid ipsa repellat cupiditate vitae ratione! Eaque laboriosam inventore, earum officia voluptatibus nihil et eos neque iure qui, quasi rem.
-        A ullam incidunt in amet maxime doloribus, maiores voluptate doloremque qui totam accusantium expedita, nam id fuga. Veniam quibusdam inventore esse, aliquam sequi quod voluptate numquam expedita, voluptatem delectus iure?
-        </p>
+      <div className="content-grid-galery-service">
+        <section className="title-service-content">
+          <TitleService
+            serviceTitle={name}
+            classService={styles["class-name"]}
+            addClass="title-service"
+          ></TitleService>
+          <p className="kanut-description-altern">
+            {/*description*/}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel
+            delectus voluptate placeat, blanditiis dignissimos, harum,
+            repellendus non tempora odio facere impedit corporis cumque.
+            Consequuntur assumenda accusamus eos ipsa et! Eligendi saepe quam
+            iure sed similique, cum voluptatum voluptas, hic aliquid ipsa
+            repellat cupiditate vitae ratione! Eaque laboriosam inventore, earum
+            officia voluptatibus nihil et eos neque iure qui, quasi rem. A ullam
+            incidunt in amet maxime doloribus, maiores voluptate doloremque qui
+            totam accusantium expedita, nam id fuga. Veniam quibusdam inventore
+            esse, aliquam sequi quod voluptate numquam expedita, voluptatem
+            delectus iure?
+          </p>
         </section>
 
-        <section className='galery-container'>
+        <section className="galery-container">
           {/* definir un contexto galery para que la grilla carge las imagenes */}
-        <GenerateGrid></GenerateGrid>
+          <GenerateGrid></GenerateGrid>
         </section>
       </div>
     </section>
-  )
-}
+  );
+};

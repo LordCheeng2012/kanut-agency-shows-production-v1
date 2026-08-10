@@ -1,12 +1,12 @@
 import './InformationService.css'
 import { useContext } from 'react';
-import { serviceContext } from '../../../../context/Services/ServiceContext.jsx';
+import {ServiceContext} from "@absolute/context/services";
 import { paths } from '../../../../config/config.js';
 export const InformationService = () => {
 const {services} = paths();    
-const {serviceDetails} = useContext(serviceContext);
-const logoSrc = serviceDetails.logoSrc;
-// console.log("contexto de servicio cargado : ",serviceDetails)
+const {service} = useContext(ServiceContext);
+const logoSrc = service["styles"]["logo-src"];
+
   return (
     <>
     <div className="item-information-service">

@@ -1,0 +1,31 @@
+:root{
+    --space-content: 3rem;
+}
+/* mision valores */
+.about-content-etic{
+/* border: 1px solid blue; */
+background-image: url('../../assets/imgs/backgrounds/Etica.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-color: black;
+padding-block: var(--space-content);
+
+}
+
+/*Preguntas frecuentes */
+.frequents-questions-content{
+/* border: 1px solid blue; */
+padding-block: var(--space-content);
+}
+.content-about-marcas{
+/* border: 1px solid blue; */
+background-image: url('../../assets/imgs/backgrounds/about_marcas.png');
+background-repeat: no-repeat;
+background-size:contain;
+background-color: var(--primary-b-black);
+height: 350vh;
+padding-block: var(--space-content);
+}
+
+
+

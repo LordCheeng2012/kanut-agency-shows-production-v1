@@ -18,19 +18,19 @@
     border: 0;
     transition: border 0.1s ease;
 }
-.border-boda:hover{
+.border-kanut-boda:hover{
   border: 0.5rem solid var(--kanut-service-boda);
    .i-s-o-option {
     scale: 0.9;
   }
 }
-.border-shows:hover{
+.border-kanut-shows:hover{
   border: 0.5rem solid var(--kanut-service-shows);
    .i-s-o-option {
      scale: 0.9;
   }
 }
-.border-party:hover{
+.border-kanut-party:hover{
   border:  0.5rem solid var(--kanut-service-party);
   .i-s-o-option {
     scale: 0.9;
@@ -39,7 +39,7 @@
 .i-s-o-option{
     width: 100%;
     height: 100%;
-    background-color: rgb(81, 109, 210);
+    background-color:var(--primary-b-black);
     border-radius: 50%;
     display: flex;
     flex-direction: column;

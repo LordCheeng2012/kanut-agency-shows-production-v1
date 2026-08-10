@@ -1,8 +1,11 @@
 import styles from "./our-services.module.css";
 import stylesParent from "../../../footer.module.css"
-import data from "../../../../../data/services/services.json";
+import { useContext } from "react";
+import { ServiceContext } from "@absolute/context/services";
+
 function OurServices({className=""}) {
- const services = data.services["all-services"];
+  const {getServices} = useContext(ServiceContext);
+
   return (
     <div
       className={`${className} ${styles["our-services-section"]}`}
@@ -10,7 +13,7 @@ function OurServices({className=""}) {
       <h1 className="title-section">NUESTROS SERVICIOS</h1>
       <section>
         <div className={styles["service-list"]}>
-          {services.map((s) => (
+          {getServices().map((s) => (
             <p className={stylesParent["option"]}>{s}</p>
           ))}
         </div>

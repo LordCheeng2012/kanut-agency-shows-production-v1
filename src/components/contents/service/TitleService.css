@@ -4,15 +4,15 @@
     width: 50%;
     border-radius: 80px;
 }
-.boda-border{
+.kanut-boda-border{
 border: 1px solid  var(--primary-b-black);
 color: var(--segondary-bwo-beich);
 }
-.party-border{
+.kanut-party-border{
 border: 1px solid  var(--primary-b-sky);
 color: var(--segondary-bwo-beich);
 }
-.shows-border{
+.kanut-shows-border{
 border: 1px solid  var(--segondary-sky-b);
 color: var(--segondary-pink);
 }

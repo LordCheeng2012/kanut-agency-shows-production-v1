@@ -9,11 +9,11 @@ function MeetSection({className=""}) {
     return (
     <div className={`${className} ${styles["meet-section"]}`}>
         <h1 className="title-section">AGENDA TU REUNIÓN</h1>
-        <section className={`${styles["section-reserved"]} `}>
+        <div className={`${styles["section-reserved"]} `}>
             <a href="https://walink.co/x856dy">
                 <img src={meet} alt="reserva referencia" />
             </a>
-        </section>
+        </div>
         <ul className={`${styles["social-points-list"]}`}>
             <li>
                 <a href=""><img src={facebook} alt = "" /></a>

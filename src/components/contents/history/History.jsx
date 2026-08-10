@@ -1,37 +1,32 @@
 import { paths } from "../../../config/config.js";
 import ItemService from "@components/contents/service/ItemService.jsx";
 const { fonts } = paths();
-import "./History.css";
-import { utils } from "../../../utils/utils.js";
+import styles from  "./history.module.css";
 
-export const History = ({ classname = "" }) => {
-   const {navigate} = utils();
 
+export const History = () => {
   return (
-    <div className={`${classname} history history-point`}>
-      <div className="item-title-history">
+    <div className={`${styles["history"]} ${styles["history-point"]}`}>
+      <div className={styles["item-title-history"]}>
         <img src={`${fonts}/font_1.png`} alt="" />
       </div>
-      <div className="item-content-video-player">
-        <div
-          className="item-service-details"
-          onclick={() => navigate("/services/boda")}
-        >
-          <section className="item-video"></section>
-          <section className="service-details">
-            <ItemService keyService={"boda"}></ItemService>
+      <div className={styles["item-content-video-player"]}>
+        <div className={styles["item-service-details"]}>
+          <section className={styles["item-video"]}></section>
+          <section className={styles["service-details"]}>
+            <ItemService keyService={"kanut-boda"}/>
           </section>
         </div>
-        <div className="item-service-details">
-          <section className="item-video"></section>
-          <section className="service-details">
-            <ItemService keyService="party"></ItemService>
+        <div className={styles["item-service-details"]}>
+          <section className={styles["item-video"]}></section>
+          <section className={styles["service-details"]}>
+            <ItemService keyService="kanut-party"></ItemService>
           </section>
         </div>
-        <div className="item-service-details">
-          <section className="item-video"></section>
-          <section className="service-details">
-            <ItemService keyService="shows"></ItemService>
+        <div className={styles["item-service-details"]}>
+          <section className={styles["item-video"]}></section>
+          <section className={styles["service-details"]}>
+            <ItemService keyService="kanut-shows"></ItemService>
           </section>
         </div>
       </div>

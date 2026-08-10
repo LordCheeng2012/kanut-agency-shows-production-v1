@@ -1,0 +1,42 @@
+:root{
+    --space-content:1rem;
+}
+.content-our-brands{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    padding-top: 15rem;
+}
+
+.brands-content{
+    display: inline-block;
+    padding: var(--space-content);
+    height: 70vh;
+    /* background-color: rgb(129, 129, 130); */
+}
+
+.our-brands-list{
+   width: 100%;
+   display: inline-flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   overflow: auto;
+   gap: 5rem;
+   /* background-color: aqua; */
+   padding: var(--space-content);
+   img{
+    width: 100%;
+   }
+}
+.description___brand{
+    /* background-color: chocolate; */
+    padding: var(--space-content);
+    font-size: 1.4rem;
+    padding-inline: 5rem;
+    line-height: 2.5rem;
+}
+

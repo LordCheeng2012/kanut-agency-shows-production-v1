@@ -1,28 +1,25 @@
-import './interface-service.css'
-import { paths } from '../../../config/config.js'
-import { ServiceHooks } from '../services.js';
-
+import "./interface-service.css";
+import { ServiceContext } from "@absolute/context/services";
+import { useContext } from "react";
+import { paths } from "@absolute/config/config";
 export const InterfaceService = () => {
-  const {loadService} = ServiceHooks();
-  const {services,assets} = paths();
+  const { services } = paths();
+  const { getPrimaryServices } = useContext(ServiceContext);
 
   return (
-    <section className='section-controller'>
-      <div className="item-service-option border-boda">
-          <div className='i-s-o-option' onClick={()=>loadService("boda")}>
-              <img src={`${assets}/imgs/Kanut-Logo.png`} alt="" />
+    <section className="section-controller">
+      {getPrimaryServices().map((service) => {
+        return (
+          <div className={`item-service-option border-${service}`}>
+            <a
+              className="i-s-o-option"
+              href={`./Service?serviceType=${service}`}
+            >
+              <img src={`${services}/${service}.png`} alt="" />
+            </a>
           </div>
-      </div>
-      <div className="item-service-option border-shows">
-        <div className='i-s-o-option' onClick={()=>loadService("shows")}>
-              <img src={`${services}/Kanut_Eventos_Shows.png`} alt="" />
-          </div>
-      </div>
-      <div className="item-service-option border-party">
-        <div className='i-s-o-option' onClick={()=>loadService("party")}>
-            <img src={`${services}/Kanut_Party.png`} alt="" />
-          </div>
-      </div>
+        );
+      })}
     </section>
-  )
-}
+  );
+};

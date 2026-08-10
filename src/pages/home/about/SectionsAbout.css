@@ -3,7 +3,7 @@
     height: 100%;
     background-image: url('../../../assets/imgs/backgrounds/about.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .ac-content-title{
@@ -25,7 +25,7 @@
     width:25%;
     /* background-color: slateblue; */
     /* border: 1px solid black; */
-    padding: 1%;
+    padding: 2%;
 }
 .details-text{
     width: 50%;
@@ -35,7 +35,6 @@
      p{
     color: white !important;
     font-size: 1rem;
-    line-height: 1.7;
 }
 }
 
@@ -84,12 +83,10 @@
     justify-content: center;
 }
 .btn-show-details{
-    height: 100%;
     width: 40%;
     /* background-color: darkgoldenrod; */
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: end;
 }
 .ac-btn{

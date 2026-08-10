@@ -1,0 +1,27 @@
+:root{
+  --size :stretch; ;
+  --default-size :100%;
+--time:0.2s;
+}
+.galery-item{
+ display: inline-block;
+ object-fit: cover;
+ cursor: pointer;
+ transition: padding var(--time) ease;
+}
+.galery-item:hover{
+    padding: 3px;
+}
+.sm{
+     height:var(--size);
+     width: var(--default-size); 
+}
+.md{
+    height:var(--default-size);;
+    width: 80vh; 
+}
+.lg{
+    height:80vh;
+    width: var(--default-size);; 
+}
+

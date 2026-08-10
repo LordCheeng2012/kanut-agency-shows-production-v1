@@ -1,8 +1,8 @@
 
-import { Valores } from '../../components/contents/valores/Valores.jsx';
-import { ServiceProvider } from '../../context/providers/ServiceProvider.jsx'
+import { useContext } from "react";
+import  {ServiceContext} from "../../context/services"; 
+import  Valores  from "@components/contents/valores"
 import { InterfaceService } from './interface-service/interface-service.jsx'
-import { ServiceHooks } from './services.js';
 import { GaleryDetails } from './service-details/GaleryDetails.jsx';
 import { InformationService } from './service-details/information/InformationService.jsx';
 import { PromotionService } from './service-details/promotions/PromotionService.jsx';
@@ -10,31 +10,28 @@ import './services.css';
 
 
 export const Services = () => {
-  const {getServiceContext} = ServiceHooks();
-  const backgroundService = getServiceContext() || 'boda';
-
-  return (
-    <ServiceProvider keyService={backgroundService}>
-        <section className={`p-content-service ${backgroundService}`}>
+const {service} = useContext(ServiceContext);
+const {styles} = service;
+  return (   
+        <section className={`p-content-service ${styles["class-name"]}`}>
         <div className="c-s-interface-service">
-          <InterfaceService></InterfaceService>
+          <InterfaceService/>
         </div>
         <div className="c-s-details-service">
         <section className="d-s-information-service">
-            <InformationService></InformationService>
+            <InformationService/>
         </section>
         <section className='d-s-galery-service'>        
-          <Valores></Valores>     
+          <Valores/>     
           <div className='d-s-content-galery-service'>
-          <GaleryDetails></GaleryDetails>
+          <GaleryDetails/>
           </div>    
         </section>
         <section className="d-s-promotions-service">
-          <PromotionService></PromotionService>
+          <PromotionService/>
         </section>
         </div>
         </section>
-    </ServiceProvider>
 
   )
 }

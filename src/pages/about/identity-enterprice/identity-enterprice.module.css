@@ -1,0 +1,44 @@
+:root{
+    --size-img:35vh;
+    --space-img:2rem;
+}
+.content-identity-enterprice{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+/* CONTENEDOR GENERAL */
+.mision-vision{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    width: 75vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-img);
+}
+
+
+
+/* LOGO */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{ 
+        height: var(--size-img);
+    }
+
+}
+
+

@@ -12,3 +12,25 @@
     height: 100%;
 }
 
+@media (max-width: 200vh) {
+  .footer-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    min-height: auto;
+    height: auto;
+  }
+  .footer-content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+  }
+}
+

@@ -1,0 +1,10 @@
+:root{
+    --space-linear:0.2rem;
+}
+
+.gallery-container{
+   display: inline-block;
+   /* background-color: black; */
+   width: 200vh;
+   height: auto;
+}

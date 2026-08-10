@@ -1,0 +1,49 @@
+.close{
+    display: contents;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.531);
+    
+
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+}
+.modal-content > * {
+   height: 75vh;
+   max-width: 80%;
+} 
+
+.close-buttom{
+   position:absolute;
+   top: 0;
+   left: 90%;
+   padding: 0.3rem;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   font-size: medium;
+   color: aliceblue;
+   background-color: rgba(255, 255, 255, 0);
+}
+.close-buttom:hover{
+    background-color: rgba(98, 85, 85, 0.78);
+    color: aliceblue;
+}

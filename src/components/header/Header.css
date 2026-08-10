@@ -9,10 +9,8 @@ header {
   display: flex;
   flex: 0 1 15vh;
   flex-direction: row;
-  /* height: 3%; */
   background-color: var(--primary-b-black);
-  color: blanchedalmond;
-  /* padding: 0.5%; */
+  flex-wrap: wrap;
 }
 .item-header {
   padding: 0;

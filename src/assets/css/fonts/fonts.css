@@ -231,7 +231,14 @@ codigo de colores de uso interno segun brand
     font-family: 'Rubik';
     font-weight: 500;
 }
-
+.details{
+    text-align: justify;
+    line-height: 23px;
+    color: white;
+    p{
+        margin-top: 1.5rem;
+    }
+}
 /* Ejemplos de utilidad: clases responsivas pequeñas */
 @media (max-width: 768px) {
   :root {

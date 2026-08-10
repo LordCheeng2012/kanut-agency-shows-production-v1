@@ -23,18 +23,16 @@ export const Header = () => {
             <p>Nosotros</p>
             <div className="line-link" />
           </a>
-          <a
-            href="/Service"
+          <div
             className="item-list"
             data-drop-down-menu
-            onClick={(e)=>e.preventDefault()}
             onMouseEnter={(e) =>deploy({e,seteableState: setDesplegableItem})}
             onMouseLeave={(e)=>close({e,seteableState:setDesplegableItem})}
             >
             <p>Servicios</p>
             <div className="disabled" />
             {desplegableItem}
-          </a>
+          </div>
           <a href="/Contact" className="item-list">
             <p>Contactenos</p>
             <div className="line-link" />

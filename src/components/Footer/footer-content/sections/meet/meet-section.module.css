@@ -23,3 +23,25 @@ section,ul{
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 200vh) {
+
+  .meet-section{gap: 1rem;}  
+  .section-reserved{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .section-reserved img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .social-points-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}

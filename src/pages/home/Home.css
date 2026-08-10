@@ -2,7 +2,7 @@
 .carousel-history {   
     display: flex;
     flex-direction: column;
-    height: 210vh; 
+    flex-wrap: wrap;
 }
 
 .about-section{

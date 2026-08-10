@@ -7,7 +7,7 @@ import { Carousel } from "../../../components/contents/carousel/carousel.jsx"
 export const SectionComments = () => {
   const {fonts} = paths(); 
   const items = prepareItems().result.map((items, index) => {
-    console.log(items);
+  
   return (
     <li className="cc-item" key={index}>
       {items.map((i, subIndex) => (
