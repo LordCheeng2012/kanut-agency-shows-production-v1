@@ -1,15 +1,13 @@
 import './Contact.css'
-import 
-{ 
+import {
   Input,
   InputSelect,
   InputCalendario,
   TextArea,
-  InputFile
-} 
-  from '../../components/inputs/Inputs.jsx';
-import { paths } from '../../config/config.js';
-import { Button } from '../../components/buttons/Button.jsx';
+  InputFile,
+  Button
+} from '@components';
+import paths from '@absolute/config';
 const {services} = paths();
 export const Contact = () => {
   return (

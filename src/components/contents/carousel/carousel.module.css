@@ -29,7 +29,7 @@
    transition: margin-left 1s;
    /* animation: slice-animation 10s alternate infinite ease-in-out; */
 }
-.carousel-content ul > li {
+.carousel-content ul > * {
     width: 100%;
     position: relative;
 }

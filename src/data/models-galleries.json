@@ -3,30 +3,74 @@
     "total-items": 11,
     "model": [
       {
-        "model-name": "slice",
+        "model-name": "template-rows-3-slice-3",
         "items": [],
         "min-items": 3
       },
       {
-        "model-name": "template",
+        "model-name": "template-rows-3-2lg-3md",
         "items": [],
-        "min-items":4,
-        "sub-items":{
-          "items":[1,2],
+        "min-items": 4,
+        "sub-items": {
+          "items": [1, 2],
           "position": 1
         }
       },
       {
-        "model-name": "slice-m",
+        "model-name": "template-rows-2-slice-2",
         "items": [],
         "min-items": 2
       },
       {
-        "model-name": "template-row",
+        "model-name": "template-rows-2",
+        "items": [],
+        "min-items": 2
+      }
+    ]
+  },
+  "kanut-party": {
+    "total-items": 10,
+    "model": [
+      {
+        "model-name": "template-rows-3-slice-3",
+        "items": [],
+        "min-items": 3
+      },
+      {
+        "model-name": "template-rows-3-2lg-3md",
+        "items": [],
+        "min-items": 3
+      },
+      {
+        "model-name": "template-rows-2-slice-2",
+        "items": [],
+        "min-items": 2
+      },
+      {
+        "model-name": "template-rows-2",
+        "items": [],
+        "min-items": 2
+      }
+    ]
+  },
+  "kanut-shows": {
+    "total-items": 9,
+    "model": [
+      {
+        "model-name": "template-rows-4",
+        "items": [],
+        "min-items": 4
+      },
+      {
+        "model-name": "template-rows-3-2lg-3md",
+        "items": [],
+        "min-items": 3
+      },
+      {
+        "model-name": "template-rows-2",
         "items": [],
         "min-items": 2
       }
     ]
   }
-  
 }

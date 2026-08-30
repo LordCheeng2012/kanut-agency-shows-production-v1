@@ -1,5 +1,5 @@
+import { Valores } from "@components";
 import styles from "./identity-enterprice.module.css"
-import  Valores  from '@components/contents/valores';
 import ball from "@imgs/icons/air-balloon.png"
 import cupcakge from "@imgs/icons/cupcakge.png"
  function IdentityEnterprice() {

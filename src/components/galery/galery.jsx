@@ -1,35 +1,78 @@
-import GaleryItem from "@components/galery-item";
+import {
+  Carousel,
+  GaleryItem,
+  GridContainer,
+  Modal,
+  Container,
+} from "@components";
 import styles from "./galery.module.css";
-import GetModelGalery from "@absolute/services";
-import GridContainer from "@components/grid-container";
+import { useServiceDetails } from "@absolute/hooks";
+import { useState } from "react";
 
-function Galery({ serviceName }) {
-  const ListGalery = GetModelGalery(serviceName);
-  console.log(ListGalery);
+function Galery() {
+  const { gallery, ListImages } = useServiceDetails();
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [open, setOpen] = useState(false);
+  const getCurrentIndex = (Currentpath) => {
+    const findIndex = ListImages.findIndex(({ url }) => url === Currentpath);
+    return findIndex || 0;
+  };
+  const openModal = (currentPath) => {
+    setOpen(true);
+    setCurrentIndex(getCurrentIndex(currentPath));
+  };
+  const contentModal = (
+    <Carousel
+      automatic={false}
+      items={ListImages.map(({ url, alt }) => (
+        <Container size="ex-lg">
+          <GaleryItem path={url} alt={alt} display="countain" />
+        </Container>
+      ))}
+      startIn={currentIndex}
+    />
+  );
   return (
-    <div className={styles["gallery-container"]}>
-      {ListGalery.map((model) => {
-        const items = model["items"];
-        const nameModel = model["model-name"];
-        return (
-          <GridContainer modelName={nameModel}>
-            {items.map((item) => {
-              if (Array.isArray(item))
+    <>
+      <div className={styles["gallery-container"]}>
+        {gallery.map((model) => {
+          const items = model["items"];
+          const nameModel = model["model-name"];
+          return (
+            <GridContainer modelName={nameModel}>
+              {items.map((item) => {
+                if (Array.isArray(item))
+                  return (
+                    <GridContainer modelName="apilate">
+                      {item.map(({ url, alt }) => (
+                        <GaleryItem
+                          onClick={() => openModal(url)}
+                          path={url}
+                          alt={alt}
+                          display="cover"
+                        />
+                      ))}
+                    </GridContainer>
+                  );
+                const { url, alt } = item;
                 return (
-                  <GridContainer modelName="apilate">
-                    {item.map(({ url, alt }) => (
-                      <GaleryItem path={url} alt={alt} />
-                    ))}
-
-                  </GridContainer>
+                  <GaleryItem
+                    onClick={() => openModal(url)}
+                    path={url}
+                    alt={alt}
+                    display="cover"
+                  />
                 );
-              const {url,alt} = item;  
-              return <GaleryItem path={url} alt={alt} />;
-            })}
-          </GridContainer>
-        );
-      })}
-    </div>
+              })}
+            </GridContainer>
+          );
+        })}
+      </div>
+      <Modal
+        handleOpenModalState={{handle:open,setHandle:setOpen}}
+        contentModal={contentModal}
+      />
+    </>
   );
 }
 

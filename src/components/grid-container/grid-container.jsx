@@ -11,12 +11,13 @@ function GridContainer({
 }) {
   const refGridContainer = useRef(null);
   useEffect(() => {
-
+    if(!modelName){
       Gridconfig({
       ref: refGridContainer,
       columns,
       rows,
     });
+    }
     
   }, []);
   return (

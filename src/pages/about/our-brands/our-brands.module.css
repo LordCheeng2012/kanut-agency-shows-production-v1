@@ -14,7 +14,6 @@
 .brands-content{
     display: inline-block;
     padding: var(--space-content);
-    height: 70vh;
     /* background-color: rgb(129, 129, 130); */
 }
 
@@ -37,6 +36,7 @@
     padding: var(--space-content);
     font-size: 1.4rem;
     padding-inline: 5rem;
-    line-height: 2.5rem;
+    line-height: 0.1rem;
+    font-weight: 400;
 }
 

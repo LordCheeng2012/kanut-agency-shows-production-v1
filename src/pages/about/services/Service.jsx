@@ -1,13 +1,10 @@
-import { TitleService } from "@components/contents/service/TitleService.jsx";
-import { GenerateGrid } from "@components/sections/grid-galery/GenerateGrid.jsx";
-import { paths } from "../../../config/config.js";
-import { useContext } from "react";
-import { ServiceContext } from "@absolute/context/services"; 
+import paths from '@absolute/config';
+import { GenerateGrid, TitleService } from "@components";
 import "./Service.css";
+import { useServices } from "@absolute/hooks";
 export const Service = () => {
   const { transitions } = paths();
-
-  const {service} = useContext(ServiceContext);  
+  const {service} = useServices();
   const { name, styles } = service;
 
   return (
@@ -44,7 +41,7 @@ export const Service = () => {
 
         <section className="galery-container">
           {/* definir un contexto galery para que la grilla carge las imagenes */}
-          <GenerateGrid></GenerateGrid>
+         <GenerateGrid/>
         </section>
       </div>
     </section>

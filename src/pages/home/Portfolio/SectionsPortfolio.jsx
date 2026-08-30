@@ -2,7 +2,7 @@ import { CardItem } from '../../../components/contents/cards/Card.jsx';
 import './SectionPortfolio.css';
 import data from "../../../data/portafolio.json"
 import { utils } from '../../../utils/utils.js';
-import { paths } from '../../../config/config.js';
+import paths from '@absolute/config';
 
 export const SectionsPortfolio = () => {
   const {banners} = paths();

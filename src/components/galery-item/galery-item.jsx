@@ -1,15 +1,18 @@
 import styles from "./galery-item.module.css";
-import Modal from "@components/modal/modal";
-function GaleryItem({ size="sm", path, alt }) {
+function GaleryItem({ 
+   size = "sm",
+   path,
+   alt,
+   onClick = undefined ,
+   display=false}) {
 
   return (
-   <Modal>
-     <img
-      className={`${styles["galery-item"]} ${styles[`${size}`]}`}
-      src={path}
-      alt={alt}
-    />
-   </Modal>
+      <img
+        onClick={onClick}
+        className={`${styles["galery-item"]} ${styles[`${size}`]} ${ display && styles[display]}`}
+        src={path}
+        alt={alt}
+      />
   );
 }
 

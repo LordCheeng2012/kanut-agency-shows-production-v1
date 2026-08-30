@@ -3,26 +3,19 @@ import { utils } from "@utils/utils";
 import styles from "./modal.module.css";
 const { isvalid_ref_element } = utils();
 
-function Modal({ children }) {
+function Modal({ 
+  children=null, 
+  contentModal = null,
+  handleOpenModalState = {
+    handle:false,
+    setHandle: undefined
+  } }) {
+
   const refModal = useRef(null);
   const refContentModal = useRef(null);
+  const {handle,setHandle} = handleOpenModalState; 
   const [show, setShow] = useState(false);
-
-  function handleOpen(event) {
-    event?.stopPropagation();
-    setShow(true);
-  }
-
-  function handleClose(event) {
-    event?.stopPropagation();
-    setShow(false);
-  }
-
-  function handleContentClick(event) {
-    event?.stopPropagation();
-  }
-
-  useEffect(() => {
+  const OpenModal = () => {
     if (!isvalid_ref_element(refModal) || !isvalid_ref_element(refContentModal))
       return;
     const modal = refModal.current;
@@ -30,14 +23,32 @@ function Modal({ children }) {
     if (show) {
       modal.classList.toggle(`${styles["modal"]}`);
       contentModal.classList.toggle(`${styles["modal-content"]}`);
-      return console.log(`modal is show`);
+      return ;
     }
     modal.classList.remove(`${styles["modal"]}`);
     contentModal.classList.remove(`${styles["modal-content"]}`);
-    return console.log("close modal show");
-  }, [show]);
+    return ;
+  };
 
-  return (
+  function handleOpen(event) {
+    event?.stopPropagation();
+    !handle  && setShow(true);
+  }
+
+  function handleClose(event) {
+    event?.stopPropagation();
+     setShow(false);
+     setHandle(false);
+
+  }
+
+  function handleContentClick(event) {
+    event?.stopPropagation();
+  }
+  useEffect(()=>{ if(handle) setShow(true)},[handle]);
+  useEffect(() => { OpenModal();}, [show]);
+
+  return  (
     <div
       className={styles["close"]}
       onClick={show ? undefined : handleOpen}
@@ -56,9 +67,10 @@ function Modal({ children }) {
           <></>
         )}
         {children}
+        {show && contentModal}
       </div>
     </div>
-  );
+  ) ;
 }
 
 export default Modal;

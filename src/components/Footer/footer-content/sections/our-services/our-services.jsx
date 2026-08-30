@@ -1,10 +1,10 @@
 import styles from "./our-services.module.css";
 import stylesParent from "../../../footer.module.css"
-import { useContext } from "react";
-import { ServiceContext } from "@absolute/context/services";
+import { useServices } from "@absolute/hooks";
+
 
 function OurServices({className=""}) {
-  const {getServices} = useContext(ServiceContext);
+  const {getServices} = useServices();
 
   return (
     <div

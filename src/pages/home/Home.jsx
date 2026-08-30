@@ -1,10 +1,8 @@
 import "./home.css";
-import { History } from "@components/contents/history/History.jsx";
+import { History, Carousel, Button } from "@components";
 import { SectionsAbout } from "./about/SectionsAbout.jsx";
 import { SectionsPortfolio } from "./portfolio/SectionsPortfolio.jsx";
 import { SectionComments } from "./comments/section-comments.jsx";
-import { Carousel } from "../../components/contents/carousel/carousel.jsx";
-import { Button } from "../../components/buttons/Button.jsx";
 
 export const Home = () => {
   const items = [

@@ -1,0 +1,28 @@
+.container{
+ padding: 0.2rem;
+ cursor: pointer;
+ /* background-color: brown; */
+ display: flex;
+ flex: 1 0 1%;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.sm{
+   height: 15vh;
+   width: 15vh; 
+}
+.md{
+   height: 30vh;
+   width: 30vh; 
+}
+.lg{
+   height: 50vh;
+   width: 50vh; 
+}
+.ex-lg{
+   height: auto;
+   width: 100vh; 
+}

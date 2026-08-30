@@ -1,6 +1,6 @@
-import ModelsGalleries from "@data/models-galleries.json";
 import { utils } from "@utils/utils";
 const { isnull_undf, deleteItemArray } = utils();
+
 function GetGalleriesPath(service) {
   // en un componente React
   const modules = import.meta.glob("/src/assets/imgs/galery/**/*.{webp,png}", {
@@ -37,9 +37,9 @@ function hydrateSubItems(itemModel, items) {
   return newItems;
 }
 
-function GetModelGalery(service) {
-  const model = ModelsGalleries[service].model;
-  if (!Array.isArray(model)) return;
+function GetModelGalery(service, model) {
+  if (!Array.isArray(model) || isnull_undf(service) || isnull_undf(model))
+    return;
   let initIndex = 0;
 
   const hydrateModel = model.map((itemModel) => {
@@ -56,8 +56,15 @@ function GetModelGalery(service) {
     itemModel.items = items;
     return itemModel;
   });
-
   return hydrateModel;
 }
 
-export default GetModelGalery;
+function GaleryService(service,model) {
+  return {
+    model:GetModelGalery(service,model),
+    ListImages:GetGalleriesPath(service)
+  }
+  
+}
+export default GaleryService;
+

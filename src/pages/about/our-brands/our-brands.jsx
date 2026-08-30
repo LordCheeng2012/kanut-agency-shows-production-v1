@@ -1,15 +1,14 @@
 import CardAnimate from "@components/contents/animate-cart-item";
 import styles from "./our-brands.module.css";
-import { paths } from "@absolute/config/config";
-import { useState,useContext } from "react";
-import {ServiceContext} from "@absolute/context/services";
+import paths from '@absolute/config';
+import { useState } from "react";
 import Galery from "@components/galery";
+import { useServices } from "@absolute/hooks";
 
 
 function OurBrands() {
-    
   const { services: path } = paths();
-  const {service,getPrimaryServices} = useContext(ServiceContext);
+  const {service,getPrimaryServices} = useServices();
 
   const listServices = getPrimaryServices().map((s) => {
     return { path: `${path}/${s}.webp`, name: `${s}` };
@@ -50,10 +49,10 @@ function OurBrands() {
           ))}
         </ul>
         <div className={`${styles["description___brand"]} details kanut-description-altern-strong`}>
-          {service["details"]["descriptions"]}
+          {service["details"]["descriptions"].map((description)=><p>{description}</p>)}
         </div>
       </section>   
-      <Galery serviceName={service.name}/>
+      <Galery/>
     </section>
   );
 }

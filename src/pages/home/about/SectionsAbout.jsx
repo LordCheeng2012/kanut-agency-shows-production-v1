@@ -1,5 +1,5 @@
-import { paths } from '../../../config/config.js'
-import { Button } from '@components/buttons/Button.jsx' 
+import  paths  from '@absolute/config'
+import { Button } from '@components' 
 import './SectionsAbout.css'
 export const SectionsAbout = () => {
  const {teams} = paths();

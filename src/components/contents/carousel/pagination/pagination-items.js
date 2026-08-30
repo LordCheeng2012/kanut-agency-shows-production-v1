@@ -1,5 +1,5 @@
 import { utils } from "../../../../utils/utils";
-import styles from "./index-items.module.css";
+import styles from "./pagination.module.css";
 
 const { isnull_undf } = utils();
 
@@ -49,7 +49,7 @@ export const _getCurrentIndex = (refIndexs) => {
     return !isnull_undf(isCurrent); // ✅ Retorna true cuando SÍ existe el atributo
   });
 
-  if (currentIndex === -1) {
+  if (!currentIndex || currentIndex < 0) {
     console.log("no se encontro indice actual,restableciendo indice --- > 0");
     return 0;
   }

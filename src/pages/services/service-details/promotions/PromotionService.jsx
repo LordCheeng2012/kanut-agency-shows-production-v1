@@ -1,6 +1,5 @@
 import { Button } from "@components/buttons/Button"
-import { useContext } from 'react';
-import {ServiceContext} from "@absolute/context/services";
+import { useServices } from "@absolute/hooks"
 import './PromotionService.css'
 
  const TypeService = ({service={
@@ -28,9 +27,8 @@ import './PromotionService.css'
 }
 
 export const PromotionService = () => {
-const {service} = useContext(ServiceContext);
+const {service} = useServices();
 const colorButton = service["styles"]["button-class"];
-console.log("contexto de servicio cargado : ",colorButton);
 
   return (
     <div className="promotion-content-service">

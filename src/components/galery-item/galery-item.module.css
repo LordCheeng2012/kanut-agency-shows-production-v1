@@ -1,13 +1,18 @@
 :root{
   --size :stretch; ;
   --default-size :100%;
---time:0.2s;
+  --time-animate:0.2s;
 }
 .galery-item{
  display: inline-block;
- object-fit: cover;
  cursor: pointer;
- transition: padding var(--time) ease;
+ transition: padding var(--time-animate) ease;
+}
+.cover{
+    object-fit: cover;
+}
+.countain{
+object-fit: contain;
 }
 .galery-item:hover{
     padding: 3px;
@@ -21,7 +26,7 @@
     width: 80vh; 
 }
 .lg{
-    height:80vh;
+    height:100vh;
     width: var(--default-size);; 
 }
 

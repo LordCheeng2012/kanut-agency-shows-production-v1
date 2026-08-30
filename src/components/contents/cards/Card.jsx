@@ -1,6 +1,5 @@
+import paths from '@absolute/config';
 import './Card.css'
-
-import { paths } from '../../../config/config.js';
 const {clients} = paths();
 export const Card =  ({data = {title:"dummy-title",img:null, descriptions:[],color:"red",autor:"" }})=> {
   const path =`${clients}/${data.img}`;

@@ -1,8 +1,9 @@
 import { useState } from "react";
-import "./Header.css";
 import { deploy, close } from "./drop-down-item/drop-down-item.jsx";
 import kanut from "@imgs/kanut.png"
-export const Header = () => {
+import "./Header.css";
+
+ function Header (){
   const [desplegableItem, setDesplegableItem] = useState(null);
   return (
     <header>
@@ -50,3 +51,4 @@ export const Header = () => {
     </header>
   );
 };
+export default Header;

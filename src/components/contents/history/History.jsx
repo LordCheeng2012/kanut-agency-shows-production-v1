@@ -1,10 +1,11 @@
-import { paths } from "../../../config/config.js";
+
 import ItemService from "@components/contents/service/ItemService.jsx";
-const { fonts } = paths();
 import styles from  "./history.module.css";
+import paths from "@absolute/config";
 
 
 export const History = () => {
+  const { fonts } = paths();
   return (
     <div className={`${styles["history"]} ${styles["history-point"]}`}>
       <div className={styles["item-title-history"]}>
