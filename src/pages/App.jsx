@@ -13,28 +13,27 @@ import { History1 } from "./Portfolio-events/Historia1.jsx";
 import { History3 } from "./Portfolio-events/Historia3.jsx";
 import { History4 } from "./Portfolio-events/Historia4.jsx";
 import { History2 } from "./Portfolio-events/Historia2.jsx";
+import RootLayout from "@components/root-layout";
+import { NotFoundPage } from "./not-found";
 
 export const App = () => {
-  return (
-    <main>
-      <Header/>
-      <section id="content-page">
+  return (  
        <Routes>
-        <Route path='/' element = {<Home/>}/>
-        <Route path='/About' element= {<About/>}/>
-        <Route path='/Home' element = {<Home/>}/>
-        <Route path='/Service' element = {<Services/>}/>
-        <Route path='/Contact' element = {<Contact/>}/>
-        <Route path='/bolsa' element = {<BolsaTrabajo/>}/>
-        <Route path='/test' element = {<Service/>}/>
-        <Route path='/Historia2' element={<History2 />} />
-        <Route path='/Historia3'element={<History3 />} />
-        <Route path='/Historia1' element={<History1 />} />
-        <Route path='/Historia4' element={<History4 />}/>
+          <Route element={<RootLayout/>}>
+            <Route path='/' element = {<Home/>}/>
+            <Route path='/About' element= {<About/>}/>
+            <Route path='/Home' element = {<Home/>}/>
+            <Route path='/Service' element = {<Services/>}/>
+            <Route path='/Contact' element = {<Contact/>}/>
+            <Route path='/bolsa' element = {<BolsaTrabajo/>}/>
+            <Route path='/test' element = {<Service/>}/>
+            <Route path='/Historia2' element={<History2 />} />
+            <Route path='/Historia3'element={<History3 />} />
+            <Route path='/Historia1' element={<History1 />} />
+            <Route path='/Historia4' element={<History4 />}/>
+            <Route path="*" element={<NotFoundPage/>}/>
+          </Route>
         </Routes>
-      </section>
-      <Footer/>
-    </main>
   );
 };
 
