@@ -16,5 +16,5 @@ export { default as ItemService } from "./contents/service/ItemService";
 export { TitleService } from "./contents/service/TitleService";
 export { default as Valores } from "./contents/valores/valores";
 export { GenerateGrid } from "./sections/grid-galery/GenerateGrid";
-export { default as Signature } from "./footer/signa-content/signature";
 export { default as Container} from "./container"
+export {default as fallbackError} from "./fallback-error"
