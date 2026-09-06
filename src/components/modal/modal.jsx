@@ -6,14 +6,14 @@ const { isvalid_ref_element } = utils();
 function Modal({ 
   children=null, 
   contentModal = null,
-  handleOpenModalState = {
+  setModalState = {
     handle:false,
     setHandle: undefined
   } }) {
 
   const refModal = useRef(null);
   const refContentModal = useRef(null);
-  const {handle,setHandle} = handleOpenModalState; 
+  const {handle,setHandle} = setModalState; 
   const [show, setShow] = useState(false);
   const OpenModal = () => {
     if (!isvalid_ref_element(refModal) || !isvalid_ref_element(refContentModal))

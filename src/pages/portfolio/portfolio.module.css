@@ -1,0 +1,52 @@
+.content-service {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-image-service {
+  width: 100%;
+}
+
+.content-image-service img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-bottom: 4px solid transparent;
+}
+
+.project-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.description-service-content {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* descripción */
+.project-container p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 900px;
+  color: black;
+  font-weight: 550;
+}
+
+.galery-container {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

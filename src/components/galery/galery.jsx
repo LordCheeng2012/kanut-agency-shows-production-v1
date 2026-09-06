@@ -8,9 +8,18 @@ import {
 import styles from "./galery.module.css";
 import { useServiceDetails } from "@absolute/hooks";
 import { useState } from "react";
-
-function Galery() {
-  const { gallery, ListImages } = useServiceDetails();
+import { utils } from "@utils/utils";
+function Galery({ gallery = null, ListImages = [] }) {
+  const { isnull_undf } = utils();
+  if (
+    isnull_undf(gallery) ||
+    isnull_undf(ListImages) ||
+    ListImages.length == 0
+  ) {
+    const ServiceContext = useServiceDetails();
+    gallery = ServiceContext.gallery;
+    ListImages = ServiceContext.ListImages;
+  }
   const [currentIndex, setCurrentIndex] = useState(0);
   const [open, setOpen] = useState(false);
   const getCurrentIndex = (Currentpath) => {
@@ -69,7 +78,7 @@ function Galery() {
         })}
       </div>
       <Modal
-        handleOpenModalState={{handle:open,setHandle:setOpen}}
+        setModalState={{ handle: open, setHandle: setOpen }}
         contentModal={contentModal}
       />
     </>

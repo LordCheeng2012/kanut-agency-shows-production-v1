@@ -1,7 +1,7 @@
 import "./home.css";
 import { History, Carousel, Button } from "@components";
 import { SectionsAbout } from "./about/SectionsAbout.jsx";
-import { SectionsPortfolio } from "./portfolio/SectionsPortfolio.jsx";
+import { PortfolioContent } from "./portfolio/portfolio-content.jsx";
 import { SectionComments } from "./comments/section-comments.jsx";
 
 export const Home = () => {
@@ -38,7 +38,7 @@ export const Home = () => {
         <SectionsAbout />
       </div>
       <div className="portfolio-section">
-        <SectionsPortfolio />
+        <PortfolioContent />
       </div>
       <div className="comments-section">
         <SectionComments />

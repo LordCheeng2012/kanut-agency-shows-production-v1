@@ -8,15 +8,12 @@ import { About } from "./about/about.jsx";
 import { Services } from "./services/Services.jsx";
 import { Contact } from "./contact/Contact.jsx";
 import { BolsaTrabajo } from "./bolsa/bolsa.jsx";
-import { Service } from "./about/services/Service.jsx";
-import { History1 } from "./Portfolio-events/Historia1.jsx";
-import { History3 } from "./Portfolio-events/Historia3.jsx";
-import { History4 } from "./Portfolio-events/Historia4.jsx";
-import { History2 } from "./Portfolio-events/Historia2.jsx";
 import RootLayout from "@components/root-layout";
 import { NotFoundPage } from "./not-found";
+import Portfolio from "./portfolio";
 
 export const App = () => {
+
   return (  
        <Routes>
           <Route element={<RootLayout/>}>
@@ -26,11 +23,7 @@ export const App = () => {
             <Route path='/Service' element = {<Services/>}/>
             <Route path='/Contact' element = {<Contact/>}/>
             <Route path='/bolsa' element = {<BolsaTrabajo/>}/>
-            <Route path='/test' element = {<Service/>}/>
-            <Route path='/Historia2' element={<History2 />} />
-            <Route path='/Historia3'element={<History3 />} />
-            <Route path='/Historia1' element={<History1 />} />
-            <Route path='/Historia4' element={<History4 />}/>
+            <Route path="/Portfolio/:projectId" element = {<Portfolio/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
           </Route>
         </Routes>

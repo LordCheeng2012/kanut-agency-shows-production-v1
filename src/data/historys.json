@@ -1,0 +1,65 @@
+[
+    {
+        "id":1,
+        "name":"Adios a la dulce niña",
+        "history-name":"Quince años de Ariana",
+        "from-service":"kanut-party",
+        "gallery":{
+          "name":"project-1",
+          "model":"default",
+         "total-items":14
+        },
+        "img":"birday15.png",
+        "details":[
+          "¡Hay celebraciones que no solo marcan una fecha, sino también una etapa de la vida! Así fue el quinceañero de Arina, ¡un momento lleno de simbolismo, emoción y belleza!, donde cada detalle acompañó su paso de la niñez a una nueva versión de sí misma.",
+          "Arina acababa de cerrar una de las etapas más importantes de su vida... ¡la secundaria! Y con ella, también se despedía de esa niña que creció entre juegos, sueños y juguetes que guardaron sus primeras alegrías.",
+          "Para un momento así, ¡el escenario no podía ser cualquiera! Su fiesta no fue pensada entre cuatro paredes, sino en el campo... rodeada de aire libre, naturaleza y esa maravillosa sensación de libertad que hacía todo aún más especial. ¡El entorno parecía hablar su mismo idioma!",
+          "Su vestido verde capturaba con delicadeza su amor por la naturaleza, mientras los tonos rosados dejaban ver la ternura de la niña que, poco a poco, iba quedando atrás. ¡Cada color tenía algo hermoso que decir! ¡Cada rincón contaba una parte viva de su historia!",
+          "La celebración tuvo ese equilibrio perfecto entre glamour y calidez. Elegante, ¡sí!, pero también inmensamente auténtica. Las sonrisas que aparecen en cada fotografía no solo muestran lo hermosa que lucía, sino la felicidad inmensa de una joven viviendo uno de esos días... ¡que se quedan impresos para siempre en el corazón!",
+          "¡Hubo tanta emoción en las miradas, alegría en cada abrazo y una energía luminosa que convirtió la velada en algo muchísimo más grande que una fiesta! Fue un verdadero homenaje a su juventud, a sus sueños y a todo lo hermoso que comienza justo cuando se cumplen quinceaños.",
+          "Detrás de esa atmósfera inolvidable... ¡hubo tiempo, dedicación y cariño! Cinco meses de planificación hicieron posible una celebración pensada con infinito detalle, sensibilidad y mucha ilusión... Todo esto para lograr algo muy importante: ¡que cada instante se sintiera tan único y especial como Arina!.",
+          "Cada detalle, desde la elección del lugar hasta la armonía de los colores, fue pensado para reflejar su personalidad y la emoción de una etapa que nunca olvidará. Fue una noche donde la naturaleza, la elegancia y el cariño se unieron para crear un recuerdo inolvidable."
+        ]
+
+    },
+    {   
+        "id":2,
+        "name": "Irving Y Valeria",
+        "history-name": "La Boda que Nos Regaló un Latido Más",
+        "from-service": "kanut-boda",
+        "gallery":{
+          "name":"project-1",
+          "model":"default",
+         "total-items":0
+        },
+        "img":"boda.png",
+        "details": [
+          "A veces, una simple llamada es el inicio de la aventura más grande de nuestras vidas. Así fue como conocimos a Irving, piloto de la FAP, y a Valeria, estudiante de Economía. Tenían la misma edad, pero sobre todo, el mismo sueño: construir una vida juntos sin complicaciones, pero con un amor que le diera sentido a todo.",
+          "Querían una boda pequeña, íntima y muy auténtica. Nada exagerado; solo algo bonito, pero imposible de olvidar. Buscaron, compararon, preguntaron en muchos lugares. Sin embargo, sentían que nadie entendía lo que realmente querían: una experiencia que se sintiera como ellos. Hasta que llegaron a nosotros.",
+          "En nuestra primera conversación definimos lo esencial: cercanía, emoción y calidez familiar. Pero días después, Valeria nos escribió en privado. Había algo más; algo que cambiaría por completo la historia: ella estaba embarazada y Irving no lo sabía.",
+          "Ahí entendimos que ya no estábamos organizando solo una boda; estábamos construyendo un momento que dividiría sus vidas en un antes y un después.",
+          "Reestructuramos cada detalle. No solo pensamos en cómo se sentirían ellos al dar el sí, sino en cómo debía sentirse el aire cuando llegara la revelación. La música, los tiempos, la iluminación, las miradas cómplices… todo tenía que guiar hacia ese instante.",
+          "Y el momento llegó. Entre sonrisas nerviosas y miradas curiosas, la sorpresa se reveló. El silencio duró apenas segundos antes de convertirse en lágrimas, abrazos y gritos de felicidad. Los invitados, muy conmovidos, levantaron a la novia entre aplausos e Irving, emocionado hasta lo más profundo, entendió que ese no era solo el inicio de un matrimonio.",
+          "Era el inicio de una familia. Ambos, orgullosos, celebraron rodeados de sus invitados, con esa alegría auténtica que no se puede actuar ni ensayar. Esa noche no solo se casaron... esa noche, el amor se multiplicó."
+        ]
+    },
+    {
+        "id":3,
+        "name": "Cuando la alegría encontró su mejor escenario",
+        "history-name": "Show Infantil en la Piscina",
+        "from-service": "kanut-shows",
+        "gallery":{
+          "name":"project-1",
+          "model":"default",
+           "total-items":0
+        },
+        "details": [
+          "Hay eventos que simplemente se organizan... ¡y hay otros que se sienten desde el primer instante! Así fue esta celebración por el Día del Niño, una fecha que convirtió las instalaciones del Club Naranjos en un espacio lleno de energía, juego y... ¡mucha emoción compartida!",
+          "Desde muy temprano, el ambiente ya anunciaba algo especial: risas que iban creciendo, miradas curiosas, familias reunidas y niños listos para vivir una tarde distinta. ¡Cada rincón parecía preparado para despertar entusiasmo, sorpresa y esa felicidad auténtica que solo aparece cuando todo invita a disfrutar!",
+          "La celebración tuvo un ritmo propio: dinámico, alegre y lleno de vida. La animación, la espontaneidad de los payasos y la vibra festiva de la jornada hicieron que la experiencia se sintiera cercana, cálida y memorable. No era solo una actividad más por el Día del Niño... ¡era una invitación abierta a jugar, compartir y dejarse llevar por la emoción del momento!",
+          "Lo más bonito ocurrió de forma natural. Niños que no se conocían terminaron corriendo juntos, riendo como si fueran amigos de siempre y creando pequeños recuerdos en cuestión de minutos. Entre juegos, ocurrencias y carcajadas, el evento logró algo invaluable: transformar un espacio en un punto de encuentro donde la alegría se volvió colectiva.",
+          "Para Kanut Espectáculos, esta experiencia también marcó un inicio muy especial. Fue uno de esos momentos que confirman que la magia de un evento no está solo en lo que se ve... ¡sino en lo que despierta en las personas!",
+          "Y aquella tarde, lo que despertó fueron sonrisas sinceras, conexión y una celebración que, sin lugar a dudas, dejó huella."
+        ]
+    }
+]
