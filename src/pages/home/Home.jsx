@@ -7,21 +7,21 @@ import { SectionComments } from "./comments/section-comments.jsx";
 export const Home = () => {
   const items = [
     <>
-      <li className="background-boda center">
+      <li className="background-template background-boda center">
         <Button size="small" classname="free-content" type="blue">
           Informes
         </Button>
       </li>
     </>,
     <>
-      <li className="background-party center">
+      <li className="background-template background-party center">
         <Button size="small" classname="free-content" type="sky">
           Informes
         </Button>
       </li>
     </>,
     <>
-      <li className="background-shows center">
+      <li className="background-template background-shows center">
         <Button size="small" classname="free-content" type="primary">
           Informes
         </Button>
@@ -31,12 +31,10 @@ export const Home = () => {
   return (
     <>
       <div className="carousel-history">
-        <Carousel items={items} />
+        <Carousel automatic={false} items={items} />
         <History />
-      </div>
-      <div className="about-section">
+      </div>    
         <SectionsAbout />
-      </div>
       <div className="portfolio-section">
         <PortfolioContent />
       </div>

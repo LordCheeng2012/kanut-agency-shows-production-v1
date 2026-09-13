@@ -5,10 +5,6 @@
     flex-wrap: wrap;
 }
 
-.about-section{
-height: 130vh;
-}
-
 .portfolio-section{
 height: 150vh;
 max-height: 170vh;
@@ -21,6 +17,4 @@ display: flex;
 .free-content{
     position: absolute;
     bottom: 30%;
-    /* left: 40%;
-    right: 40%; */
 }

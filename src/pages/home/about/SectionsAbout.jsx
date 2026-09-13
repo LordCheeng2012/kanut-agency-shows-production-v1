@@ -5,9 +5,6 @@ export const SectionsAbout = () => {
  const {teams} = paths();
   return (
     <section className='about-content'>
-        <div className='a-c-item ac-content-title'>
-        
-        </div>
         <div className='a-c-item ac-about-details'>
             <section className='ab-item-detail'>
                 <div className='img-card'>
@@ -20,7 +17,8 @@ export const SectionsAbout = () => {
                 </div>
             </section>
             <section className = 'ab-item-detail details-text' >
-               <p className='kanut-description-altern'> <strong>Kanut</strong> nació como un acto de fe en el arte y en las personas.
+               <p className='kanut-description-altern'> 
+                <strong>Kanut</strong> nació como un acto de fe en el arte y en las personas.
                  Es la unión de caminos como el teatro, la danza y la música con un propósito 
                  claro: transformar emociones en experiencias que dejen huella. 
                  Más que un nombre, es una declaración de identidad, creación y movimiento.
@@ -52,9 +50,7 @@ export const SectionsAbout = () => {
             </section>
         </div>
         <div className='a-c-item ac-footer'>
-            <div className='btn-show-details'>
                 <Button size = "medium" >Saber mas</Button>
-            </div>
         </div>
             
     </section>

@@ -18,7 +18,7 @@ export const Carousel = ({
   const itemsCarousel = { carousel: refCarousel, indexs: refPagination ,totalItems:items.length};
 
   useEffect(() => {
-    automatic && toogleItems(refCarousel, refPagination);
+    automatic== true && toogleItems(refCarousel, refPagination);
     return () => undefined;
   }, []);
 

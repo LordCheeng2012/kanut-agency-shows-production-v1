@@ -7,7 +7,7 @@
     align-items: center;
     width: 100%;
     position: absolute;
-    bottom: 1%;
+    bottom: 0%;
 }
 .status-items  div  {
     background-color: var(--primary-griss);

@@ -26,6 +26,7 @@
     color: var(--segondary-blue-marine-ghost);
     background-color:var(--gray-white) ;
     margin:0;
+    font-weight: 800;
 }
 .nav-content a:nth-child(5){
 border-bottom: 0cm;

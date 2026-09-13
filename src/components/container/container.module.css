@@ -1,31 +1,35 @@
-.container{
- padding: 0.2rem;
- cursor: pointer;
- /* background-color: brown; */
- display: flex;
- flex: 1 0 1%;
- flex-wrap: wrap;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+.container {
+  padding: 0.2rem;
+  cursor: pointer;
+  /* background-color: brown; */
+  display: flex;
+  flex: 1 0 1%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.auto{
-   height: auto;
-   width: auto;
+.auto {
+  height: auto;
+  width: auto;
 }
-.sm{
-   height: 15vh;
-   width: 15vh; 
+.sm {
+  height: 15vh;
+  width: 15vh;
 }
-.md{
-   height: 30vh;
-   width: 30vh; 
+.md {
+  height: 30vh;
+  width: 30vh;
 }
-.lg{
-   height: 50vh;
-   width: 50vh; 
+.lg {
+  height: 50vh;
+  width: 50vh;
 }
 .ex-lg{
-   height: auto;
-   width: 100vh; 
+ height: 85vh;
+ width: 85vh;
+}
+.full{
+  height: 100vh;
+  width: 100vh;
 }
