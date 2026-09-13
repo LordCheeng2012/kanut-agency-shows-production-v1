@@ -69,8 +69,7 @@
   height: 70%;
   font-size: var(--size-text);
   text-align: justify;
-  padding-left: var(--padding-comments);
-  padding-right: var(--padding-comments);
+  padding-inline: var(--padding-comments);
   p{
     margin-bottom: 10px;
   }

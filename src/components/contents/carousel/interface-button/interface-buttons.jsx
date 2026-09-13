@@ -1,4 +1,4 @@
-import { ButtonCircle } from '../../../buttons/Button.jsx';
+import { ButtonCircle } from '@components';
 import { movePrev,moveNext } from './interface-buttons.js';
 
 import s from "./interface-buttons.module.css"

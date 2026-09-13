@@ -31,5 +31,21 @@
 }
 .full{
   height: 100vh;
-  width: 100vh;
+  width: 100%;
+}
+
+
+/* dimensiones width */
+
+.inline-sm{
+  max-height: 50vh;
+  width: 30%;
+}
+.inline-md{
+  max-height: 100vh;
+  width: 50%;
+}
+.inline-lg{
+  max-height: 200vh;
+  width: 100%;
 }

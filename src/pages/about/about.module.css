@@ -23,7 +23,6 @@ background-image: url('../../assets/imgs/backgrounds/about_marcas.png');
 background-repeat: no-repeat;
 background-size:contain;
 background-color: var(--primary-b-black);
-min-height: 350vh;
 padding-block: var(--space-content);
 }
 

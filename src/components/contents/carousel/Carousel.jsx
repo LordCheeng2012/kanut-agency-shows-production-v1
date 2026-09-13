@@ -3,10 +3,12 @@ import { Interface } from "./interface-button/interface-buttons.jsx";
 import { Pagination } from "./pagination/pagination.jsx";
 import { defWidth, toogleItems } from "./carousel-config.js";
 import { useEffect, useRef } from "react";
+import {Container} from "@components";
 export const Carousel = ({ 
   classname = "", 
   items=[], 
   automatic = true,
+  size = null,
   startIn = 0 }) => {
 
   if (!items || !Array.isArray(items))
@@ -23,7 +25,7 @@ export const Carousel = ({
   }, []);
 
   return (
-    <section className={`${s["carousel-content"]}`}>
+    <Container className={`${s["carousel-content"]}`} size={size || "full"}>
       <div ref={refCarousel} className={buildclass}>
         <Interface isghost={!automatic} refItemsCarousel={itemsCarousel} />
         <ul
@@ -36,6 +38,6 @@ export const Carousel = ({
         </ul>
         <Pagination ref={refPagination} startIn = {startIn}  items={items.length} />
       </div>
-    </section>
+    </Container>
   );
 };

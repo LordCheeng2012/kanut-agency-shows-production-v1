@@ -21,7 +21,7 @@ li.cc-item {
   flex-direction: row;
   gap: 15px;
   justify-content: center;
-  height: 80vh;
+  height: 100vh;
 }
 
 .content-comments > li.cc-item > div {
