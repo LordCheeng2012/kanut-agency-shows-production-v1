@@ -1,0 +1,113 @@
+:root {
+  --border-content: 10px;
+  --padding-align: 3rem;
+}
+.content-type {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  text-align: justify;
+}
+.title-promotion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 0.5rem;
+  h2.n-promotion {
+    font-size: 2rem;
+    font-style: oblique;
+    background-color: var(--kanut-boda-beich);
+    color: var(--kanut-boda-orange);
+    padding-inline: 4rem;
+    padding-block: 0.5rem;
+    border-radius: var(--border-content);
+  }
+}
+
+.img-content-type {
+  background-color: black;
+  border-radius: 10px;
+  margin: 10px;
+  height: 10vh;
+  width: 100%;
+}
+
+.description-promotion {
+  text-align: justify;
+  color: black;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  border-radius: var(--border-content);
+  background-color: var(--kanut-boda-beich);
+  position: relative;
+  padding: 1vh;
+  height: 130vh;
+  width: 25rem;
+  padding-block: 3rem;
+  align-items: normal;
+}
+
+.include-title {
+  position: absolute;
+  top: -1rem;
+  left: 2rem;
+  background-color: var(--kanut-boda-red);
+  color: var(--kanut-boda-beich);
+  padding-inline: 1rem;
+  padding-block: 5px;
+  border: 1px solid var(--kanut-boda-beich);
+  border-radius: 5px;
+}
+.includes-content {
+  cursor: pointer;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.includes-content > h2.type-category-section {
+  text-align: start;
+  width: 100%;
+  font-size: medium;
+  padding-inline: var(--padding-align);
+}
+.includes-content > ul {
+  list-style: disc;
+  margin-block: 10px;
+  font-size: small;
+  width: 100%;
+  padding-inline: var(--padding-align);
+}
+.description-promotion button {
+  width: 50%;
+  margin-top: 10%;
+  height: 6%;
+  font-size: medium;
+}
+.price-container {
+  margin-top: auto;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  font-style: oblique;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik';
+
+}
+.price-container > h2 {
+  padding-block: 0.1rem;
+  padding-inline: 0.6rem;
+  background-color: var(--kanut-boda-red);
+  color: var(--kanut-boda-beich);
+  border-radius: 5px;
+  font-weight: 300;
+}
+.price-container > h1 {
+  color:var(--kanut-boda-red);
+  font-size: xx-large;
+}

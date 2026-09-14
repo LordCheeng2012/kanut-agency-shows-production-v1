@@ -14,5 +14,6 @@ import GaleryService from "@absolute/services";
     ListImages,
     details: service?.details || {},
     styles: service?.styles || {},
+    promotions:appData.promotions[serviceType]
   };
 }

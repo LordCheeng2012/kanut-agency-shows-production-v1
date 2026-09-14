@@ -239,6 +239,19 @@ codigo de colores de uso interno segun brand
         margin-top: 1.5rem;
     }
 }
+.details-altern{
+    text-align: justify;
+    line-height: 23px;
+    color: white;
+    font-family:emoji;
+    p{
+        margin-top: 1.5rem;
+    }
+}
+.center-text{
+   font-size: medium;
+   text-align: center;
+}
 /* Ejemplos de utilidad: clases responsivas pequeñas */
 @media (max-width: 768px) {
   :root {

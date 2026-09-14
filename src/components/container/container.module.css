@@ -49,3 +49,22 @@
   max-height: 200vh;
   width: 100%;
 }
+
+/* dimensiones height  */
+
+.block-sm{
+  min-height: 10vh;
+  min-width: 30%;
+}
+.block-md{
+  height: 50vh;
+  min-width: 50%;
+}
+.block-md-lg{
+  height: 70vh;
+  min-width: 80%;
+}
+.block-lg {
+  height: 100vh;
+  max-width: 100%;
+}

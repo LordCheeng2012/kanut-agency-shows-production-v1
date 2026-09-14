@@ -2,3 +2,14 @@
     border: 1px solid var(--primary-griss);
     margin: 1rem;
 }
+
+.interrumped{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   h2{
+    color: var(--primary-griss);
+    font-weight: 700;
+    width: 100%;
+   }
+}

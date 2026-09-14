@@ -5,7 +5,7 @@ import { Header, Footer } from "@components";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./home/Home.jsx";
 import { About } from "./about/about.jsx";
-import { Services } from "./services/Services.jsx";
+import { Services } from "./services/services.jsx";
 import { Contact } from "./contact/Contact.jsx";
 import { BolsaTrabajo } from "./bolsa/bolsa.jsx";
 import RootLayout from "@components/root-layout";

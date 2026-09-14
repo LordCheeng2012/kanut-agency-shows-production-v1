@@ -1,0 +1,366 @@
+{
+  "kanut-party": [
+    {
+     "id":1,
+      "title": "Fiesta ON",
+      "path": "fiesta-on",
+      "summary": "La opción ideal para cumpleaños, reuniones y celebraciones inolvidables.",
+      "includes": [
+        {
+          "type": "Ritmo y diversión asequible",
+          "items": [
+            "DJ profesional durante 5 horas",
+            "Sistema de sonido profesional con 2 parlantes de alta calidad",
+            "2 luces psicodélicas"
+          ]
+        },
+        {
+          "type": "Hora llamativa",
+          "items": [
+            "Hora loca de 1 hora con 3 personajes temáticos",
+            "Interacción con invitados mediante coreografías, música y dinámicas"
+          ]
+        }
+      ],
+      "price": 144690
+    },
+    {
+      "id":2,  
+      "title": "Party Experience",
+      "path": "party-experience",
+      "summary": "Más música, entretenimiento y diversión para toda ocasión.",
+      "includes": [
+        {
+          "type": "Espectáculo musical",
+          "items": [
+            "DJ profesional durante 5 horas",
+            "Sistema de sonido profesional con 4 parlantes",
+            "4 luces psicodélicas"
+          ]
+        },
+        {
+          "type": "Experiencia sin límites",
+          "items": [
+            "Hora loca de 1 hora con 3 personajes",
+            "3 juegos y dinámicas de animación"
+          ]
+        },
+        {
+          "type": "Experiencia inolvidable",
+          "items": [
+            "Fotógrafo profesional durante 3 horas",
+            "Marco temático para fotografías"
+          ]
+        }
+      ],
+      "price": 363790
+    },
+    {
+      "id":3,  
+      "title": "Ultimate Party",
+      "path": "ultimate-party",
+      "summary": "Experiencia completa con música, animación y efectos para sorprender a los invitados.",
+      "includes": [
+        {
+          "type": "Experiencia exclusiva",
+          "items": [
+            "Cabina de DJ iluminada",
+            "DJ profesional durante 5 horas",
+            "Sonido profesional con 4 parlantes",
+            "6 luces psicodélicas"
+          ]
+        },
+        {
+          "type": "Entretenimiento de alto nivel",
+          "items": [
+            "Hora loca de 1 hora con 3 personajes",
+            "3 juegos y dinámicas"
+          ]
+        },
+        {
+          "type": "Zona karaoke",
+          "items": [
+            "Micrófonos inalámbricos",
+            "Pantalla de karaoke por 5 horas",
+            "Más de 1000 canciones"
+          ]
+        },
+        {
+          "type": "Evento en imágenes",
+          "items": [
+            "Marco temático para fotografías",
+            "Fotógrafo profesional por 3 horas"
+          ]
+        },
+        {
+          "type": "Legado visual",
+          "items": [
+            "1 cañón lanzador de confeti Kabuki con oxígeno"
+          ]
+        },
+        {
+          "type": "Coctelería VIP",
+          "items": [
+            "4 cócteles a elección",
+            "Insumos incluidos",
+            "Barman profesional con barra móvil"
+          ]
+        }
+      ],
+      "price": 642090
+    }
+  ],
+  "kanut-boda": [
+    { 
+      "id":1,  
+      "title": "Esencia de Amor",
+      "path": "esencia-de-amor",
+      "summary": "Paquete ideal para una celebración elegante y llena de momentos inolvidables.",
+      "includes": [
+        {
+          "type": "Música y animación",
+          "items": [
+            "Cabina DJ estilo Vintage",
+            "DJ profesional durante 8 horas",
+            "2 sistemas de sonido profesional",
+            "Animación e interacción durante la celebración"
+          ]
+        },
+        {
+          "type": "Recuerdos del gran día",
+          "items": [
+            "2 horas de cobertura fotográfica y videográfica",
+            "Entrega de fotografías y clips editados"
+          ]
+        },
+        {
+          "type": "Iluminación del evento",
+          "items": [
+            "4 tachos LED de iluminación ambiental",
+            "6 tubos LED para escenario"
+          ]
+        }
+      ],
+      "price": 178990
+    },
+    {
+      "id":2,  
+      "title": "Sueño Inolvidable",
+      "path": "sueno-inolvidable",
+      "summary": "Experiencia creada para una boda espectacular llena de detalles únicos.",
+      "includes": [
+        {
+          "type": "Producción musical",
+          "items": [
+            "DJ profesional durante 8 horas",
+            "Cabina DJ estilo Vintage iluminada",
+            "Sistema de sonido con 4 parlantes"
+          ]
+        },
+        {
+          "type": "Experiencias 360",
+          "items": [
+            "Cabina 360",
+            "Lanzamiento de confeti"
+          ]
+        },
+        {
+          "type": "Escenografía y ambientación",
+          "items": [
+            "Decoración con tela y flores",
+            "12 tachos LED",
+            "Máquina de niebla"
+          ]
+        }
+      ],
+      "price": 517599
+    },
+    {
+      "id":3,
+      "title": "Boda de Ensueño",
+      "path": "boda-de-ensueno",
+      "summary": "Todo lo necesario para una boda inolvidable con servicios premium.",
+      "includes": [
+        {
+          "type": "Producción premium",
+          "items": [
+            "DJ profesional 8 horas",
+            "Cabina DJ Vintage iluminada",
+            "12 tachos LED",
+            "Sistema de sonido profesional",
+            "Máquina de niebla",
+            "2 lanzadores de confeti",
+            "Hora loca temática"
+          ]
+        },
+        {
+          "type": "Decoración VIP",
+          "items": [
+            "Decoración con telas y flores"
+          ]
+        },
+        {
+          "type": "Cobertura audiovisual",
+          "items": [
+            "Fotógrafo profesional 8 horas",
+            "Cabina de fotos instantáneas",
+            "Cobertura aérea con dron"
+          ]
+        },
+        {
+          "type": "Experiencia gourmet",
+          "items": [
+            "Catering para 50 personas",
+            "Bartender profesional",
+            "5 cócteles",
+            "Cristalería y vasos"
+          ]
+        },
+        {
+          "type": "Coordinación profesional",
+          "items": [
+            "Maestro de ceremonias",
+            "Wedding planner"
+          ]
+        }
+      ],
+      "price": 1780499
+    }
+  ],
+  "kanut-shows": [
+    {
+      "id":1,
+      "title": "Show Infantil",
+      "path": "show-infantil",
+      "summary": "Juegos y momentos inolvidables para toda la familia.",
+      "includes": [
+        {
+          "type": "Show infantil",
+          "items": [
+            "1 artista principal a elección",
+            "2 horas de espectáculo interactivo",
+            "Interacción constante con los niños"
+          ]
+        },
+        {
+          "type": "Juegos recreativos",
+          "items": [
+            "3 juegos o dinámicas recreativas",
+            "Actividades grupales según la edad"
+          ]
+        },
+        {
+          "type": "Producción y ambientación",
+          "items": [
+            "Sistema de sonido con 1 parlante",
+            "DJ por 2 horas",
+            "2 tachos LED"
+          ]
+        }
+      ],
+      "price": 84690
+    },
+    {
+      "id":2, 
+      "title": "Espectáculo Infantil",
+      "path": "espectaculo-infantil",
+      "summary": "Diversión constante para todos los niños durante la celebración.",
+      "includes": [
+        {
+          "type": "Espectáculo infantil",
+          "items": [
+            "1 artista principal",
+            "Animación permanente",
+            "2 horas de espectáculo interactivo"
+          ]
+        },
+        {
+          "type": "Show de diversión",
+          "items": [
+            "3 juegos o dinámicas recreativas",
+            "Actividades adaptadas a la edad"
+          ]
+        },
+        {
+          "type": "Sonido e iluminación",
+          "items": [
+            "Sistema de sonido profesional",
+            "DJ infantil y familiar",
+            "2 tachos LED"
+          ]
+        },
+        {
+          "type": "Escenografía temática",
+          "items": [
+            "Decoración personalizada",
+            "Ambientación según temática"
+          ]
+        },
+        {
+          "type": "Invitados especiales",
+          "items": [
+            "2 ositos temáticos"
+          ]
+        }
+      ],
+      "price": 365590
+    },
+    {
+      "id":3,  
+      "title": "Fiesta VIP Infantil",
+      "path": "fiesta-vip-infantil",
+      "summary": "Celebración infantil premium con entretenimiento, catering y recuerdos.",
+      "includes": [
+        {
+          "type": "Fiesta VIP infantil",
+          "items": [
+            "2 horas de espectáculo interactivo",
+            "Animación permanente",
+            "1 artista principal"
+          ]
+        },
+        {
+          "type": "Producción premium",
+          "items": [
+            "Sistema de sonido profesional",
+            "DJ infantil y familiar",
+            "2 tachos LED"
+          ]
+        },
+        {
+          "type": "Arquitectura y ambientación",
+          "items": [
+            "Decoración personalizada",
+            "Piñata temática",
+            "Torta personalizada"
+          ]
+        },
+        {
+          "type": "Estaciones gourmet",
+          "items": [
+            "Catering para 40 personas",
+            "4 estaciones de snacks"
+          ]
+        },
+        {
+          "type": "Zona de diversión",
+          "items": [
+            "Juego inflable",
+            "Cama saltarina",
+            "2 artistas temáticos",
+            "Piñata para 40 niños",
+            "40 sorpresas temáticas"
+          ]
+        },
+        {
+          "type": "Recuerdos inolvidables",
+          "items": [
+            "Fotógrafo profesional",
+            "Marco temático para fotografías"
+          ]
+        }
+      ],
+      "price": 1684990
+    }
+  ]
+}

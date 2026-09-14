@@ -11,10 +11,10 @@ export function useServices() {
   return useMemo(() => {
     if (!services || !Array.isArray(services)) {
       console.error("useServices: 'services' is not available in context");
-      const emptyGetServiceByName = () => ({ name: serviceType, styles: {} });
+
       return {
         serviceType,
-        service: emptyGetServiceByName(),
+        service: { name: serviceType, styles: {} },
         services: [],
         getServiceByName: () => undefined,
         getServices: () => [],

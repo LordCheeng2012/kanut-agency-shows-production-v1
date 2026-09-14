@@ -5,6 +5,7 @@ import questions from "./questions.json";
 import portfolio from "./portafolio.json";
 import modelsGalleries from "./models-galleries.json";
 import historys from "./historys.json"
+import promotions from "./promotions.json"
 export const appData = {
   services,
   comments,
@@ -12,6 +13,7 @@ export const appData = {
   questions,
   portfolio,
   modelsGalleries,
-  historys
+  historys,
+  promotions
 };
 export default appData;

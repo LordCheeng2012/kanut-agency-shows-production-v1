@@ -31,7 +31,7 @@ export const Home = () => {
   return (
     <>
       <div className="carousel-history">
-        <Carousel automatic={false} items={items} size="inline-lg" />
+        <Carousel items={items} size="inline-lg" />
         <History />
       </div>    
         <SectionsAbout />
