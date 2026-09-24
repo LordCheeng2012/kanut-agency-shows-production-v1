@@ -6,7 +6,7 @@ import {
   Container,
 } from "@components";
 import styles from "./galery.module.css";
-import { useServiceDetails } from "@absolute/hooks";
+import { useServices } from "@absolute/hooks";
 import { useState } from "react";
 import { utils } from "@utils/utils";
 function Galery({ gallery = null, ListImages = [] }) {
@@ -16,9 +16,9 @@ function Galery({ gallery = null, ListImages = [] }) {
     isnull_undf(ListImages) ||
     ListImages.length == 0
   ) {
-    const ServiceContext = useServiceDetails();
-    gallery = ServiceContext.gallery;
-    ListImages = ServiceContext.ListImages;
+    const {galery} = useServices();
+    gallery = galery.model;
+    ListImages = galery.ListImages;
   }
   const [currentIndex, setCurrentIndex] = useState(0);
   const [open, setOpen] = useState(false);

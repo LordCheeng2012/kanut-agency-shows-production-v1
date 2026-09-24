@@ -3,8 +3,8 @@ import paths from "@absolute/config";
 import "./InformationService.css";
 export default function InformationService(){
   const { services } = paths();
-  const { service } = useServices();
-  const logoSrc = service["styles"]["logo-src"];
+  const { Loadservice } = useServices();
+  const logoSrc = Loadservice["styles"]["logo"];
 
   return (
     <>

@@ -1,0 +1,339 @@
+[
+  {
+    "service": "kanut-boda",
+    "styles": {
+      "primary-class": "boda",
+      "backgrounds": {
+        "primary": "--kanut-service-boda",
+        "altern": "--kanut-boda-beich",
+        "segondary":"--kanut-boda-red"
+      },
+      "buttoms": {
+        "primary": "btn-primary-sky",
+        "altern": "--kanut-service-boda"
+      },
+      "border": "--primary-b-black",
+      "text": {
+        "primary": "--kanut-boda-text-orange",
+        "altern": "--kanut-boda-orange"
+      },
+      "logo": "/kanut-boda.png",
+      "images-links": ["image_3.png"]
+    }
+  },
+  {
+    "service": "kanut-party",
+    "styles": {
+      "primary-class": "party",
+      "backgrounds": {
+        "primary": "--kanut-service-party",
+        "altern": "--kanut-service-party"
+      },
+      "buttoms": {
+        "primary": "btn-gold",
+        "altern": "--kanut-service-party"
+      },
+      "border": "--kanut-service-party",
+      "text": {
+        "primary": "--kanut-service-party",
+        "altern": "--kanut-service-party"
+      },
+      "logo": "/kanut-party.png",
+      "images-links": ["image_2.png"]
+    }
+  },
+  {
+    "service": "kanut-shows",
+    "styles": {
+      "primary-class": "kanut-shows-background-1",
+      "backgrounds": {
+        "primary": "--kanut-service-shows",
+        "altern": "--kanut-service-shows"
+      },
+      "buttoms": {
+        "primary": "btn-primary",
+        "altern": "--kanut-service-shows"
+      },
+      "border": "--kanut-service-shows",
+      "text": {
+        "primary": "--kanut-service-shows",
+        "altern": "--kanut-service-shows"
+      },
+      "logo": "kanut-shows.png",
+      "images-links": ["image_1.png"]
+    }
+  },
+  {
+    "service": "show-infantiles",
+    "styles": {
+      "primary-class": "show-infantiles",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "decoraciones-tematicas",
+    "styles": {
+      "primary-class": "decoraciones-tematicas",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "bodas",
+    "styles": {
+      "primary-class": "bodas",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "eventos-corporativos",
+    "styles": {
+      "primary-class": "eventos-corporativos",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "eventos-quinceaneros",
+    "styles": {
+      "primary-class": "eventos-quinceaneros",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "hora-loca",
+    "styles": {
+      "primary-class": "hora-loca",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "luces-psicodelicas",
+    "styles": {
+      "primary-class": "luces-psicodelicas",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "equipo-de-sonido",
+    "styles": {
+      "primary-class": "equipo-de-sonido",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "fotografia",
+    "styles": {
+      "primary-class": "fotografia",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "catering",
+    "styles": {
+      "primary-class": "catering",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "filmacion-eventos",
+    "styles": {
+      "primary-class": "filmacion-eventos",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "regalos-corporativos",
+    "styles": {
+      "primary-class": "regalos-corporativos",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  },
+  {
+    "service": "activaciones-publicitarias",
+    "styles": {
+      "primary-class": "activaciones-publicitarias",
+      "backgrounds": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "buttoms": {
+        "primary": "btn-default",
+        "altern": "--primary-b-black"
+      },
+      "border": "",
+      "text": {
+        "primary": "--primary-b-black",
+        "altern": "--primary-b-black"
+      },
+      "logo": "",
+      "images-links": [""]
+    }
+  }
+]

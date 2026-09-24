@@ -6,10 +6,15 @@
 .interrumped{
    display: flex;
    flex-direction: row;
-   width: 100%;
-   h2{
-    color: var(--primary-griss);
-    font-weight: 700;
-    width: 100%;
+   align-items: center;
+   justify-content: center;
+   height: 1vh;
+   div{
+    padding-inline: 1vh;
+    height: 0.2rem;
+    margin-inline: 2px;
    }
+}
+.default-color{
+      background-color: var(--primary-griss); 
 }

@@ -6,7 +6,7 @@
     height: 10%;
 }
 .c-s-details-service{
-    height:90%;
+    padding-block: 10rem;
 }
 .d-s-information-service {
     /* border: 1px solid rgb(0, 0, 0); */
@@ -18,18 +18,9 @@
 .d-s-galery-service{
     display: flex;
     flex-direction: column;
-    /* border: 1px solid rgb(0, 0, 0); */
-    height:50%;
+    justify-content: center;
+    align-items: center;
 }
-.d-s-content-galery-service{
-    height:100%;
-    display: grid;
-    grid-template-columns: repeat(2,minmax(2rem,1fr));
-    padding: 5%;
-   gap: 0.3rem;
-    
-}
-
 .d-s-promotions-service {
      /* border: 1px solid blanchedalmond;
      border: 1px solid rgb(0, 0, 0); */

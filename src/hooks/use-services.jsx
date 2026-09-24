@@ -1,40 +1,44 @@
 import { useMemo, useContext } from "react";
 import { utils } from "@utils/utils";
 import ServiceContext from "@absolute/context";
+import GaleryService from "@absolute/services";
 
 export function useServices() {
   const ctx = useContext(ServiceContext);
-  const services = ctx?.services;
+  const { services: Allservices, styles,model ,promotions} = ctx;
   const { getParamsByUrl } = utils();
-  const serviceType = getParamsByUrl("serviceType") || "kanut-boda";
+  const name = getParamsByUrl("serviceType") || "kanut-boda";
+  const getServiceByName = (key) => {
+    const service = Allservices.find((s) => s.name == key);
+    const addProps = styles.find(s=>s.service== key)["styles"];
+    return {
+      ...service,
+      styles: { ...addProps },
+    };
+  };
 
   return useMemo(() => {
-    if (!services || !Array.isArray(services)) {
+    if (!Allservices || !Array.isArray(Allservices)) {
       console.error("useServices: 'services' is not available in context");
-
       return {
-        serviceType,
-        service: { name: serviceType, styles: {} },
-        services: [],
-        getServiceByName: () => undefined,
-        getServices: () => [],
-        getPrimaryServices: () => [],
+        name,
+        Loadservice: null,
+        getServiceByName: null,
+        Allservices,
+        galery:null,
+        promotions:null,
       };
     }
 
-    const getServiceByName = (name) => {
-      return services.find((service) => service.name === name) || services[0];
-    };
-
-    const service = getServiceByName(serviceType);
-
     return {
-      serviceType,
-      service,
-      services,
+      name,
+      Loadservice: getServiceByName(name),
+      Allservices,
       getServiceByName,
-      getServices: () => services.map((item) => item.name),
-      getPrimaryServices: () => services.slice(0, 3).map((item) => item.name),
+      galery:{
+        ...GaleryService(name,model[name].model)
+      },
+      promotions:promotions[name]
     };
-  }, [serviceType, services]);
+  }, [name, Allservices]);
 }

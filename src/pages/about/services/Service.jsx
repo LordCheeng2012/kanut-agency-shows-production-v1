@@ -4,15 +4,15 @@ import "./Service.css";
 import { useServices } from "@absolute/hooks";
 export const Service = () => {
   const { transitions } = paths();
-  const {service} = useServices();
-  const { name, styles } = service;
+  const {Loadservice} = useServices();
+  const { name, styles } = Loadservice;
 
   return (
     <section className="content-service">
       <div className="content-image-service">
         <img
-          style={{ borderBottom: `${styles["border-color"]}` }}
-          src={`${transitions}/${styles["logo-src"]}`}
+          style={{ borderBottom: `3px solid var(${styles["border"]})` }}
+          src={`${transitions}/${styles["logo"]}`}
           alt="imagen del servicio"
         />
       </div>

@@ -1,0 +1,93 @@
+/* codigos de colores para el servicio de kanut-boda */
+
+/* 
+Codigo de colores para uso segundario 
+----------------------------------------
+@Corparation KANUT--ENTERPRICE-2026 
+----------------------------------------
+codigo de colores de uso interno segun brand 
+*/
+
+:root {
+  --kanut-shows-pink: #F21D92;
+  --kanut-shows-white:white;
+  --kanut-shows-blue:#1847BB;
+  --kanut-shows-blue-dark:#022859;
+  --kanut-shows-text-red: #D91818;
+  --kanut-shows-orange:#D9863D;
+  --kanut-shows-neon:#30B1BF;
+  --kanut-shows-green:var(--btn-wsp);
+  --time:0.5s;
+}
+
+.transition{
+    transition: 
+    background-color 0.5s ease,
+    color 0.5s ease ;
+}
+
+
+
+/* fonts */
+.kanut-shows-style-text{
+  font-family:emoji;
+  font-style: oblique;
+}
+/* colors */
+
+.kanut-shows-background-1{
+  background-color: var(--kanut-shows-blue);
+}
+.kanut-shows-background-2 {
+  background-color: var(--kanut-shows-white);
+}
+.kanut-shows-background-2-b-a {
+  background-color: var(--kanut-shows-pink);
+}
+.kanut-shows-background-3{
+    background-color: var(--kanut-shows-pink);
+}
+.kanut-shows-b-3-a{
+    background-color: var(--kanut-shows-pink);
+}
+.kanut-shows-background-4 {
+  background-color: var(--kanut-shows-blue);
+}
+.kanut-shows-background-5-h{
+  background-color:white;
+}
+.kanut-shows-background-5-h:hover{
+    background-color:var(--kanut-shows-green);
+}
+.kanut-shows-border-1 {
+  border: 1px solid var(--kanut-shows-pink);
+}
+.kanut-shows-border-2 {
+  border: 1px solid var(--kanut-shows-blue);
+}
+.kanut-shows-border-3 {
+  border: 1px solid var(--kanut-shows-blue);
+}
+.kanut-shows-color-text-1 {
+  color: var(--kanut-shows-pink);
+}
+.kanut-shows-color-text-2 {
+  color: var(--kanut-shows-blue);
+}
+.kanut-shows-color-text-2-t-a {
+  color: var(--kanut-shows-white);
+}
+.kanut-shows-color-text-3 {
+ color: var(--kanut-shows-pink);
+}
+.kanut-shows-color-text-3-h {
+color: var(--kanut-shows-green);
+}
+.kanut-shows-color-text-3-h:hover{
+    color: white;
+}
+.kanut-shows-color-text-4 {
+  color: var(--kanut-shows-white);
+}
+
+

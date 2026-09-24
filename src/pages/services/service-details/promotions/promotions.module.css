@@ -3,10 +3,10 @@
     height: 100%;
     text-align: center;
 }
-.promotion-content-service h1{
+.promotion-content-service > h1{
     height: 15%;
     font-size: 15vh;
-    color: var(--primary-w);
+    color: white;
 }
 .types-promotions-service-content{
     display: flex;

@@ -4,7 +4,7 @@ import { useServices } from "@absolute/hooks";
 
 
 function OurServices({className=""}) {
-  const {getServices} = useServices();
+  const {Allservices} = useServices();
 
   return (
     <div
@@ -13,8 +13,8 @@ function OurServices({className=""}) {
       <h1 className="title-section">NUESTROS SERVICIOS</h1>
       <section>
         <div className={styles["service-list"]}>
-          {getServices().map((s) => (
-            <p className={stylesParent["option"]}>{s}</p>
+          {Allservices.map((s) => (
+            <p className={stylesParent["option"]}>{s["name"]}</p>
           ))}
         </div>
       </section>

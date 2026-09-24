@@ -8,10 +8,10 @@ import { useServices } from "@absolute/hooks";
 
 function OurBrands() {
   const { services: path } = paths();
-  const {service,getPrimaryServices} = useServices();
+  const {Loadservice,Allservices} = useServices();
 
-  const listServices = getPrimaryServices().map((s) => {
-    return { path: `${path}/${s}.webp`, name: `${s}` };
+  const listServices = Allservices.slice(0,3).map((s) => {
+    return { path: `${path}/${s["name"]}.webp`, name: `${s["name"]}` };
   });
 
   const [imageList, setImageList] = useState(listServices);
@@ -49,7 +49,7 @@ function OurBrands() {
           ))}
         </ul>
         <div className={`${styles["description___brand"]} details kanut-description-altern-strong`}>
-          {service["details"]["descriptions"].map((description)=><p>{description}</p>)}
+          {Loadservice["details"]["descriptions"].map((description)=><p>{description}</p>)}
         </div>
       </section>   
       <Galery/>

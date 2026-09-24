@@ -1,19 +1,28 @@
 import styles from "./separator.module.css";
-function Separator({ type = "linear" }) {
+function Separator({ type = "linear",className=null,classItems="default-color" }) {
   return type == "interrumped" ? (
-     <div className={styles["interrumped"]}>
-      <h2>--</h2>
-      <h2>--</h2>
-      <h2>--</h2>
-      <h2>--</h2>
-      <h2>--</h2>
-      <h2>--</h2>
-      <h2>--</h2>
-      <h2>--</h2>
-      <h2>--</h2>
+     <div className={`${className && className} ${styles["interrumped"]}`}>
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
+        <div className={classItems} />
     </div>
   ) : (
-   <div className={styles["separator"]}></div>
+   <div className={ `${className && className} ${styles["separator"]} ${classItems}`}></div>
   );
 }
 export default Separator;

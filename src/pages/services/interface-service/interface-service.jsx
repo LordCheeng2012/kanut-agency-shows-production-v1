@@ -3,18 +3,19 @@ import paths from "@absolute/config";
 import "./interface-service.css";
 export const InterfaceService = () => {
   const { services } = paths();
-  const { getPrimaryServices } = useServices();
+  const { Allservices } = useServices();
 
   return (
     <section className="section-controller">
-      {getPrimaryServices().map((service) => {
+      {Allservices.slice(0,3).map((service) => {
+        const name = service["name"]
         return (
-          <div className={`item-service-option border-${service}`}>
+          <div className={`item-service-option border-${name}`}>
             <a
               className="i-s-o-option"
-              href={`./Service?serviceType=${service}`}
+              href={`./Service?serviceType=${name}`}
             >
-              <img src={`${services}/${service}.png`} alt="" />
+              <img src={`${services}/${name}.png`} alt="" />
             </a>
           </div>
         );

@@ -8,8 +8,68 @@ Codigo de colores para uso segundario
 codigo de colores de uso interno segun brand 
 */
 
-:root{
---kanut-boda-red:#71141F;
---kanut-boda-beich:#FFFAE7;
---kanut-boda-orange:#D99B66;
+:root {
+  --kanut-boda-red: #71141f;
+  --kanut-boda-beich: #fffae7;
+  --kanut-boda-orange: #D9863D;
+  --kanut-boda-text-orange: #8c683e;
+  --time:0.5s;
 }
+
+.transition{
+    transition: 
+    background-color 0.5s ease,
+    color 0.5s ease ;
+}
+
+/* fonts */
+.kanut-party-style-text{
+  font-family: emoji;
+  font-weight: 100;
+}
+
+.kanut-boda-background-1{
+  background-color: var(--kanut-service-boda);
+}
+.kanut-boda-background-2 {
+  background-color: var(--kanut-boda-beich);
+}
+.kanut-boda-background-3 {
+  background-color: var(--kanut-boda-red);
+}
+.kanut-boda-background-4{
+    background-color: var(--kanut-boda-orange);
+}
+.kanut-boda-background-5-h{
+  background-color:white;
+}
+.kanut-boda-background-5-h:hover{
+    background-color:var(--kanut-boda-orange);
+}
+.kanut-boda-border-1 {
+  border: 1px solid var(--kanut-boda-red);
+}
+.kanut-boda-border-2 {
+  border: 1px solid var(--kanut-boda-beich);
+}
+.kanut-boda-color-text-1 {
+  color: var(--kanut-boda-text-orange);
+}
+.kanut-boda-color-text-2 {
+  color: var(--kanut-boda-orange);
+}
+.kanut-boda-color-text-3 {
+  color: var(--kanut-boda-red);
+}
+.kanut-boda-color-text-3-h {
+  color: var(--kanut-boda-red);
+}
+.kanut-boda-color-text-3-h:hover{
+  color: white;
+}
+.kanut-boda-color-text-4 {
+  color: var(--kanut-boda-beich);
+}
+
+
+

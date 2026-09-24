@@ -1,0 +1,86 @@
+/* codigos de colores para el servicio de kanut-boda */
+
+/* 
+Codigo de colores para uso segundario 
+----------------------------------------
+@Corparation KANUT--ENTERPRICE-2026 
+----------------------------------------
+codigo de colores de uso interno segun brand 
+*/
+
+:root {
+  --kanut-party-white: #FFFFFF;
+  --kanut-party-blue:#1B52BF;
+  --kanut-party-blue-dark:#022859;
+  --kanut-party-text-red: #D91818;
+  --kanut-party-orange:#D9863D;
+  --kanut-party-neon:#30B1BF;
+  --kanut-party-green:var(--btn-wsp);
+  --time:0.5s;
+}
+
+.transition{
+    transition: 
+    background-color 0.5s ease,
+    color 0.5s ease ;
+}
+
+
+
+/* fonts */
+.kanut-party-style-text{
+  font-family: sans-serif;
+}
+/* colors */
+
+.kanut-party-background-1{
+  background-color: var(--kanut-service-party);
+}
+.kanut-party-background-2 {
+  background-color: var(--kanut-party-white);
+}
+.kanut-party-background-3{
+    background-color: var(--kanut-party-blue-dark);
+}
+.kanut-party-b-3-a{
+    background-color: var(--kanut-party-neon);
+}
+.kanut-party-background-4 {
+  background-color: var(--kanut-party-blue);
+}
+.kanut-party-background-5-h{
+  background-color:white;
+}
+.kanut-party-background-5-h:hover{
+    background-color:var(--kanut-party-green);
+}
+.kanut-party-border-1 {
+  border: 1px solid var(--kanut-party-white);
+}
+.kanut-party-border-2 {
+  border: 1px solid var(--kanut-party-orange);
+}
+.kanut-party-border-3 {
+  border: 1px solid var(--kanut-party-blue);
+}
+.kanut-party-color-text-1 {
+  color: var(--kanut-party-neon);
+}
+.kanut-party-color-text-2 {
+  color: var(--kanut-party-blue-dark);
+}
+.kanut-party-color-text-3 {
+ color: var(--kanut-party-blue-dark);
+}
+.kanut-party-color-text-3-h {
+color: var(--kanut-party-green);
+}
+.kanut-party-color-text-3-h:hover{
+    color: white;
+}
+.kanut-party-color-text-4 {
+  color: var(--kanut-party-white);
+}
+
+
+
