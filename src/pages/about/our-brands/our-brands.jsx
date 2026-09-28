@@ -48,8 +48,8 @@ function OurBrands() {
             </CardAnimate>
           ))}
         </ul>
-        <div className={`${styles["description___brand"]} details kanut-description-altern-strong`}>
-          {Loadservice["details"]["descriptions"].map((description)=><p>{description}</p>)}
+        <div className={`${styles["description___brand"]} description kanut-description-altern-strong`}>
+          {Loadservice["details"][0]["descriptions"].map((description)=><p>{description}</p>)}
         </div>
       </section>   
       <Galery/>

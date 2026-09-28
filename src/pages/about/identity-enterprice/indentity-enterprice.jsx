@@ -11,7 +11,7 @@ import cupcakge from "@imgs/icons/cupcakge.png"
           {/* ================= MISIÓN ================= */}
           <section className={styles["item"]}>
 
-            <div className={'details'}>
+            <div className={'description'}>
               <h1 className={`${styles['mision-title']} kanut-title`}>Misión</h1>
               <p className={styles['kanut-description-altern']}>
                 Llevamos emociones y diversión a cada celebración a 
@@ -37,7 +37,7 @@ import cupcakge from "@imgs/icons/cupcakge.png"
               <img src={ball}  alt="" />
             </div>
 
-            <div className={'details'}>
+            <div className={'description'}>
               <h1 className={`${styles['vision-title']} kanut-title`}>Visión</h1>
 
               <p className={styles['kanut-description-altern']}>

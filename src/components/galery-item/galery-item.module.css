@@ -1,6 +1,4 @@
 :root{
-  --size :stretch; ;
-  --default-size :100%;
   --time-animate:0.2s;
 }
 .galery-item{
@@ -9,24 +7,24 @@
  transition: padding var(--time-animate) ease;
 }
 .cover{
-    object-fit: cover;
+object-fit: cover;
 }
 .countain{
 object-fit: contain;
 }
 .galery-item:hover{
-    padding: 3px;
+ padding: 3px;
 }
 .sm{
-     height:var(--size);
-     width: var(--default-size); 
+     height:100%;
+     width: 100%; 
 }
 .md{
-    height:var(--default-size);;
+    height:100%;
     width: 80vh; 
 }
 .lg{
     height:100vh;
-    width: var(--default-size);; 
+    width: 100%; 
 }
 

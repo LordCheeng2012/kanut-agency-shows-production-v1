@@ -231,26 +231,24 @@ codigo de colores de uso interno segun brand
     font-family: 'Rubik';
     font-weight: 500;
 }
-.details{
-    text-align: justify;
-    line-height: 23px;
-    color: white;
-    p{
-        margin-top: 1.5rem;
-    }
+.description{
+  text-align: justify;
+  line-height: 25px;
+  color: white;
+  word-spacing: -1px;
+  p{
+    margin: 5px;
+  }
+
 }
-.details-altern{
-    text-align: justify;
-    line-height: 23px;
-    color: white;
-    font-family:emoji;
-    p{
-        margin-top: 1.5rem;
-    }
+.signature{
+  font-style: oblique;
+  font-weight: 700;
 }
 .center-text{
    font-size: medium;
    text-align: center;
+   margin: 5px;
 }
 /* Ejemplos de utilidad: clases responsivas pequeñas */
 @media (max-width: 768px) {

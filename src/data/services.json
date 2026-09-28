@@ -2,13 +2,21 @@
   {
     "name": "kanut-boda",
     "summary": "Eventos - Bodas",
-    "details": {
-      "summary": "Detrás de cada boda hay sueños compartidos, promesas sinceras y emociones que no caben en palabras. Nos mueve la belleza de lo auténtico, la emoción de lo verdadero y la fuerza de un amor que decide celebrarse.",
-      "descriptions": [
-        "Creamos experiencias auténticas que reflejan elegancia,romanticismo y celebración,",
-        "cuidando cada detalle e iluminación para transformar momentos especiales en recuerdos inolvidables."
-      ]
-    },
+    "details": [
+      {
+        "summary": "Detrás de cada boda hay sueños compartidos, promesas sinceras y emociones que no caben en palabras. Nos mueve la belleza de lo auténtico, la emoción de lo verdadero y la fuerza de un amor que decide celebrarse.",
+        "descriptions": [
+          "Creamos experiencias auténticas que reflejan elegancia,romanticismo y celebración,",
+          "cuidando cada detalle e iluminación para transformar momentos especiales en recuerdos inolvidables."
+        ]
+      },
+      {
+        "summary": "Porque no solo basta de organizar un evento, si no de hacer realidad el sueño que recordarás para siempre.",
+        "descriptions": [
+        "Una boda o una fiesta de quince años no se construye contratando proveedores, se construye creando emociones, cuidando cada detalle y dando vida a un sueño que imaginaste una y otra vez . Por ello en Kanut convertimos tus ideas en experiencias inolvidables. Diseñamos escenarios donde la elegancia, la belleza y la magia se unen para crear momentos auténticos que hablan de ti."
+        ]
+      }
+    ],
     "comments": [
       "“Porque cuando dos personas se eligen, el mundo se detiene por un instante y ese instante merece ser inolvidable.”"
     ]
@@ -16,13 +24,22 @@
   {
     "name": "kanut-party",
     "summary": "Eventos - party",
-    "details": {
-      "summary": "La juventud es color, movimiento y emoción sin filtros. Es celebrar la vida con intensidad, crear recuerdos que algún día arrancarán una sonrisa nostálgica y compartir momentos que fortalecen amistades para siempre.",
-      "descriptions": [
-        "Fusionamos la elegancia con la energía de celebraciones vibrantes para crear experiencias únicas.",
-        "Cuidamos cada detalle e iluminación para transformar tus momentos especiales en recuerdos inolvidables"
-      ]
-    },
+    "details": [
+      {
+        "summary": "La juventud es color, movimiento y emoción sin filtros. Es celebrar la vida con intensidad, crear recuerdos que algún día arrancarán una sonrisa nostálgica y compartir momentos que fortalecen amistades para siempre.",
+        "descriptions": [
+          "Fusionamos la elegancia con la energía de celebraciones vibrantes para crear experiencias únicas.",
+          "Cuidamos cada detalle e iluminación para transformar tus momentos especiales en recuerdos inolvidables"
+        ]
+      },
+      {
+        "summary": "“Las mejores fiestas no solo se contratan, se recuerdan para volver a vivirlas.” ",
+        "descriptions": [
+        "Las celebraciones más memorables nacen de los momentos compartidos con quienes más quieres. Una mirada, una carcajada, un abrazo o una canción pueden convertirse en recuerdos para toda la vida.",
+        "En Kanut, transformamos cada encuentro en una experiencia llena de energía, emoción y diversión. A través de propuestas creativas, música y entretenimiento, logramos que cada invitado se sienta parte de una historia única.  "
+        ]
+      }
+    ],
     "comments": [
       "“Cada celebración es una explosión de energía que conecta corazones y transforma una noche en una historia inolvidable.”"
     ]
@@ -30,13 +47,22 @@
   {
     "name": "kanut-shows",
     "summary": "Eventos - Shows",
-    "details": {
-      "summary": "Hay instantes donde el tiempo parece detenerse y solo importa la felicidad compartida, porque cuando un niño es feliz, el corazón de los padres también lo es. Sabemos que detrás de cada celebración hay algo mucho más profundo.",
-      "descriptions": [
-        "Llenamos tus días de diversión y alegría con juegos, espectáculos y actividades junto a la piscina.",
-        "Creamos momentos inolvidables y risas para toda la familia en cada evento."
-      ]
-    },
+    "details": [
+      {
+        "summary": "Hay instantes donde el tiempo parece detenerse y solo importa la felicidad compartida, porque cuando un niño es feliz, el corazón de los padres también lo es. Sabemos que detrás de cada celebración hay algo mucho más profundo.",
+        "descriptions": [
+          "Llenamos tus días de diversión y alegría con juegos, espectáculos y actividades junto a la piscina.",
+          "Creamos momentos inolvidables y risas para toda la familia en cada evento."
+        ]
+      },
+      {
+        "summary": "Hay instantes donde el tiempo parece detenerse y solo importa la felicidad compartida, porque cuando un niño es feliz, el corazón de los padres también lo es. Sabemos que detrás de cada celebración hay algo mucho más profundo.",
+        "descriptions": [
+          "Llenamos tus días de diversión y alegría con juegos, espectáculos y actividades junto a la piscina.",
+          "Creamos momentos inolvidables y risas para toda la familia en cada evento."
+        ]
+      }
+    ],
     "comments": [
       "“El deseo de regalarle a tu hijo un momento que nunca olvide. Un día lleno de emoción, juegos, sorpresas y sonrisas verdaderas.”"
     ]

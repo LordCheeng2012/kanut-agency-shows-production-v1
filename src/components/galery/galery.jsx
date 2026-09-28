@@ -33,8 +33,8 @@ function Galery({ gallery = null, ListImages = [] }) {
   const contentModal = (
     <Carousel
       automatic={false}
-      items={ListImages.map(({ url, alt }) => (
-        <Container size="ex-lg">
+      items={ListImages.map(({ url, alt },i) => (
+        <Container size="ex-lg" key={i}>
           <GaleryItem path={url} alt={alt} display="countain" />
         </Container>
       ))}

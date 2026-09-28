@@ -11,7 +11,7 @@
    height: 1vh;
    div{
     padding-inline: 1vh;
-    height: 0.2rem;
+    height: 1px;
     margin-inline: 2px;
    }
 }

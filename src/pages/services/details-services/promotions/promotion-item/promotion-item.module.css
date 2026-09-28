@@ -5,9 +5,9 @@
 .content-type {
   display: flex;
   flex-direction: column;
-  padding: 2%;
   text-align: justify;
   align-items: center;
+  position: relative;
 }
 .title-promotion {
   display: flex;
@@ -41,7 +41,7 @@
   border-radius: var(--border-content);
   position: relative;
   padding: 1vh;
-  min-height: 150vh;
+  height: 170vh;
   width: 25rem;
   padding-block: 3rem;
   align-items: normal;

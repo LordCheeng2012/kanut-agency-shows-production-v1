@@ -1,7 +1,3 @@
-import "./root.css";
-import "./bootstrap-iso.css";
-import "./bootstrap.js";
-import { Header, Footer } from "@components";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./home/Home.jsx";
 import { About } from "./about/about.jsx";

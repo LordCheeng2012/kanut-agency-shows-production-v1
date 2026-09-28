@@ -1,9 +1,9 @@
 .container {
-  padding: 0.2rem;
+  padding: 1rem;
   cursor: pointer;
   /* background-color: brown; */
   display: flex;
-  flex: 1 0 1%;
+  flex: 1 0 1;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@
   width: 50%;
 }
 .inline-lg{
-  max-height: 200vh;
+  height:auto ;
   width: 100%;
 }
 

@@ -9,10 +9,11 @@ export function useServices() {
   const { getParamsByUrl } = utils();
   const name = getParamsByUrl("serviceType") || "kanut-boda";
   const getServiceByName = (key) => {
-    const service = Allservices.find((s) => s.name == key);
+    const {details,...rest} = Allservices.find((s) => s.name == key);
     const addProps = styles.find(s=>s.service== key)["styles"];
     return {
-      ...service,
+      ...rest,
+      details,
       styles: { ...addProps },
     };
   };

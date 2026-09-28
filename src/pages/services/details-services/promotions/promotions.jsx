@@ -9,7 +9,7 @@ export default function Promotions() {
 
   return (
     <Container className={styles["promotion-content-service"]} size="inline-lg">
-      <h1 className="kanut-title">Promociones</h1>
+      <h1 className={`kanut-title ${styles["promotions-title"]}`}>Promociones</h1>
       <section className={styles["types-promotions-service-content"]}>
         {promotions.map((p) => (
           <PromotionItem

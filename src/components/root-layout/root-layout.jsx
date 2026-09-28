@@ -4,6 +4,9 @@ import logError from "@utils/log-error";
 import { useEffect } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { Outlet, useLocation } from "react-router-dom";
+import "./root.css";
+import "./bootstrap-iso.css";
+import "./bootstrap.js";
 
 export default function RootLayout() {
     const { pathname } = useLocation();
@@ -15,9 +18,7 @@ export default function RootLayout() {
       <main>
         <Header />
         <ErrorBoundary onError={logError} FallbackComponent={FallBackError}>
-          <section id="content-page">
             <Outlet />
-          </section>
         </ErrorBoundary>
         <Footer />
       </main>

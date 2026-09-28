@@ -3,13 +3,14 @@
     height: 100%;
     text-align: center;
 }
-.promotion-content-service > h1{
-    height: 15%;
-    font-size: 15vh;
+.promotions-title{
+    margin-bottom: 5rem;
+    font-size: 5rem !important;
     color: white;
 }
 .types-promotions-service-content{
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    position: relative;
 }
