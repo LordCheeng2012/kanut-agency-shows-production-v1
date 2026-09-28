@@ -11,6 +11,5 @@
 .types-promotions-service-content{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
     position: relative;
 }

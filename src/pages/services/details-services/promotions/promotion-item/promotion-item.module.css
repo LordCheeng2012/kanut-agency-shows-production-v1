@@ -8,6 +8,7 @@
   text-align: justify;
   align-items: center;
   position: relative;
+  width: 100%;
 }
 .title-promotion {
   display: flex;
