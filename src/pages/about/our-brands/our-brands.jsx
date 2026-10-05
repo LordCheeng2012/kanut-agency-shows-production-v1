@@ -1,13 +1,13 @@
 import CardAnimate from "@components/contents/animate-cart-item";
 import styles from "./our-brands.module.css";
-import paths from '@absolute/config';
+import {Paths} from "@utils/index"
 import { useState } from "react";
 import Galery from "@components/galery";
 import { useServices } from "@absolute/hooks";
 
 
 function OurBrands() {
-  const { services: path } = paths();
+  const { services: path } =Paths();
   const {Loadservice,Allservices} = useServices();
 
   const listServices = Allservices.slice(0,3).map((s) => {

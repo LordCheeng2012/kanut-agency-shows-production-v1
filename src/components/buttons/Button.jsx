@@ -4,7 +4,7 @@ export const Button = ({
   classname,
   children,
   type = "primary",
-  size = "small",
+  size = "auto",
   onClick = ()=> undefined
 }) => {
   if (!children) return;

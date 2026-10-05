@@ -16,6 +16,7 @@ function Signature() {
             <p>© 2025 KANUT ESPECTACULOS. Todos los derechos reservados</p>
             <p>Compañía KANUT ESPECTACULOS S.A.C</p>
             <p>20614692295</p>
+            <p className="brands">ULTIMATE 2012</p>
         </div>
     </section>
     )

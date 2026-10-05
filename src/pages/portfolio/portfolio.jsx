@@ -1,4 +1,4 @@
-import paths from "@absolute/config";
+import {Paths} from "@utils/index";
 import { Galery } from "@components";
 import stylesSheet from "./portfolio.module.css";
 import appData from "@absolute/data/data";
@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import { NotFoundPage } from "../not-found";
 export default function Portfolio() {
   const { projectId } = useParams();
-  const { history } = paths();
+  const { history } =Paths();
 
   const project = appData.historys.find((p) => {
     return p["id"] == projectId;

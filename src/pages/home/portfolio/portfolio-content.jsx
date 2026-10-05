@@ -2,10 +2,10 @@ import { CardItem } from '../../../components/contents/cards/Card.jsx';
 import styles from './portfolio-content.module.css';
 import {appData as data}  from '@absolute/data/data.js';
 import { utils } from '../../../utils/utils.js';
-import paths from '@absolute/config';
+import {Paths} from "@utils/index"
 
 export const PortfolioContent = () => {
-  const {banners} = paths();
+  const {banners} =Paths();
   const {redirect} = utils();
 
   return (

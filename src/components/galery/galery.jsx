@@ -8,9 +8,12 @@ import {
 import styles from "./galery.module.css";
 import { useServices } from "@absolute/hooks";
 import { useState } from "react";
-import { utils } from "@utils/utils";
+import { utils,ExistDirectory } from "@utils/index";
+
 function Galery({ gallery = null, ListImages = [] }) {
   const { isnull_undf } = utils();
+  ExistDirectory("afsaedfsdfserf");
+  
   if (
     isnull_undf(gallery) ||
     isnull_undf(ListImages) ||

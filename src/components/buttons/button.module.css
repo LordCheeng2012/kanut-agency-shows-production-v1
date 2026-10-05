@@ -21,8 +21,12 @@ button{
     border: none;
     cursor: pointer;
     text-align: center;
+    padding-inline: 1rem;
 }
-
+.auto{
+    height: auto;
+    width: auto;
+}
 
 /* sizes */
 .small{

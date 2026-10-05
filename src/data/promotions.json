@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Fiesta ON",
-      "path": "fiesta-on",
+      "path": "fiesta-on.webp",
       "summary": "La opción ideal para cumpleaños, reuniones y celebraciones inolvidables.",
       "includes": [
         {
@@ -27,7 +27,7 @@
     {
       "id": 2,
       "title": "Party Experience",
-      "path": "party-experience",
+      "path": "party-experience.webp",
       "summary": "Más música, entretenimiento y diversión para toda ocasión.",
       "includes": [
         {
@@ -58,7 +58,7 @@
     {
       "id": 3,
       "title": "Ultimate Party",
-      "path": "ultimate-party",
+      "path": "ultimate-party.webp",
       "summary": "Experiencia completa con música, animación y efectos para sorprender a los invitados.",
       "includes": [
         {
@@ -114,7 +114,7 @@
     {
       "id": 1,
       "title": "Esencia de Amor",
-      "path": "esencia-de-amor",
+      "path": "esencia-amor.webp",
       "summary": "Paquete ideal para una celebración elegante y llena de momentos inolvidables.",
       "includes": [
         {
@@ -146,7 +146,7 @@
     {
       "id": 2,
       "title": "Sueño Inolvidable",
-      "path": "sueno-inolvidable",
+      "path": "sueño-inolvidable.webp",
       "summary": "Experiencia creada para una boda espectacular llena de detalles únicos.",
       "includes": [
         {
@@ -178,7 +178,7 @@
     {
       "id": 3,
       "title": "Boda de Ensueño",
-      "path": "boda-de-ensueno",
+      "path": "boda-ensueño.webp",
       "summary": "Todo lo necesario para una boda inolvidable con servicios premium.",
       "includes": [
         {
@@ -228,7 +228,7 @@
     {
       "id": 1,
       "title": "Show Infantil",
-      "path": "show-infantil",
+      "path": "pequeños-sueños.webp",
       "summary": "Juegos y momentos inolvidables para toda la familia.",
       "includes": [
         {
@@ -260,7 +260,7 @@
     {
       "id": 2,
       "title": "Espectáculo Infantil",
-      "path": "espectaculo-infantil",
+      "path": "mundo-fantasia.webp",
       "summary": "Diversión constante para todos los niños durante la celebración.",
       "includes": [
         {
@@ -305,7 +305,7 @@
     {
       "id": 3,
       "title": "Fiesta VIP Infantil",
-      "path": "fiesta-vip-infantil",
+      "path": "reino-diversion.webp",
       "summary": "Celebración infantil premium con entretenimiento, catering y recuerdos.",
       "includes": [
         {

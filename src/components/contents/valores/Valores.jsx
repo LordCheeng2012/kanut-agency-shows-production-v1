@@ -1,8 +1,8 @@
-import paths from "@absolute/config";
+import {Paths} from "@utils/index";
 import styles from "./valores.module.css"
 
 function Valores(){
-   const {icons} = paths();
+   const {icons} =Paths();
   return (
      <section className={styles['content-valores']}>
       <h1 className={`${styles['title-content']} kanut-title`}>Valores</h1>

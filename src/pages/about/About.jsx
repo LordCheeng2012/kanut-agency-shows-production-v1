@@ -3,7 +3,7 @@ import IdentityEnterprice from "./identity-enterprice";
 import OurBrands from "./our-brands";
 import { Questions } from "./questions/Questions.jsx";
 
-export const About = () => {
+export default function About(){
   return (
     <>
       <div className={styles["about-content-etic"]}>

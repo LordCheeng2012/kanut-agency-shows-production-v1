@@ -2,7 +2,7 @@
   --border-content: 10px;
   --padding-align: 3rem;
 }
-.content-type {
+.promotion_item__content {
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -10,29 +10,35 @@
   position: relative;
   width: 100%;
 }
-.title-promotion {
+.section__title_promotion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-block: 0.5rem;
-  h2.n-promotion {
-    font-size: 2rem;
-    font-style: oblique;
-    padding-inline: 4rem;
-    padding-block: 0.5rem;
-    border-radius: var(--border-content);
-  }
+}
+
+.title__promotion {
+  font-size: 2rem;
+  font-style: oblique;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: var(--border-content);
 }
 
 .img-content-type {
-  background-color: black;
-  border-radius: 10px;
-  margin: 10px;
-  height: 10vh;
-  width: 100%;
+  height:25vh;
+  width: 50vh;
 }
-
+.summary__promotion{
+  width: 15rem;
+  color: var(--primary-w);
+  display: flex;
+  flex:  1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .description-promotion {
   text-align: justify;
   color: black;
@@ -41,10 +47,9 @@
   flex-direction: column;
   border-radius: var(--border-content);
   position: relative;
-  padding: 1vh;
-  height: 170vh;
-  width: 25rem;
-  padding-block: 3rem;
+  min-height: 90rem;
+  width: 100%;
+  padding: 2.5rem 1rem;
   align-items: normal;
 }
 
@@ -80,7 +85,6 @@
 .includes-content > ul > li {
   font-weight: 700;
   margin-block: 5px;
-  word-spacing: -1px;
 }
 .sub-items-item {
   display: flex;
@@ -129,8 +133,10 @@
 .buttom-buy {
   margin: 20px;
   width: min-content;
-  padding-inline: 3rem;
   font-weight: 900;
   font-size: 1.9rem;
   font-style: oblique;
+  p{
+    padding: 0.5rem;
+  }
 }

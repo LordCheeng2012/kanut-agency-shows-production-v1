@@ -1,9 +1,9 @@
-import paths from '@absolute/config';
+import {Paths} from "@utils/index"
 import { GenerateGrid, TitleService } from "@components";
 import "./Service.css";
 import { useServices } from "@absolute/hooks";
 export const Service = () => {
-  const { transitions } = paths();
+  const { transitions } =Paths();
   const {Loadservice} = useServices();
   const { name, styles } = Loadservice;
 

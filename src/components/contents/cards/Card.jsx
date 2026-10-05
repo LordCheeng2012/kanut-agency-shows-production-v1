@@ -1,6 +1,6 @@
-import paths from '@absolute/config';
 import './Card.css'
-const {clients} = paths();
+import {Paths} from "@utils/index"
+const {clients} =Paths();
 export const Card =  ({data = {title:"dummy-title",img:null, descriptions:[],color:"red",autor:"" }})=> {
   const path =`${clients}/${data.img}`;
   return (

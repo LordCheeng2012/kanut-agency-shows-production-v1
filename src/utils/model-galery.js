@@ -1,4 +1,5 @@
 import { utils } from "@utils/utils";
+
 const { isnull_undf, deleteItemArray } = utils();
 
 function GetGalleriesPath(service) {
@@ -41,7 +42,6 @@ function GetModelGalery(service, model) {
   if (!Array.isArray(model) || isnull_undf(service) || isnull_undf(model))
     return;
   let initIndex = 0;
-
   const hydrateModel = model.map((itemModel) => {
     let garellyesPath = GetGalleriesPath(service);
     const minItems = itemModel["min-items"];
@@ -59,12 +59,10 @@ function GetModelGalery(service, model) {
   return hydrateModel;
 }
 
-function GaleryService(service,model) {
+function GaleryService(service, model) {
   return {
-    model:GetModelGalery(service,model),
-    ListImages:GetGalleriesPath(service)
-  }
-  
+    model: GetModelGalery(service, model),
+    ListImages: GetGalleriesPath(service),
+  };
 }
 export default GaleryService;
-

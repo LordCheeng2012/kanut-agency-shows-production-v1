@@ -4,7 +4,7 @@ import { SectionsAbout } from "./about/SectionsAbout.jsx";
 import { PortfolioContent } from "./portfolio/portfolio-content.jsx";
 import { SectionComments } from "./comments/section-comments.jsx";
 
-export const Home = () => {
+export default function HomePage(){
   const items = [
     <>
       <li className="background-template background-boda center">

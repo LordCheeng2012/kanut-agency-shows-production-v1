@@ -1,10 +1,10 @@
 import { Card, Carousel } from "@components";
 import { prepareItems } from "./section-comments.js";
-import paths from '@absolute/config';
+import {Paths} from "@utils/index"
 import './section-comments.css';
 
 export const SectionComments = () => {
-  const {fonts} = paths(); 
+  const {fonts} =Paths(); 
   const items = prepareItems().result.map((items, index) => {
   
   return (

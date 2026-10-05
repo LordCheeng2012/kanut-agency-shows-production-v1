@@ -19,3 +19,5 @@ export { GenerateGrid } from "./sections/grid-galery/GenerateGrid";
 export {default as Container} from "./container"
 export {default as fallbackError} from "./fallback-error"
 export {default as VideoPlayer} from "./video-player"
+export {default as Image} from "./image"
+export {default } from "./root-layout"

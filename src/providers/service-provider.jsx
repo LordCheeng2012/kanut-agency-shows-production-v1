@@ -1,4 +1,4 @@
-import  ServiceContext  from "@absolute/context";
+import  ServiceContext  from "@absolute/providers/service-context";
 import appData from "@absolute/data/data";
 
 export const ServiceProvider = ({ children }) => {

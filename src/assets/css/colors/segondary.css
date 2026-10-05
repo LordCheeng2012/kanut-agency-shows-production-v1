@@ -31,13 +31,13 @@ codigo de colores de uso interno segun brand
 --segondary-purple:#8B0142;
 --segondary-red:#D11515;
 --segondary-violet-purple:#7102C2;
---segondary-gray:#464646;
+--segondary-gray:#474747;
 
 
 /* codigos de servicios --- */
 --kanut-service-boda:var(--segondary-bwo-beich);
 --text-boda:var(--black-text);
---kanut-service-shows:var(--segondary-g-phamtom);
+--kanut-service-shows:var(--segondary-pink);
 --text-shows:var(--black-text);
 --kanut-service-party:var(--segondary-blue-marine);
 --text-party:var(--gray-white);

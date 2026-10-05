@@ -1,0 +1,12 @@
+.image{
+    margin: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+}
+.default{
+    height: 10rem;
+    width: 10rem;
+}
+.contain{object-fit:contain;}
+.cover{object-fit: cover;}

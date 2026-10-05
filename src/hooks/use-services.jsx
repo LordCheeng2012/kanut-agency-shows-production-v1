@@ -1,7 +1,7 @@
 import { useMemo, useContext } from "react";
 import { utils } from "@utils/utils";
-import ServiceContext from "@absolute/context";
-import GaleryService from "@absolute/services";
+import ServiceContext from "@absolute/providers/service-context";
+import {ModelGalery} from "@utils/index";
 
 export function useServices() {
   const ctx = useContext(ServiceContext);
@@ -37,7 +37,7 @@ export function useServices() {
       Allservices,
       getServiceByName,
       galery:{
-        ...GaleryService(name,model[name].model)
+        ...ModelGalery(name,model[name].model)
       },
       promotions:promotions[name]
     };

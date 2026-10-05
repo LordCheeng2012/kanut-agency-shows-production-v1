@@ -237,9 +237,9 @@ codigo de colores de uso interno segun brand
   color: white;
   word-spacing: -1px;
   p{
-    margin: 5px;
+   margin: 5px;
   }
-
+  
 }
 .signature{
   font-style: oblique;
@@ -250,6 +250,14 @@ codigo de colores de uso interno segun brand
    text-align: center;
    margin: 5px;
 }
+.brands{
+  font-weight: 100;
+  font-family: sans-serif;
+}
+p{
+   word-spacing: -1px;
+}
+
 /* Ejemplos de utilidad: clases responsivas pequeñas */
 @media (max-width: 768px) {
   :root {

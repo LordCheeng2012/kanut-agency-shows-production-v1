@@ -15,6 +15,6 @@
       "@imgs/*": ["src/assets/imgs"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "src/App.jsx"],
   "exclude": ["node_modules", "dist"]
 }

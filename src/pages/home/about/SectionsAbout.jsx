@@ -1,8 +1,8 @@
-import  paths  from '@absolute/config'
+import { Paths}  from '@utils/index'
 import { Button } from '@components' 
 import './SectionsAbout.css'
 export const SectionsAbout = () => {
- const {teams} = paths();
+ const {teams} =Paths();
   return (
     <section className='about-content'>
         <div className='a-c-item ac-about-details'>

@@ -7,9 +7,9 @@ import {
   InputFile,
   Button
 } from '@components';
-import paths from '@absolute/config';
-const {services} = paths();
-export const Contact = () => {
+import {Paths} from "@utils/index"
+const {services} =Paths();
+export default function Contact(){
   return (
     <div className='content-form-main'>
         <form action="">
