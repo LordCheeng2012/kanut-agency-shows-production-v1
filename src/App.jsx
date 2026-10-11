@@ -20,7 +20,7 @@ export default function App() {
         <Route path="/Service" element={<ServicesPage />} />
         <Route path="/Contact" element={<ContactPage />} />
         <Route path="/bolsa" element={<Bolsa />} />
-        <Route path="/Portfolio/:projectId" element={<Portfolio />} />
+        <Route path="/portfolio/:slug" element={<Portfolio />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
