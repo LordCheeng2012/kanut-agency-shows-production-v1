@@ -50,6 +50,7 @@ export const _getCurrentIndex = (refIndexs) => {
   });
 
   if (!currentIndex || currentIndex < 0) {
+    console.log(currentIndex)
     console.log("no se encontro indice actual,restableciendo indice --- > 0");
     return 0;
   }

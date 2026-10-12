@@ -7,9 +7,9 @@ import "./Header.css";
   const [desplegableItem, setDesplegableItem] = useState(null);
   return (
     <header>
-      <div className="icon item-header">
+      <div className="item-header">
        <a href="./">
-        <img src= {kanut}alt="kanut logo principal" />
+        <img src= {kanut}alt="kanut logo principal" className="icon" />
        </a>
       </div>
       <nav className="navbar item-header">

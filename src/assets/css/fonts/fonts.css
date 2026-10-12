@@ -254,7 +254,7 @@ codigo de colores de uso interno segun brand
   font-weight: 100;
   font-family: sans-serif;
 }
-p{
+p,h1,h2,h3,a{
    word-spacing: -1px;
 }
 
@@ -265,6 +265,20 @@ p{
     --fs-subtitle: 18px;
     --fs-body: 15px;
     --fs--subtitle-h1:20px;
+  }
+  
+}
+@media screen and (min-width:2000px) {
+  p,h1,h2,h3,a{
+  font-size: clamp(1rem,2vw,2rem);
+  word-spacing: 1px;
+  line-height: 35px;
+}
+  :root {
+    --fs-title: 45px;
+    --fs-subtitle: 30px;
+    --fs-body: 35px;
+    --fs--subtitle-h1:55px;
   }
 }
 

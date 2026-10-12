@@ -12,30 +12,16 @@ header {
   background-color: var(--primary-b-black);
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 .item-header {
-  padding: 0;
+  padding-left: 1.5rem;
   margin: 0;
-  /* background-color: blueviolet; */
-  /* border: 1px solid beige; */
 }
 .icon {
-  display: flex;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
-.icon-img {
-  margin: 0;
-  background-image: url("../../assets/imgs/kanut.png");
-  background-repeat: no-repeat;
-  height: 60%;
-  width: 15vh;
-}
 .navbar {
   width: 90%;
   display: flex;
@@ -56,7 +42,9 @@ header {
   color: white;
   text-decoration: none;
   font-weight: 400;
-  transition:color var(--time-transition),font-weight var(--time-transition);
+  transition:
+    color var(--time-transition),
+    font-weight var(--time-transition);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -89,10 +77,10 @@ header {
     width: 100%;
   }
 }
-.list-options > .btn-whatsap:hover{
-color: var(--primary-b-black);
+.list-options > .btn-whatsap:hover {
+  color: var(--primary-b-black);
 }
-.disabled{
+.disabled {
   height: 5px;
 }
 .btn-whatsap {
@@ -108,5 +96,19 @@ color: var(--primary-b-black);
   text-size-adjust: initial;
   i {
     font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  header {
+    padding: 2rem;
+  }
+  .icon {
+    width: 150%;
+  }
+
+  .btn-whatsap {
+    width: 15%;
+    padding: 5px;
   }
 }

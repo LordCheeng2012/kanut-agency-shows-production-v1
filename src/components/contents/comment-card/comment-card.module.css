@@ -1,0 +1,77 @@
+
+.card-comment-content {
+  max-width: 45vh;
+}
+.content-card-comment {
+  border-radius: 20px;
+  font-size: small;
+  color: black;
+  background-color: var(--gray-white);
+}
+.title-service-comment {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 1rem;
+  padding: 5px;
+  font-size: medium;
+  color: var(--gray-white);
+  max-width: 80%;
+  h3{
+   padding-left: 10px;
+  }
+}
+
+.comment-img-content {
+  justify-content: start;
+  min-height: 80vh;
+  position: relative;
+}
+.img-autor-comment{
+  max-width: 40%;
+  background-color: transparent;
+}
+.comments {
+  text-align: justify;
+  font-weight: 500;
+  word-spacing: -1px;
+  padding: 1rem;
+  width: 100%;
+  p{
+    margin: 10px;
+  }
+}
+
+.autor {
+  text-align: start;
+  padding-inline: 1rem;
+  margin: 5px;
+  align-self: flex-start;
+  justify-self: flex-end;
+  font-size: medium;
+  font-style: oblique;
+  position: absolute;
+  bottom: 5%;
+}
+.footer-comment-card {
+  height: 10%;
+  width: 10%;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 5vh solid var(--gray-white);
+}
+
+
+@media screen and (min-width:2000px) {
+
+.card-comment-content {
+  max-width: 50vh;
+}
+  .comments {
+  word-spacing: -2px;
+  padding: 0;
+  width: 100%;
+  p{
+    margin: 15px;
+  }
+}
+}

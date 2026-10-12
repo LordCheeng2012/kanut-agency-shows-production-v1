@@ -1,0 +1,64 @@
+.about-section {
+  background: url("../../../assets/imgs/backgrounds/about.png");
+  background-repeat: no-repeat;
+  background-color: var(--primary-w);
+  background-size: cover;
+  min-height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10rem;
+  gap: 20px;
+}
+.about button {
+  align-self: flex-end;
+}
+.about img {
+  background-color: transparent;
+  max-width: 35vh;
+}
+.up {
+  margin-bottom: 20vh;
+}
+.description-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  max-width: 40%;
+  min-height: 100vh;
+}
+.container-team {
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding-inline: 0.5rem;
+  font-size: medium;
+  font-style: oblique;
+}
+
+@media screen and (min-width: 2000px) {
+  .about {
+    margin-top: 0;
+  }
+  .up {
+    align-self: normal;
+   margin-bottom: 0;
+  }
+  .description-about {
+    max-width: 50%;
+  }
+  .about img {
+    background-color: transparent;
+    max-width: 30vh;
+  }
+}

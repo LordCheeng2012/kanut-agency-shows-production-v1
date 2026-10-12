@@ -1,0 +1,16 @@
+.content-comments {
+  background-color: var(--primary-b-black);
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 1 auto;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding-block: 1rem;
+}
+
+.content-comments > .title-coments {
+  width: 80%;
+  margin-block: 2rem;
+}

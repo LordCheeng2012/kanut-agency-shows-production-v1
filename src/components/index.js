@@ -9,7 +9,6 @@ export { default as GridContainer } from "./grid-container/grid-container";
 export { default as Modal } from "./modal/modal";
 export { default as Separator } from "./separator/separator";
 export { default as CardAnimate } from "./contents/animate-cart-item/animate-card-item";
-export { Card, CardItem } from "./contents/cards/Card";
 export { Carousel } from "./contents/carousel/carousel"
 export { History } from "./contents/history/History";
 export { default as ItemService } from "./contents/service/ItemService";
@@ -21,3 +20,4 @@ export {default as fallbackError} from "./fallback-error"
 export {default as VideoPlayer} from "./video-player"
 export {default as Image} from "./image"
 export {default } from "./root-layout"
+export {default as CommentCard} from "./contents/comment-card"

@@ -1,24 +1,33 @@
-import { Card, Carousel } from "@components";
+import { Carousel, CommentCard } from "@components";
 import { prepareItems } from "./section-comments.js";
-import {Paths} from "@utils/index"
-import './section-comments.css';
+import { Paths } from "@utils/index";
+import styles from "./section-comments.module.css";
 
 export const SectionComments = () => {
-  const {fonts} =Paths(); 
+  const { fonts } = Paths();
   const items = prepareItems().result.map((items, index) => {
-  
+    return (
+     <>
+        {items.map((i) => {
+          return <CommentCard id="comment-card-item" {...i} />;
+        })}
+     </>
+    
+    );
+  });
   return (
-    <li className="cc-item" key={index}>
-      {items.map((i, subIndex) => (
-        <Card key={subIndex} data={{ ...i }} />
-      ))}
-    </li>
-  )
-});    
-  return (
-    <section className="content-comments">
-      <img src={`${fonts}/font_2.png`} alt="Kanulovers"  className="cc-item"/>
-      <Carousel items={items} automatic = {false} />
+    <section className={styles["content-comments"]}>
+      <img
+        src={`${fonts}/font_2.png`}
+        alt="Kanulovers"
+        className={styles["title-coments"]}
+      />
+      <Carousel
+        id="comment-carousel"
+        size="full"
+        items={items}
+        automatic={false}
+      />
     </section>
-  )
-}
+  );
+};

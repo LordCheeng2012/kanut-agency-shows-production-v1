@@ -1,31 +1,30 @@
-import { CardItem } from '../../../components/contents/cards/Card.jsx';
-import styles from './portfolio-content.module.css';
-import {appData as data}  from '@absolute/data/data.js';
-import { utils } from '../../../utils/utils.js';
-import {Paths} from "@utils/index"
+import styles from "./portfolio-content.module.css";
+import { appData as data } from "@absolute/data/data.js";
+import { utils, Paths } from "@utils/index";
+import { Container, Image } from "@components";
 
 export const PortfolioContent = () => {
-  const {banners} =Paths();
-  const {redirect} = utils();
+  const { banners } = Paths();
+  const { redirect } = utils();
 
   return (
-    <section className={styles["portfolio-content"]}>
-      <div className={`${styles["p-c-item"]} ${styles["p-c-title-portfolio"]}`}>
-        <h1 className="kanut-title">Portafolio</h1>
-      </div>
-
-      <div className={`${styles["p-c-item"]} ${styles["portfolio-list"]}`}>
-        {data.portfolio
-        .map((cv, index) => (
-            <CardItem
-              key={index}
-              image={`${banners}/${cv.image}`}
-              title={cv.title}
-              service={cv.service}
-              color={cv.color}
-              onClick={() =>redirect(`Portfolio/${cv["id"]}`)}
-            />
-          ))}
+    <section className={`center ${styles["portfolio-content"]}`}>
+      <h1 className={`${styles["title"]} kanut-title`}>Portafolio</h1>
+      <div className={`${styles["portfolio-list"]}`}>
+        {data.portfolio.map((cv, index) => (
+          <Container
+            className={styles["container-image-project-service"]}
+            size="inline-sm"
+            key={index}
+            onClick={() => redirect(`Portfolio/${cv.id}`)}
+          >
+            <Image src={ cv.image && `${banners}/${cv.image}`} />
+            <section className={`center ${styles["portfolio-subtitle-of-service"]}`}>
+              <h1>{cv.title}</h1>
+              <h2 className="signature" style={{color:`var(${cv.color})`}}>{cv.service}</h2>
+            </section>
+          </Container>
+        ))}
       </div>
     </section>
   );

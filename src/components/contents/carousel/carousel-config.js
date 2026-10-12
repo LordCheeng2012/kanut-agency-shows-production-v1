@@ -1,12 +1,11 @@
 
 import { _getCurrentIndex, clearAll, moveTransition } from "./pagination/pagination-items";
 export const toogleItems = (carouselRef,refPagination)=>{
-    if(!carouselRef) return;
+    if(!carouselRef || !carouselRef.current) return console.error("el carrusel objetivo no existe");
     const carousel = carouselRef.current.querySelector(`ul[data-carousel-active = "true"]`);
     const carouselItems = Array.from(carousel.querySelectorAll(`li`));
-    const onlyDefault = carouselItems.filter((i)=> i.className.includes("background"));
     let waitForStart = 3000;
-    const totalItems = onlyDefault.length-1;
+    const totalItems = carouselItems.length-1;
 
     const animation = ()=>{
         setInterval(()=>{

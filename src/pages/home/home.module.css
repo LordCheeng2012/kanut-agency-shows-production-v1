@@ -1,0 +1,13 @@
+.item-carousel-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.item-carousel-content button{
+   position: absolute;
+   bottom: 25vh;
+}
