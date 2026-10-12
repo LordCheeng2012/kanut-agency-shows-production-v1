@@ -10,7 +10,7 @@ export const Carousel = ({
   automatic = true,
   size = null,
   startIn = 0,
-  id="carousel-container"
+  id = "carousel-container",
 }) => {
   if (!items || !Array.isArray(items))
     return console.log("error items not is array valid -> ", items);
@@ -30,7 +30,7 @@ export const Carousel = ({
   return (
     <Container
       cssMerge={false}
-      className={`${s["carousel-content"]}`}
+      className={`${s["carousel-content"]} ${classname}`}
       size={size || "auto"}
       ref={refCarousel}
       id={id}

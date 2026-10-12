@@ -31,7 +31,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2%;
   max-width: 40%;
   min-height: 100vh;
 }

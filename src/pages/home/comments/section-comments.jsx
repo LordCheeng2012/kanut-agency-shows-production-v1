@@ -17,17 +17,20 @@ export const SectionComments = () => {
   });
   return (
     <section className={styles["content-comments"]}>
-      <img
+      
+       <img
         src={`${fonts}/font_2.png`}
         alt="Kanulovers"
         className={styles["title-coments"]}
       />
+
       <Carousel
-        id="comment-carousel"
-        size="full"
+        classname ={styles["comment-carousel"]}
+        size="auto"
         items={items}
         automatic={false}
-      />
+      /> 
+      
     </section>
   );
 };

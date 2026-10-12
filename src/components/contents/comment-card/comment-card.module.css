@@ -1,6 +1,7 @@
-
 .card-comment-content {
   max-width: 45vh;
+  justify-content: flex-start;
+  max-height: 120vh;
 }
 .content-card-comment {
   border-radius: 20px;
@@ -16,19 +17,20 @@
   font-size: medium;
   color: var(--gray-white);
   max-width: 80%;
-  h3{
-   padding-left: 10px;
+  h3 {
+    padding-left: 10px;
   }
 }
 
 .comment-img-content {
-  justify-content: start;
-  min-height: 80vh;
+  justify-content: flex-start;
   position: relative;
+  height: 100vh;
 }
-.img-autor-comment{
+.img-autor-comment {
   max-width: 40%;
   background-color: transparent;
+  margin: 1rem;
 }
 .comments {
   text-align: justify;
@@ -36,21 +38,21 @@
   word-spacing: -1px;
   padding: 1rem;
   width: 100%;
-  p{
+  p {
     margin: 10px;
   }
 }
 
 .autor {
   text-align: start;
-  padding-inline: 1rem;
-  margin: 5px;
+  padding: 1.5rem 2.5rem;
   align-self: flex-start;
-  justify-self: flex-end;
   font-size: medium;
   font-style: oblique;
-  position: absolute;
-  bottom: 5%;
+  font-weight: 600;
+  font-style: oblique;
+  margin-top: auto;
+  
 }
 .footer-comment-card {
   height: 10%;
@@ -60,18 +62,19 @@
   border-top: 5vh solid var(--gray-white);
 }
 
-
-@media screen and (min-width:2000px) {
-
-.card-comment-content {
-  max-width: 50vh;
-}
-  .comments {
-  word-spacing: -2px;
-  padding: 0;
-  width: 100%;
-  p{
-    margin: 15px;
+@media screen and (min-width: 2000px) {
+  .card-comment-content {
+    max-width: 50vh;
   }
-}
+  
+  .comments {
+    word-spacing: -2px;
+    padding: 0;
+    width: 85%;
+    padding-block: 1rem;
+    p {
+      margin: 15px;
+      font-size: 1.7rem;
+    }
+  }
 }
