@@ -23,7 +23,7 @@ export const PortfolioContent = () => {
               title={cv.title}
               service={cv.service}
               color={cv.color}
-              onClick={() =>redirect(`Portfolio/${cv["id"]}`)}
+              onClick={() => redirect(`/portfolio/${cv.slug}`)}
             />
           ))}
       </div>
