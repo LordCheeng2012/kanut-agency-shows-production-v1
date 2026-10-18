@@ -1,7 +1,7 @@
 export * from "./buttons/Button";
 export * from "./inputs/Inputs";
 
-export {default as Header}  from "./header/header"
+export {default as Header}  from "./header"
 export { Footer } from "./footer/Footer";
 export { default as Galery } from "./galery/galery";
 export { default as  GaleryItem } from "./galery-item/galery-item";

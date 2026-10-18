@@ -1,54 +1,57 @@
 import { useState } from "react";
 import { deploy, close } from "./drop-down-item/drop-down-item.jsx";
-import kanut from "@imgs/kanut.png"
-import "./Header.css";
+import kanut from "@imgs/kanut.png";
+import styles from "./header.module.css";
 
- function Header (){
+function Header() {
   const [desplegableItem, setDesplegableItem] = useState(null);
+
   return (
     <header>
-      <div className="item-header">
-       <a href="./">
-        <img src= {kanut}alt="kanut logo principal" className="icon" />
-       </a>
+      <div className={styles["item-header"]}>
+        <a href="./">
+          <img src={kanut} alt="kanut logo principal" className={styles.icon} />
+        </a>
       </div>
-      <nav className="navbar item-header">
-        <li className="list-options kanut-subtitle-light">
-          <a href="/Home" className="item-list">
+      <nav className={`${styles["item-header"]} kanut-subtitle-light`}>      
+          <a href="/Home" className={styles["item-list"]}>
             <p>Inicio</p>
-            <div className="line-link" />
+            <div className={styles["line-link"]} />
           </a>
-          <a 
-           href="/about"
-           className="item-list">
+
+          <a href="/about" className={styles["item-list"]}>
             <p>Nosotros</p>
-            <div className="line-link" />
+            <div className={styles["line-link"]} />
           </a>
+
           <div
-            className="item-list"
+            className={styles["item-list"]}
             data-drop-down-menu
-            onMouseEnter={(e) =>deploy({e,seteableState: setDesplegableItem})}
-            onMouseLeave={(e)=>close({e,seteableState:setDesplegableItem})}
-            >
+            onMouseEnter={(e) => deploy({ e, seteableState: setDesplegableItem })}
+            onMouseLeave={(e) => close({ e, seteableState: setDesplegableItem })}
+          >
             <p>Servicios</p>
-            <div className="disabled" />
+            <div className={styles["disabled"]} />
             {desplegableItem}
           </div>
-          <a href="/Contact" className="item-list">
+
+          <a href="/Contact" className={styles["item-list"]}>
             <p>Contactenos</p>
-            <div className="line-link" />
+           <div className={styles["line-link"]} />
           </a>
-          <a href="/bolsa" className="item-list">
+
+          <a href="/bolsa" className={styles["item-list"]}>
             <p>Bolsa de trabajo</p>
-            <div className="line-link" />
+            <div className={styles["line-link"]} />
           </a>
-          <a href="https://walink.co/x856dy" className="item-list btn-whatsap">
+
+          <a href="https://walink.co/x856dy" className={`${styles["item-list"]} ${styles["btn-whatsap"]}`}>
             <i className="fa fa-whatsapp"></i>
-            <p className="i-l-wsp kanut-subtitle"> WhatsApp</p>
+            <p className="i-l-wsp kanut-subtitle">WhatsApp</p>
           </a>
-        </li>
       </nav>
     </header>
   );
-};
+}
+
 export default Header;

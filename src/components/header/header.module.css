@@ -10,25 +10,19 @@ header {
   flex: 0 1 100%;
   flex-direction: row;
   background-color: var(--primary-b-black);
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1rem;
+  padding: var(--space-container);
 }
 .item-header {
-  padding-left: 1.5rem;
+  padding-left: var(--space-container);
   margin: 0;
 }
 .icon {
   width: 100%;
 }
 
-.navbar {
+nav {
   width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.list-options {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -37,6 +31,7 @@ header {
   width: 100%;
   gap: 2rem;
 }
+
 .item-list {
   position: relative;
   color: white;
@@ -44,7 +39,8 @@ header {
   font-weight: 400;
   transition:
     color var(--time-transition),
-    font-weight var(--time-transition);
+    font-weight var(--time-transition),
+    margin var(--time-transition);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -62,7 +58,7 @@ header {
   }
 }
 
-.list-options > .item-list:not(.btn-whatsap):hover {
+nav > a.item-list:not(.btn-whatsap):hover {
   color: var(--segondary-sky-b);
   font-weight: 500;
   margin-left: 10px;
@@ -71,15 +67,19 @@ header {
   p {
     margin-bottom: 5px;
   }
-  div.line-link {
+   div.line-link {
     background-color: var(--segondary-sky-b);
     border-radius: 5px;
     width: 100%;
   }
 }
-.list-options > .btn-whatsap:hover {
+nav > .btn-whatsap:hover {
   color: var(--primary-b-black);
 }
+.item-list[data-drop-down-menu]:hover{
+ margin-inline: 1vw;
+}
+
 .disabled {
   height: 5px;
 }
@@ -91,7 +91,7 @@ header {
   width: 20%;
   gap: 5%;
   background-color: var(--btn-wsp);
-  padding: 3px;
+  padding: var(--space-font);
   border-radius: 15px;
   text-size-adjust: initial;
   i {
@@ -99,16 +99,47 @@ header {
   }
 }
 
-@media screen and (min-width: 2000px) {
-  header {
-    padding: 2rem;
+
+@media  (max-width:1130px) {
+ header{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:var(--space-container)
+ }
+
+ .item-header {
+  padding-left:0;
+  margin: 0;
+}
+nav{
+  justify-content: center;
+}
+}
+
+@media (max-width:800px) {
+  header{
+    position: relative;
+    gap: var(--space-container);
   }
+  nav {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-whatsap {
+ width: 100%;
+ padding-inline: 5px;
+}
+
+}
+
+@media screen and (min-width: 2000px) {
   .icon {
     width: 150%;
   }
-
   .btn-whatsap {
     width: 15%;
-    padding: 5px;
   }
 }

@@ -1,0 +1,20 @@
+:root{
+ --space-container:2rem;
+ --space-font:5px;
+}
+
+@media (max-width: 600px)  {
+  :root{
+    --space-container:0.5rem;
+  }
+}
+@media (min-width:600px)  {
+  :root{
+   --space-container:1rem;
+  }
+}
+@media (max-width: 1025px) {
+  :root{
+   --space-container:1.5rem;
+  }
+}

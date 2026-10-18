@@ -1,0 +1,25 @@
+/*
+Configuracion de fuentes principales Kanut
+----------------------------------------
+@Corparation KANUT--ENTERPRICE-2026 
+----------------------------------------
+codigo de colores de uso interno segun brand 
+
+*/
+
+/*colores  */
+@import url("./colors/primary.css");
+@import url("./colors/segondary.css");
+@import url("./banners/banners.css");
+
+/* clases personalizadas  */
+@import url("./styles/kanut-boda.css");
+@import url("./styles/kanut-party.css");
+@import url("./styles/kanut-shows.css");
+
+/* fuentes  */
+@import url("./fonts/fonts.css");
+
+/* settings  */
+@import url("./settings/fonts-rules.css");
+@import url("./settings/space-const.css");
