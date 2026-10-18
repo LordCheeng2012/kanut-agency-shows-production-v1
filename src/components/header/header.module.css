@@ -126,7 +126,7 @@ nav>.btn-whatsap:hover {
   }
 }
 
-@media (max-width:800px) {
+@media (max-width:600px) {
   header {
     position: relative;
     gap: var(--space-container);
