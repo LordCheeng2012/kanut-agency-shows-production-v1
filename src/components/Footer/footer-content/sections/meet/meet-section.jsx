@@ -8,7 +8,7 @@ import lnk from "@imgs/icons/linkedin.png"
 function MeetSection({className=""}) {
     return (
     <div className={`${className} ${styles["meet-section"]}`}>
-        <h1 className="title-section">AGENDA TU REUNIÓN</h1>
+        <h2 >AGENDA TU REUNIÓN</h2>
         <div className={`${styles["section-reserved"]} `}>
             <a href="https://walink.co/x856dy">
                 <img src={meet} alt="reserva referencia" />

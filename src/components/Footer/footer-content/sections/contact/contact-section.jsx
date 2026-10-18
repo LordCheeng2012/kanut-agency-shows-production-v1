@@ -3,14 +3,15 @@ import contactInfo from "@data/contacts.json";
 import wsp from "@imgs/icons/wsp.png";
 import email from "@imgs/icons/email.png";
 import claim from "@imgs/icons/claim.png";
+import Image from "@components/image";
 function ContactSection({ className = "" }) {
 
   return (
     <div className={`${className} ${styles["contact-section"]}`}>
-      <h1 className="title-section">CONTACTANOS</h1>
+      <h2>CONTACTANOS</h2>
       <section className={` ${styles["info-contact"]}`}>
         <div className={`${styles["item-info"]} `}>
-          <img src={wsp} alt="whatssap" />
+          <Image src={wsp} alt="whatssap" />
           <ul className={styles["list-numbers"]}>
             {contactInfo.telephones.map((n) => (
               <li>{`+51 ${n}`}</li>
@@ -18,7 +19,7 @@ function ContactSection({ className = "" }) {
           </ul>
         </div>
         <div className={`${styles["item-info"]}`}>
-          <img src={email} alt="email" />
+          <Image src={email} alt="email"  />
           <a href="">
            {contactInfo.email}
           </a>

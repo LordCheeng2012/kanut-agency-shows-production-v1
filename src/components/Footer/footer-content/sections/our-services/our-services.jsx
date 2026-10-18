@@ -10,7 +10,7 @@ function OurServices({className=""}) {
     <div
       className={`${className} ${styles["our-services-section"]}`}
     >
-      <h1 className="title-section">NUESTROS SERVICIOS</h1>
+      <h2>NUESTROS SERVICIOS</h2>
       <section>
         <div className={styles["service-list"]}>
           {Allservices.map((s) => (

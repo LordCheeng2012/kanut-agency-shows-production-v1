@@ -1,12 +1,10 @@
 
 .footer-content{
     display: inline-flex;
-    padding: 1rem;
-    height: 80vh;
+    padding: var( --space-container);
 }
 .footer-content-item{
     display: inline-block;
-    padding: 0.5rem;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -29,7 +27,6 @@
     justify-content: flex-start;
     align-items: stretch;
     width: 100%;
-    padding: 0.75rem;
     box-sizing: border-box;
   }
 }

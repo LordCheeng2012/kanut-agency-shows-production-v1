@@ -13,10 +13,12 @@ header {
   justify-content: space-between;
   padding: var(--space-container);
 }
+
 .item-header {
   padding-left: var(--space-container);
   margin: 0;
 }
+
 .icon {
   width: 100%;
 }
@@ -46,10 +48,12 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   p {
     margin-bottom: 0px;
     transition: margin-bottom var(--time-transition);
   }
+
   div.line-link {
     height: 5px;
     width: 0;
@@ -58,31 +62,34 @@ nav {
   }
 }
 
-nav > a.item-list:not(.btn-whatsap):hover {
+nav>a.item-list:not(.btn-whatsap):hover {
   color: var(--segondary-sky-b);
   font-weight: 500;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-inline: 10px;
   height: 100%;
   p {
     margin-bottom: 5px;
   }
-   div.line-link {
+
+  div.line-link {
     background-color: var(--segondary-sky-b);
     border-radius: 5px;
     width: 100%;
   }
 }
-nav > .btn-whatsap:hover {
+
+nav>.btn-whatsap:hover {
   color: var(--primary-b-black);
 }
-.item-list[data-drop-down-menu]:hover{
- margin-inline: 1vw;
+
+.item-list[data-drop-down-menu]:hover {
+  margin-inline: 1vw;
 }
 
 .disabled {
   height: 5px;
 }
+
 .btn-whatsap {
   display: flex;
   flex-direction: row;
@@ -94,44 +101,48 @@ nav > .btn-whatsap:hover {
   padding: var(--space-font);
   border-radius: 15px;
   text-size-adjust: initial;
+
   i {
     font-size: 25px;
   }
 }
 
 
-@media  (max-width:1130px) {
- header{
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap:var(--space-container)
- }
+@media (max-width:1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-container)
+  }
 
- .item-header {
-  padding-left:0;
-  margin: 0;
-}
-nav{
-  justify-content: center;
-}
+  .item-header {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  nav {
+    justify-content: center;
+  }
 }
 
 @media (max-width:800px) {
-  header{
+  header {
     position: relative;
     gap: var(--space-container);
   }
+
   nav {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.btn-whatsap {
- width: 100%;
- padding-inline: 5px;
-}
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .btn-whatsap {
+    width: 100%;
+    padding-inline: 5px;
+  }
 
 }
 
@@ -139,6 +150,7 @@ nav{
   .icon {
     width: 150%;
   }
+
   .btn-whatsap {
     width: 15%;
   }
