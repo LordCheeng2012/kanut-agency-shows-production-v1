@@ -17,6 +17,7 @@ codigo de colores de uso interno segun brand
   --kanut-party-neon:#30B1BF;
   --kanut-party-green:var(--btn-wsp);
   --time:0.5s;
+  --size-border:0.3vw;
 }
 
 .transition{
@@ -56,13 +57,13 @@ codigo de colores de uso interno segun brand
     background-color:var(--kanut-party-green);
 }
 .kanut-party-border-1 {
-  border: 1px solid var(--kanut-party-white);
+  border: var(--size-border) solid var(--kanut-party-white);
 }
 .kanut-party-border-2 {
-  border: 1px solid var(--kanut-party-orange);
+  border: var(--size-border) solid var(--kanut-party-orange);
 }
 .kanut-party-border-3 {
-  border: 1px solid var(--kanut-party-blue);
+  border: var(--size-border) solid var(--kanut-party-blue);
 }
 .kanut-party-color-text-1 {
   color: var(--kanut-party-neon);
@@ -81,6 +82,9 @@ color: var(--kanut-party-green);
 }
 .kanut-party-color-text-4 {
   color: var(--kanut-party-white);
+}
+.kanut-party-color-text-5{
+  color:  var(--kanut-party-orange);
 }
 
 

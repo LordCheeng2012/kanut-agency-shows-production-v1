@@ -1,6 +1,9 @@
 :root{
  --space-container:2rem;
  --space-font:5px;
+ --space-font-sm:0.5rem;
+ --space-font-md:1rem;
+ --space-font-lg:1.5rem;
 }
 
 @media (max-width: 600px)  {

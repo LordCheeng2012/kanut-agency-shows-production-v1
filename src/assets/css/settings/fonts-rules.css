@@ -28,3 +28,14 @@ a{
         color: var(--gray-white);
 }
 
+/* 
+clases personalisadas
+*/
+
+.signature{
+    font-family: Josefin Sans;
+    font-style: oblique;
+    font-weight: 700;
+    letter-spacing: -1.4px;
+    color: var(--background-gray--service);
+}

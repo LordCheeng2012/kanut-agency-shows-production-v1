@@ -15,9 +15,10 @@ codigo de colores de uso interno segun brand
   --kanut-shows-blue-dark:#022859;
   --kanut-shows-text-red: #D91818;
   --kanut-shows-orange:#D9863D;
-  --kanut-shows-neon:#30B1BF;
+  --kanut-shows-sky-blue:#30B1BF;
   --kanut-shows-green:var(--btn-wsp);
   --time:0.5s;
+  --size-border:0.3vw;
 }
 
 .transition{
@@ -60,13 +61,16 @@ codigo de colores de uso interno segun brand
     background-color:var(--kanut-shows-green);
 }
 .kanut-shows-border-1 {
-  border: 1px solid var(--kanut-shows-pink);
+  border: var(--size-border) solid var(--kanut-shows-pink);
 }
 .kanut-shows-border-2 {
-  border: 1px solid var(--kanut-shows-blue);
+  border: var(--size-border) solid var(--kanut-shows-blue);
 }
 .kanut-shows-border-3 {
-  border: 1px solid var(--kanut-shows-blue);
+  border: var(--size-border) solid var(--kanut-shows-blue);
+}
+.kanut-shows-border-4{
+  border: var(--size-border) solid var(--kanut-shows-sky-blue);
 }
 .kanut-shows-color-text-1 {
   color: var(--kanut-shows-pink);

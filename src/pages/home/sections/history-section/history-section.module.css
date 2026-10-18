@@ -25,9 +25,43 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: var(--space-content);
+    padding: var(--space-content);
 }
 
 .service__list__item {
-    background-color: cadetblue;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    max-width: 30vw;
+    height: 100vh;
+}
+.service__list_event__information__container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.service__list__item__event_type{
+    padding: var(--space-font);
+    border-radius: 10vw;
+    width: 50%;
+}
+.service__list__item__description{
+    padding: var(--space-font);
+    margin-block: 1.5rem;
+}
+.service__list__item_comments{
+    width: 60%;
+}
+
+@media screen and (max-width:768px) {
+  .history-section__service__list {
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.service__list__item {
+    max-width: 100%;
+    height: auto;
+    margin-block: var(--space-content);
+}
 }

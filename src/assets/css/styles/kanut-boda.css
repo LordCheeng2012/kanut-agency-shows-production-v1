@@ -14,6 +14,7 @@ codigo de colores de uso interno segun brand
   --kanut-boda-orange: #D9863D;
   --kanut-boda-text-orange: #8c683e;
   --time:0.5s;
+  --size-border:0.3vw;
 }
 
 .transition{
@@ -47,10 +48,10 @@ codigo de colores de uso interno segun brand
     background-color:var(--kanut-boda-orange);
 }
 .kanut-boda-border-1 {
-  border: 1px solid var(--kanut-boda-red);
+  border: var(--size-border) solid var(--kanut-boda-red);
 }
 .kanut-boda-border-2 {
-  border: 1px solid var(--kanut-boda-beich);
+  border: var(--size-border) solid var(--kanut-boda-beich);
 }
 .kanut-boda-color-text-1 {
   color: var(--kanut-boda-text-orange);
