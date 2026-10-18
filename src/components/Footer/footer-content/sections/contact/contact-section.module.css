@@ -56,22 +56,7 @@
 
 
 
-
-@media (min-width: 600px) {
- .info-contact {
-  flex-flow: row nowrap ;
-
-}
- .item-info {
-  flex-flow: row;
-  justify-content: center;
-  text-align: center;
-  img{
-    width: 5vw;
-  }
-  }
-}
-@media (min-width: 1024px)  {
+@media (max-width: 1024px)  {
   .info-contact {
     align-items: center;
     text-align: center;
@@ -101,5 +86,20 @@
   .claim-big {
     width: 100%;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+ .info-contact {
+  flex-flow: row wrap ;
+
+}
+ .item-info {
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+  img{
+    width: 5vw;
+  }
   }
 }

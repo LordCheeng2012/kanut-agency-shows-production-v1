@@ -1,47 +1,44 @@
-import styles from  "./home.module.css";
-import { History, Carousel, Button } from "@components";
-import { PortfolioContent } from "./portfolio/portfolio-content.jsx";
-import { SectionComments } from "./comments/section-comments.jsx";
-import AboutSection from "./about/about-section";
-
+import styles from "./home.module.css";
+import {
+  PortfolioSection,
+  AboutSection,
+  SectionComments,
+  HistorySection,
+} from "./sections";
+import { Carousel,Button } from "@components";
 export default function HomePage() {
-  const items = [ 
-      <div className="background-template background-boda">
-        <div className={styles["item-carousel-content"]}>
-          <Button size="medium" classname="free-content" type="blue">
+  const items = [
+    <div className="background-template background-boda">
+      <div className={styles["item-carousel-content"]}>
+        <Button size="medium" classname="free-content" type="blue">
           Informes
         </Button>
-        </div>
       </div>
-   ,
-   
-      <div className="background-template background-party">
-       <div className={styles["item-carousel-content"]}>
-         <Button size="medium" classname="free-content" type="sky">
+    </div>,
+
+    <div className="background-template background-party">
+      <div className={styles["item-carousel-content"]}>
+        <Button size="medium" classname="free-content" type="sky">
           Informes
         </Button>
-       </div>
       </div>
-   ,
-    
-      <div className="background-template background-shows">
-         <div className={styles["item-carousel-content"]}>
+    </div>,
+
+    <div className="background-template background-shows">
+      <div className={styles["item-carousel-content"]}>
         <Button size="medium" classname="free-content" type="primary">
           Informes
         </Button>
-          
-        </div>
       </div>
-   ,
+    </div>,
   ];
   return (
-      <div className ={`center ${styles["home-page"]}`}>
-      <Carousel items={items} size="inline-lg"/>
-      <History />
+    <div className={`center ${styles["home-page"]}`}>
+      <Carousel items={items} size="inline-lg" />
+      <HistorySection />
       <AboutSection />
-      <PortfolioContent />
+      <PortfolioSection />
       <SectionComments />
-      </div>
-  
+    </div>
   );
 }

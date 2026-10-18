@@ -10,7 +10,6 @@ export { default as Modal } from "./modal/modal";
 export { default as Separator } from "./separator/separator";
 export { default as CardAnimate } from "./contents/animate-cart-item/animate-card-item";
 export { Carousel } from "./contents/carousel/carousel"
-export { History } from "./contents/history/History";
 export { default as ItemService } from "./contents/service/ItemService";
 export { TitleService } from "./contents/service/TitleService";
 export { default as Valores } from "./contents/valores/valores";

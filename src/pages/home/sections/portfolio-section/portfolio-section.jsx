@@ -1,9 +1,9 @@
-import styles from "./portfolio-content.module.css";
+import styles from "./portfolio-section.module.css";
 import { appData as data } from "@absolute/data/data.js";
 import { utils, Paths } from "@utils/index";
 import { Container, Image } from "@components";
 
-export const PortfolioContent = () => {
+export default function PortfolioSection() {
   const { banners } = Paths();
   const { redirect } = utils();
 
