@@ -10,8 +10,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color:cadetblue;
 }
 .item-carousel-content button{
    position: absolute;
-   bottom: 25vh;
+   bottom: 7vw;
 }
+

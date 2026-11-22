@@ -100,7 +100,7 @@ color:var(--primary-w);
     height:var(--size-md);
     width: var(--size-md);
     text-align: center;
-    padding: 0;
+    padding: 10px;
     font-size: var(--size-circle);
 }
 .circle * {
@@ -109,4 +109,5 @@ color:var(--primary-w);
     justify-content: center;
     align-items: center;
     height: auto;
+    line-height: 0;
 }

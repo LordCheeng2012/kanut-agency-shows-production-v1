@@ -60,8 +60,8 @@ function Modal({
         ref={refContentModal}
       >
         {show ? (
-          <button className={styles["close-buttom"]} onClick={handleClose}>
-            X
+          <button className={styles["modal-close"]} onClick={handleClose}>
+             <span aria-hidden="true">&times;</span>
           </button>
         ) : (
           <></>

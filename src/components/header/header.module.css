@@ -22,7 +22,9 @@ header {
 .icon {
   width: 100%;
 }
-
+.hamburger{
+  display: contents;
+}
 nav {
   width: 90%;
   display: flex;
@@ -107,7 +109,6 @@ nav>.btn-whatsap:hover {
   }
 }
 
-
 @media (max-width:1024px) {
   header {
     flex-direction: column;
@@ -126,26 +127,6 @@ nav>.btn-whatsap:hover {
   }
 }
 
-@media (max-width:600px) {
-  header {
-    position: relative;
-    gap: var(--space-container);
-  }
-
-  nav {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .btn-whatsap {
-    width: 100%;
-    padding-inline: 5px;
-  }
-
-}
-
 @media screen and (min-width: 2000px) {
   .icon {
     width: 150%;
@@ -154,4 +135,23 @@ nav>.btn-whatsap:hover {
   .btn-whatsap {
     width: 15%;
   }
+}
+
+@media (max-width:768px) {
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hamburger{
+    display: flex;
+    min-width: 15vw;
+    min-height: 10vh;
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+  }
+  nav{
+    display: none;
+  }
+
 }

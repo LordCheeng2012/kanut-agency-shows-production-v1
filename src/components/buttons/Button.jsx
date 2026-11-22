@@ -13,7 +13,6 @@ export const Button = ({
   );
 };
 export const ButtonCircle = ({
-  classname,
   children,
   type = "primary",
   size = "small",

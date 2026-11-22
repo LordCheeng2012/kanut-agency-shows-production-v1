@@ -4,15 +4,15 @@ import {
   GridContainer,
   Modal,
   Container,
+  Image
 } from "@components";
 import styles from "./galery.module.css";
 import { useServices } from "@absolute/hooks";
 import { useState } from "react";
-import { utils,ExistDirectory } from "@utils/index";
+import { utils } from "@utils/index";
 
 function Galery({ gallery = null, ListImages = [] }) {
   const { isnull_undf } = utils();
-  ExistDirectory("afsaedfsdfserf");
   
   if (
     isnull_undf(gallery) ||
@@ -37,8 +37,8 @@ function Galery({ gallery = null, ListImages = [] }) {
     <Carousel
       automatic={false}
       items={ListImages.map(({ url, alt },i) => (
-        <Container size="ex-lg" key={i}>
-          <GaleryItem path={url} alt={alt} display="countain" />
+        <Container size="auto" key={i} >
+          <Image src={url} alt={alt} display="cover" className  ={styles["gallery-modal-container-image"]} />
         </Container>
       ))}
       startIn={currentIndex}

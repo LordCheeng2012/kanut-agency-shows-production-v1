@@ -31,4 +31,5 @@ main {
   flex-flow: column nowrap;
   position: relative;
   background-color: var(--gray-white);
+  overflow: hidden;
 }

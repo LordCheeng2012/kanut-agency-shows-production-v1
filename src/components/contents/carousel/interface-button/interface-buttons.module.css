@@ -2,7 +2,6 @@
     position: absolute;
     background-color: brown;
     width: 100%;
-    /* height: 15vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +14,7 @@
     z-index: -1;
 }
 .io-options{
-    /* height: 100%; */
+
     width: 100%;
     position: absolute;
     /* ensure controls sit above potential overlays and receive pointer events */
@@ -24,11 +23,12 @@
     flex-direction: column;
 }
 .io-buttons{
-    /* background-color: rgba(90, 15, 160, 0.068); */
+    pointer-events: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
     z-index: 1001;
+    
 }
