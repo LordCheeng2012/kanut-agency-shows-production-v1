@@ -60,12 +60,20 @@
     font-weight: 800;
   }
 }
-
+@media (max-width: 768px) {
+  .nav-content {
+    top:0;
+    padding:0;
+    height: auto;
+    justify-content: start;
+    position: relative;
+  }
+}
 @media (max-width: 500px) {
   .nav-content {
+    gap: 0;
+    min-width: 100vw;
     position: relative;
     background-color: var(--gray-white);
-    min-width: 100vw;
-    gap: 0;
   }
 }

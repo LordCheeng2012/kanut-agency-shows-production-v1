@@ -42,7 +42,7 @@ export default function HomePage() {
   ];
   return (
     <div className={`center ${styles["home-page"]}`}>
-      <Carousel items={items}  />
+      <Carousel items={items} automatic= {false}/>
       <HistorySection />
       <AboutSection />
       <PortfolioSection />

@@ -23,3 +23,12 @@ codigo de colores de uso interno segun brand
 /* settings  */
 @import url("./settings/fonts-rules.css");
 @import url("./settings/space-const.css");
+
+.mb-hidden{
+    display: none;
+}
+
+
+@media (max-width:768px) {
+.mb-hidden{display: block}
+}

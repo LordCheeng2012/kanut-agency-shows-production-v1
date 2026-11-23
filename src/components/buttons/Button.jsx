@@ -13,6 +13,7 @@ export const Button = ({
   );
 };
 export const ButtonCircle = ({
+  classname = null,
   children,
   type = "primary",
   size = "small",
@@ -20,7 +21,7 @@ export const ButtonCircle = ({
 }) => {
   if (!children) return;
   return (
-    <button onClick={onClick} className={`${b["circle"]} ${b[type]} ${b[size]}`}>
+    <button onClick={onClick} className={`${b["circle"]} ${b[type]} ${b[size]} ${classname && classname}`}>
       {children}
     </button>
   );

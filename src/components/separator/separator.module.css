@@ -1,6 +1,5 @@
 .separator{
     border: 1px solid var(--primary-griss);
-    margin: 1rem;
 }
 
 .interrumped{
@@ -17,4 +16,14 @@
 }
 .default-color{
       background-color: var(--primary-griss); 
+}
+
+.space-sm{
+    margin: 5px;
+}
+.space-md{
+    margin: 10px;
+}
+.space-lg{
+    margin: 1rem;
 }

@@ -1,20 +1,35 @@
-import { useState } from "react";
-import { deploy, close, DrowItem } from "./drop-down-item/drop-down-item.jsx";
+import { useEffect, useState } from "react";
+import { DrowItem } from "./drop-down-item/drop-down-item.jsx";
 import kanut from "@imgs/kanut.png";
 import styles from "./header.module.css";
-import { Separator } from "@components";
+import { ButtonCircle, Separator } from "@components";
+import ArrowDropIcon from "@components/icons/arrow-drop-icon.jsx";
 
 function Header() {
-  const [desplegableItem, setDesplegableItem] = useState(DrowItem);
+  const [desplegableItem, setDesplegableItem] = useState(false);
+  const [isMobile, setIsMobile] = useState(
+    window.matchMedia("(max-width: 768px)").matches,
+  );
+
   const mobile = (
-    <>
-      <Separator />
-      <Separator />
-      <Separator />
-    </>
+    <div className={`${styles["mobile-content"]}`}>
+      <Separator space="md" />
+      <Separator space="md" />
+      <Separator space="md" />
+    </div>
   );
   const desktop = (
     <nav className={`${styles["item-header"]} kanut-subtitle-light`}>
+      <ButtonCircle
+        size="medium"
+        classname={`mb-hidden ${styles["close-menu-bar"]}`}
+        onClick={(e) => {
+         e.stopPropagation();
+          setIsMobile(true);
+        }}
+      >
+        X
+      </ButtonCircle>
       <a href="/Home" className={styles["item-list"]}>
         <p>Inicio</p>
         <div className={styles["line-link"]} />
@@ -28,12 +43,15 @@ function Header() {
       <div
         className={styles["item-list"]}
         data-drop-down-menu
-        onMouseEnter={(e) => deploy({ e, seteableState: setDesplegableItem })}
-        onMouseLeave={(e) => close({ e, seteableState: setDesplegableItem })}
+        onMouseEnter={() => setDesplegableItem(true)}
+        onMouseLeave={() => setDesplegableItem(false)}
       >
-        <p>Servicios</p>
+        <p>
+          Servicios
+          <ArrowDropIcon className="mb-hidden"/>
+        </p>
         <div className={styles["disabled"]} />
-        {desplegableItem}
+        {desplegableItem && <DrowItem />}
       </div>
 
       <a href="/Contact" className={styles["item-list"]}>
@@ -55,8 +73,14 @@ function Header() {
       </a>
     </nav>
   );
- 
-   const [Nav, setNav] = useState(desktop);
+
+  useEffect(() => {
+    const queryMedia = window.matchMedia("(max-width: 768px)");
+    const updateView = (e) => setIsMobile(e.matches);
+    queryMedia.addEventListener("change", updateView);
+    return () => queryMedia.removeEventListener("change", updateView);
+  }, []);
+
   return (
     <header>
       <div className={styles["item-header"]}>
@@ -64,9 +88,12 @@ function Header() {
           <img src={kanut} alt="kanut logo principal" className={styles.icon} />
         </a>
       </div>
-      <a className={styles["hamburger"]} onClick={() => setNav(desktop)}>
-        {Nav}
-      </a>
+      <div
+        className={styles["hamburger"]}
+        onClick={(e) =>setIsMobile(false)}
+      >
+        {isMobile ? mobile : desktop}
+      </div>
     </header>
   );
 }
