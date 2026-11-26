@@ -1,16 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { DrowItem } from "./drop-down-item/drop-down-item.jsx";
 import kanut from "@imgs/kanut.png";
 import styles from "./header.module.css";
 import { ButtonCircle, Separator } from "@components";
 import ArrowDropIcon from "@components/icons/arrow-drop-icon.jsx";
-
+import { UseViewVersion } from "@absolute/hooks";
 function Header() {
+  
+  const [display,setDisplay] = useState(false);
   const [desplegableItem, setDesplegableItem] = useState(false);
-  const [isMobile, setIsMobile] = useState(
-    window.matchMedia("(max-width: 768px)").matches,
-  );
-
+  const [isMobile] = UseViewVersion();
   const mobile = (
     <div className={`${styles["mobile-content"]}`}>
       <Separator space="md" />
@@ -25,7 +24,7 @@ function Header() {
         classname={`mb-hidden ${styles["close-menu-bar"]}`}
         onClick={(e) => {
          e.stopPropagation();
-          setIsMobile(true);
+          setDisplay(!display);
         }}
       >
         X
@@ -39,16 +38,19 @@ function Header() {
         <p>Nosotros</p>
         <div className={styles["line-link"]} />
       </a>
-
       <div
         className={styles["item-list"]}
         data-drop-down-menu
-        onMouseEnter={() => setDesplegableItem(true)}
-        onMouseLeave={() => setDesplegableItem(false)}
+        onMouseEnter={() => !isMobile && setDesplegableItem(!desplegableItem)}
+        onMouseLeave={() => !isMobile && setDesplegableItem(!desplegableItem)}
+        onClick={(e)=> {
+          e.stopPropagation();
+          isMobile && setDesplegableItem(!desplegableItem)
+        }}
       >
         <p>
           Servicios
-          <ArrowDropIcon className="mb-hidden"/>
+          <ArrowDropIcon className="mb-hidden" active = {desplegableItem}/>
         </p>
         <div className={styles["disabled"]} />
         {desplegableItem && <DrowItem />}
@@ -74,12 +76,6 @@ function Header() {
     </nav>
   );
 
-  useEffect(() => {
-    const queryMedia = window.matchMedia("(max-width: 768px)");
-    const updateView = (e) => setIsMobile(e.matches);
-    queryMedia.addEventListener("change", updateView);
-    return () => queryMedia.removeEventListener("change", updateView);
-  }, []);
 
   return (
     <header>
@@ -90,9 +86,9 @@ function Header() {
       </div>
       <div
         className={styles["hamburger"]}
-        onClick={(e) =>setIsMobile(false)}
+        onClick={() =>setDisplay(!display)}
       >
-        {isMobile ? mobile : desktop}
+        {display ? mobile : desktop}
       </div>
     </header>
   );

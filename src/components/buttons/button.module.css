@@ -1,113 +1,107 @@
-:root{
-    --size-circle: 15px;
-    --size-sm:5vh;
-    --size-md:7vh;
-    --size-big:15vh;
-    --size-extra-big:20vh;
-    --pd-sm:10px;
-    --pd-md:15px;
-    --pd-big:20px;
-    --pd-ext-bg:30px;
-    --font-size-sm : 3vh; 
-    --font-size-md:3.5vh;
-    --font-size-big:5vh;
-    --font-size-extra-big:8vh;
-
-
+:root {
+  --size-circle: 15px;
+  --size-sm: 5vh;
+  --size-md: 10vh;
+  --size-big: 15vh;
+  --size-extra-big: 20vh;
+  --pd-sm: 10px;
+  --pd-md: 15px;
+  --pd-big: 20px;
+  --pd-ext-bg: 30px;
+  --font-size-sm: 3vh;
+  --font-size-md: 5vh;
+  --font-size-big: 7vh;
+  --font-size-extra-big: 9vh;
 }
 
-button{
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    padding-inline: 1rem;
+button {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding-inline: 1rem;
 }
-.auto{
-    height: auto;
-    width: auto;
+
+.auto {
+  height: auto;
+  width: auto;
 }
 
 /* sizes */
-.small{
-    font-size: var(--font-size-sm);
-    height: var(--size-sm);
-    width: var(--size-sm)*2;
-    padding-left: var(--pd-sm);
-    padding-right: var(--pd-sm);
-    font-weight: 100;
+.small {
+  font-size: var(--font-size-sm);
+  height: var(--size-sm);
+  width: var(--size-sm) ;
+  padding-left: var(--pd-sm);
+  padding-right: var(--pd-sm);
+  font-weight: 100;
+}
+.medium {
+  font-size: var(--font-size-md);
+  height: var(--size-md);
+  width: var(--size-md) ;
+  padding-left: var(--pd-md);
+  padding-right: var(--pd-md);
+  font-weight: 500;
+}
+.big {
+  font-size: var(--font-size-big);
+  height: var(--size-big);
+  width: var(--size-big) ;
+  padding-left: var(--pd-big);
+  padding-right: var(--pd-big);
+  font-weight: 800;
+}
 
-}
-.medium{
-    font-size: var(--font-size-md);
-    height:var(--size-md) ;
-    width:var(--size-md)*2;
-    padding-left: var(--pd-md);
-    padding-right: var(--pd-md);
-    font-weight: 500;
-}
-.big{
-    font-size: var(--font-size-big);
-    height: var(--size-big);
-    width: var(--size-big)*2;
-    padding-left: var(--pd-big);
-    padding-right: var(--pd-big);
-    font-weight: 800;
-}
-
-.extra-big{
-    font-size: var(--font-size-extra-big);
-    height: var(--size-big);
-    width: var(--size-big)*2;
-    padding-left: var(--pd-ext-bg);
-    padding-right: var(--pd-ext-bg);
-    font-weight: 800;
+.extra-big {
+  font-size: var(--font-size-extra-big);
+  height: var(--size-big);
+  width: var(--size-big) * 2;
+  padding-left: var(--pd-ext-bg);
+  padding-right: var(--pd-ext-bg);
+  font-weight: 800;
 }
 
 /* types */
-.primary{
-background-color: var(--segondary-pink);
-color: var(--primary-w);
+.primary {
+  background-color: var(--segondary-pink);
+  color: var(--primary-w);
 }
-.sky{
-background-color: var(--segondary-sky-b);
-color: var(--primary-w);
+.sky {
+  background-color: var(--segondary-sky-b);
+  color: var(--primary-w);
 }
-.gold{
-background-color: var(--segondary-gold);
-color: var(--primary-w);
+.gold {
+  background-color: var(--segondary-gold);
+  color: var(--primary-w);
 }
-.blue{
-background-color: var(--blue);
-color:var(--primary-w);
+.blue {
+  background-color: var(--blue);
+  color: var(--primary-w);
 }
-.white{
-    background-color:var(--primary-w);
-    color: var(--primary-b-black);
+.white {
+  background-color: var(--primary-w);
+  color: var(--primary-b-black);
 }
-.ghost{
-    background-color:var(--gray-white-ghost);
-    color: var(--primary-b-black);
+.ghost {
+  background-color: var(--gray-white-ghost);
+  color: var(--primary-b-black);
 }
-.brown{
-    background-color: var(--segondary-brown);
-    color:var(--primary-w);
+.brown {
+  background-color: var(--segondary-brown);
+  color: var(--primary-w);
 }
 /* formas */
-
-.circle{
-    border-radius: 35px;
-    height:var(--size-md);
-    width: var(--size-md);
-    text-align: center;
-    padding: 2vh;
-    font-size: var(--size-circle);
+.circle {
+  border-radius: 50%;
+  text-align: center;
+  padding: 1vh;
 }
 .circle * {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    line-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  line-height: 0;
 }

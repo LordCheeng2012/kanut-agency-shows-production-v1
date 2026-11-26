@@ -10,7 +10,9 @@
     transform: rotate(180deg);
   }
 }
-
 .circle {
-  animation: rotate 2s linear infinite;
+  transform: rotate(360deg);
+}
+.active{
+  transform: rotate(180deg);
 }

@@ -102,9 +102,8 @@ nav > .btn-whatsap:hover {
   padding: var(--space-font);
   border-radius: 15px;
   text-size-adjust: initial;
-
   i {
-    font-size: 25px;
+     font-size: clamp(35px,5vw, 50px);
   }
 }
 .mobile-content {
@@ -161,7 +160,7 @@ nav > .btn-whatsap:hover {
     width: 100%;
     height: 100vh;
     position: fixed;
-    align-items: end;
+    align-items: baseline;
     flex-flow: column nowrap;
     justify-content: start;
     background-color: rgba(0, 0, 0, 0.87);
@@ -170,7 +169,7 @@ nav > .btn-whatsap:hover {
     top: 10vh;
     width: 100vw;
     p {
-      width: 80%;
+      width: 100%;
       padding: 1rem;
       text-align: start;
       margin-bottom: 0px;
@@ -193,10 +192,13 @@ nav > .btn-whatsap:hover {
     }
   }
   nav > .btn-whatsap {
+    gap: 0;
     width: 100%;
     border-radius: 0;
+    justify-content: center;
     background-color: transparent;
   }
+  
   nav > .btn-whatsap:hover {
     background-color: var(--btn-wsp);
     color: var(--primary-b-black);
@@ -214,9 +216,9 @@ nav > .btn-whatsap:hover {
   }
 
   .close-menu-bar {
-    display: block;
     margin: 1rem;
     background-color: transparent;
+    align-self: self-end;
   }
   .close-menu-bar:hover{
     background-color: var(--primary-w);
